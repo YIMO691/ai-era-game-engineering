@@ -15,6 +15,9 @@
 - 在 Windows / Python 3.14.6 下实际执行 `python -I -m unittest discover -s tests -p 'test_*.py' -v`：23 项测试通过，退出码 0；实现前曾运行同批测试并观察到检查器缺失导致的失败。
 - 实际执行 `python -I scripts/check_docs.py`：退出码 0；必备文件、约定范围内 Markdown、仓库内链接和 README 导航通过，两份导入件字节数及 SHA-256 与记录一致。
 - 增加同命令的只读权限 GitHub Actions，官方依赖固定到完整提交 SHA；工作流存在不代表运行成功，具体提交的运行结果见 [Actions](https://github.com/YIMO691/ai-era-game-engineering/actions)。
-- GitHub 与 Obsidian 实际视觉渲染未验证；本条记录本地检查，不预先声明发布或远端 CI 通过。
+- 公开仓库已真实创建并推送，默认分支为 `main`，描述及 6 个主题标签已配置；没有启用 Pages、第三方发布服务或额外高权限自动化。
+- 初始提交 `a7e9c7f5299901e50003916fbc85e95d74151302` 的本地与远端 SHA 一致，两份 Git blob 原文校验通过；其 [Actions 运行](https://github.com/YIMO691/ai-era-game-engineering/actions/runs/40839002803)及两个检查步骤均为 success。本条记录该次运行，不替未来提交背书。
+- 已读取 GitHub API 返回的 README HTML，核对标题、阅读表格与链接；本地 Obsidian 导航的 10 个目标文件均存在。这不是浏览器或 Obsidian 的视觉验收。
+- Obsidian 阅读视图、浏览器视觉效果及原文 Mermaid 图形仍未验证。
 - 来源恢复、独立事实核验和 Unity 实验尚未实施；没有本项目性能测量结果。
 - 导入报告的 v1.0 是原报告标记，不是本项目的研究完成版本。
