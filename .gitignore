@@ -1,0 +1,27 @@
+# Local tools and private configuration
+.obsidian/
+.claude/
+.vscode/
+.idea/
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python and operating-system files
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+Thumbs.db
+
+# Generated Unity artifacts (future experiments only)
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Bb]uild/
+[Bb]uilds/

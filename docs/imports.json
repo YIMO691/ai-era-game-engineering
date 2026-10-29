@@ -1,0 +1,23 @@
+{
+  "imported_on": "2026-10-29",
+  "records": [
+    {
+      "path": "docs/manifesto.md",
+      "source_filename": "deep-research-report (2).md",
+      "role": "baseline",
+      "sha256": "8554965d34c25e4d6e3d07b161bf31d3461f9150708c6abcd4ecff69fe9fe5c9",
+      "bytes": 29469,
+      "exceptions": ["export-citations", "original-format"],
+      "reason": "Preserve the user-provided report byte-for-byte; claims and citations remain unverified."
+    },
+    {
+      "path": "docs/historical/deep-research-draft.md",
+      "source_filename": "deep-research-report (1).md",
+      "role": "historical-draft",
+      "sha256": "bf3f58667720750b7185c1570f5d9df791c952c549a88c6dc2c5c332f83cdb33",
+      "bytes": 27798,
+      "exceptions": ["export-citations", "original-format"],
+      "reason": "Preserve the user-provided report byte-for-byte; claims and citations remain unverified."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+Licensing scope — ai-era-game-engineering
+Copyright (c) 2026 YIMO691 and contributors
+
+Original documentation and original diagrams are licensed under the
+Creative Commons Attribution 4.0 International license (CC BY 4.0).
+Full legal text: LICENSES/CC-BY-4.0.txt
+Official legal code: https://creativecommons.org/licenses/by/4.0/legalcode.en
+Text obtained from the Creative Commons official source repository:
+https://github.com/creativecommons/cc-legal-tools-data/blob/a0dac18d1a773b4cdb7d8dd5d9bf4efab7901030/docs/licenses/by/4.0/legalcode.txt
+Retrieved: 2026-10-29. MIT template verified using GitHub's licenses/mit API.
+
+Original standalone source code, tests, scripts and GitHub workflow code
+are licensed under the MIT License.
+Full license text: LICENSES/MIT.txt
+
+Unless a nearby notice states otherwise, original executable code snippets
+inside documentation are also available under MIT. Surrounding explanatory
+text remains CC BY 4.0. Configuration and import metadata are available
+under MIT; license texts themselves are reproduced as legal notices.
+
+These licenses apply by material type, not as a choice of either license
+for the entire repository. When reusing documents, attribute YIMO691 and
+contributors, name this project, link to the source and the CC BY 4.0
+license, and indicate modifications. Do not imply endorsement.
+
+Third-party quotations, code, images, trademarks and other third-party
+materials retain their respective rights and notices. They are NOT
+relicensed by inclusion here. A citation, broken citation, or missing
+rights notice does not grant permission to reproduce external content.
+
+The two imported reports are included as user-supplied research inputs.
+CC BY 4.0 applies only to contributions the licensor is entitled to license;
+it is not a claim of ownership of cited third-party material. Their
+citations and empirical claims remain unverified; see docs/import-notes.md.
+No external article, image collection or third-party source archive is
+bundled as part of this initial publication.
+
+There is no warranty of factual accuracy, fitness for production, or
+non-infringement beyond the terms of the applicable license. Source and
+rights verification remain necessary before reusing third-party material.
