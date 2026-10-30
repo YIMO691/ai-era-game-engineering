@@ -1,3 +1,5 @@
 * text=auto eol=lf
 /docs/manifesto.md -text
 /docs/historical/deep-research-draft.md -text
+# Preserve the supplied manifesto's Markdown hard line breaks.
+/docs/project-manifesto.md whitespace=-blank-at-eol

@@ -139,6 +139,13 @@ class DocumentChecks(unittest.TestCase):
         errors = checker.check_repository(self.root)
         self.assert_error(errors, "required file missing")
 
+    def test_project_manifesto_is_required(self):
+        self.assertIn("docs/project-manifesto.md", checker.REQUIRED)
+
+    def test_readme_requires_both_manifesto_and_report(self):
+        self.assertIn("docs/project-manifesto.md", checker.NAVIGATION)
+        self.assertIn("docs/manifesto.md", checker.NAVIGATION)
+
 
 if __name__ == "__main__":
     unittest.main()
