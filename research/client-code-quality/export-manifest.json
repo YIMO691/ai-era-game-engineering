@@ -1,0 +1,179 @@
+{
+  "source_topic_id": "20261105-client-code-quality",
+  "exported_on": "2026-11-12",
+  "source_stage": "awaiting_review",
+  "source_human_review": "pending",
+  "public_authorization": "User authorized public export; authorization is not academic review or experimental validation. Local export only; no commit or push.",
+  "records": [
+    {
+      "source_filename": "plan.md",
+      "source_sha256": "decd4ebd8c830d03d35e437068552ecdff163d1c23b0ed059654179dfec8aa4f",
+      "path": "plan.md",
+      "export_sha256": "512d66af379d33a55ddc977bdbadb69ccd6d8a629c17893e098862f0e5ee4f1f",
+      "transformations": [
+        "Generalize the private task-brief filename; do not export the private prompt."
+      ]
+    },
+    {
+      "source_filename": "sources.md",
+      "source_sha256": "b1562a2957694f0a62cd1d2136bcc7557860d8d0303c29688f43392c43923486",
+      "path": "sources.md",
+      "export_sha256": "7485dd282c171352eb6d865d60fa4d547abdbd43b7147f85f8c7f6e44c626f84",
+      "transformations": [
+        "Convert Obsidian wikilinks to standard file-level relative links."
+      ]
+    },
+    {
+      "source_filename": "research-report.md",
+      "source_sha256": "9927087f89b058058789acd56ca81ad58f3d8f4d671a653a3a124f3b186e6280",
+      "path": "research-report.md",
+      "export_sha256": "a8d7877a13bd835ab2bf2d53fb76e714c1cbccb9e00cd2121574fd61c0862a6b",
+      "transformations": [
+        "Convert Obsidian wikilinks to standard file-level relative links.",
+        "Replace link to excluded internal skill-proposal.md with explicit exclusion text."
+      ]
+    },
+    {
+      "source_filename": "code-quality-guide.md",
+      "source_sha256": "aa34531666cb024c4ffcd8fdf4d8de75c0b7df63f346c638ed55ee4b0aafe7de",
+      "path": "code-quality-guide.md",
+      "export_sha256": "4a265e0854c5fd64b425d2ea1388586ea5c61dc1819bbba00a427137c4c13ae6",
+      "transformations": [
+        "Convert Obsidian wikilinks to standard file-level relative links."
+      ]
+    },
+    {
+      "source_filename": "unity-csharp-examples.md",
+      "source_sha256": "0031223cdfdd1a8f9516c77d156cd85fc26b28e69d9cbe1481e27de9ef85d132",
+      "path": "unity-csharp-examples.md",
+      "export_sha256": "c5f204e78228611ef8326ee9e781f7f05e16f71db05971ef957eba7a0730f36f",
+      "transformations": [
+        "Convert Obsidian wikilinks to standard file-level relative links."
+      ]
+    },
+    {
+      "source_filename": "code-review-checklist.md",
+      "source_sha256": "186cf3a3e0a37c90b182b87996ab03e470f5bd4f1c94b7c02e13c1adba32f160",
+      "path": "code-review-checklist.md",
+      "export_sha256": "1f5de76beeade1e487242c14fa037e2588601b8bc62662fa51b6257dd6570506",
+      "transformations": [
+        "Convert Obsidian wikilinks to standard file-level relative links."
+      ]
+    },
+    {
+      "source_filename": "training-route.md",
+      "source_sha256": "bd009b8b00abf214b6c42f9bd1ef0e259d777b8e1179d0e71bec9bca9147958f",
+      "path": "training-route.md",
+      "export_sha256": "a9cc52fed0c732c2fb317bd5e8609a3d91e0bd3a401f669bcfef95ab464715b2",
+      "transformations": [
+        "Convert Obsidian wikilinks to standard file-level relative links.",
+        "Replace link to excluded internal skill-proposal.md with explicit exclusion text."
+      ]
+    },
+    {
+      "source_filename": "third-party-notices.md",
+      "source_sha256": "b140a4bc7c6d45b4709df12441ac78eb8b4469dc102dd1d4c7643b558d58ae98",
+      "path": "third-party-notices.md",
+      "export_sha256": "2f327e12bfba5da69aff8487ec323318a2079ce82b476714d50d7c5b54bea596",
+      "transformations": [
+        "Convert Obsidian wikilinks to standard file-level relative links."
+      ]
+    },
+    {
+      "source_filename": "review.md",
+      "source_sha256": "01da089103b1427ccf7ac1c1843d82db0e1b816b2d0311189debdf7e7ed1bb75",
+      "path": "review.md",
+      "export_sha256": "2447d8cbb6158cae0e7309a578eb64a31e53a101895af019dc375205ab2f360c",
+      "transformations": [
+        "Convert Obsidian wikilinks to standard file-level relative links.",
+        "Replace two absolute workstation paths in historical command records with generic locations; retain historical results."
+      ]
+    },
+    {
+      "source_filename": null,
+      "source_sha256": null,
+      "path": "README.md",
+      "export_sha256": "bb5c420ca4d0d872d6148fd4b013d76dce721c2af9df4924578af449ba04cf98",
+      "transformations": [
+        "Generated public-export introduction, source-stage explanation, AI disclosure, review/rights boundaries and rollback scope; not a source research artifact."
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "source_filename": "topic.json",
+      "reason": "Private workflow state and checkpoint metadata; checked read-only, not exported."
+    },
+    {
+      "source_filename": "skill-proposal.md",
+      "reason": "Internal Skill reuse/trigger/deployment proposal with a natural-language review prompt; not a research finding or necessary public teaching artifact. Reviewed in full and excluded; generic review/training templates remain in the exported checklist and training route."
+    }
+  ],
+  "source_checkpoint_verification": [
+    {
+      "source_filename": "plan.md",
+      "expected_sha256": "decd4ebd8c830d03d35e437068552ecdff163d1c23b0ed059654179dfec8aa4f",
+      "actual_sha256": "decd4ebd8c830d03d35e437068552ecdff163d1c23b0ed059654179dfec8aa4f",
+      "status": "match"
+    },
+    {
+      "source_filename": "sources.md",
+      "expected_sha256": "b1562a2957694f0a62cd1d2136bcc7557860d8d0303c29688f43392c43923486",
+      "actual_sha256": "b1562a2957694f0a62cd1d2136bcc7557860d8d0303c29688f43392c43923486",
+      "status": "match"
+    },
+    {
+      "source_filename": "research-report.md",
+      "expected_sha256": "9927087f89b058058789acd56ca81ad58f3d8f4d671a653a3a124f3b186e6280",
+      "actual_sha256": "9927087f89b058058789acd56ca81ad58f3d8f4d671a653a3a124f3b186e6280",
+      "status": "match"
+    },
+    {
+      "source_filename": "code-quality-guide.md",
+      "expected_sha256": "aa34531666cb024c4ffcd8fdf4d8de75c0b7df63f346c638ed55ee4b0aafe7de",
+      "actual_sha256": "aa34531666cb024c4ffcd8fdf4d8de75c0b7df63f346c638ed55ee4b0aafe7de",
+      "status": "match"
+    },
+    {
+      "source_filename": "unity-csharp-examples.md",
+      "expected_sha256": "0031223cdfdd1a8f9516c77d156cd85fc26b28e69d9cbe1481e27de9ef85d132",
+      "actual_sha256": "0031223cdfdd1a8f9516c77d156cd85fc26b28e69d9cbe1481e27de9ef85d132",
+      "status": "match"
+    },
+    {
+      "source_filename": "code-review-checklist.md",
+      "expected_sha256": "186cf3a3e0a37c90b182b87996ab03e470f5bd4f1c94b7c02e13c1adba32f160",
+      "actual_sha256": "186cf3a3e0a37c90b182b87996ab03e470f5bd4f1c94b7c02e13c1adba32f160",
+      "status": "match"
+    },
+    {
+      "source_filename": "skill-proposal.md",
+      "expected_sha256": "c60e9e4ef0d27d69f14448ee8a12f3460d23187072789a34be3def6c28001dbf",
+      "actual_sha256": "c60e9e4ef0d27d69f14448ee8a12f3460d23187072789a34be3def6c28001dbf",
+      "status": "match"
+    },
+    {
+      "source_filename": "training-route.md",
+      "expected_sha256": "bd009b8b00abf214b6c42f9bd1ef0e259d777b8e1179d0e71bec9bca9147958f",
+      "actual_sha256": "bd009b8b00abf214b6c42f9bd1ef0e259d777b8e1179d0e71bec9bca9147958f",
+      "status": "match"
+    },
+    {
+      "source_filename": "third-party-notices.md",
+      "expected_sha256": "b140a4bc7c6d45b4709df12441ac78eb8b4469dc102dd1d4c7643b558d58ae98",
+      "actual_sha256": "b140a4bc7c6d45b4709df12441ac78eb8b4469dc102dd1d4c7643b558d58ae98",
+      "status": "match"
+    },
+    {
+      "source_filename": "review.md",
+      "expected_sha256": "01da089103b1427ccf7ac1c1843d82db0e1b816b2d0311189debdf7e7ed1bb75",
+      "actual_sha256": "01da089103b1427ccf7ac1c1843d82db0e1b816b2d0311189debdf7e7ed1bb75",
+      "status": "match"
+    }
+  ],
+  "scope_notes": [
+    "Explicit filename whitelist; no source changes, network access, repository code execution or research additions.",
+    "Original publication_status and review history describe the source snapshot, not the current public authorization.",
+    "Generated README has null source_filename/source_sha256. The manifest does not hash itself."
+  ]
+}

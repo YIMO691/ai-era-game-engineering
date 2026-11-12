@@ -1,0 +1,427 @@
+{
+  "source_topic_id": "20261106-engineering-judgment",
+  "exported_on": "2026-11-12",
+  "path_base": "this directory",
+  "records": [
+    {
+      "source_filename": "从工程思维到工程判断力_深化研究报告.md",
+      "source_sha256": "c8a6bbcacd0ee59ab63787d37fe6e413c9c5e924b8281cca77f30d59a795792a",
+      "path": "engineering-judgment-report.md",
+      "export_sha256": "396fae2604d4f75f18f12cd03b6eba39ae817d2168e442e2e4a64c39d6a379cc",
+      "transformations": [
+        "UTF-8 without BOM; LF; final newline",
+        "Added dated public-export notice without upgrading historical research status",
+        "Renamed to engineering-judgment-report.md",
+        "Converted 18 wikilinks to file-level relative links; heading locators kept as label text",
+        "Converted 2 Obsidian callout markers to ordinary blockquotes"
+      ]
+    },
+    {
+      "source_filename": "工程判断模型与决策手册.md",
+      "source_sha256": "2b3a04aea5bebd2a128d3ec986c42049d9a8efaaf2955c544b2703bcc8a529c1",
+      "path": "decision-handbook.md",
+      "export_sha256": "39be80e08be7f797252d3e058c7a28e73e89863efc24b85e967bba672d727587",
+      "transformations": [
+        "UTF-8 without BOM; LF; final newline",
+        "Added dated public-export notice without upgrading historical research status",
+        "Renamed to decision-handbook.md",
+        "Converted 8 wikilinks to file-level relative links; heading locators kept as label text",
+        "Converted 1 Obsidian callout markers to ordinary blockquotes"
+      ]
+    },
+    {
+      "source_filename": "成熟项目源码阅读与设计还原手册.md",
+      "source_sha256": "7d14a0258a615b7eb9b92bea98c426de1f8f1a249e31c1a96ac516798676e114",
+      "path": "source-reading-handbook.md",
+      "export_sha256": "c28ffe0b5a71614b50545a361e7467419eeadbb41b85a923e9cbde9601351531",
+      "transformations": [
+        "UTF-8 without BOM; LF; final newline",
+        "Added dated public-export notice without upgrading historical research status",
+        "Renamed to source-reading-handbook.md",
+        "Converted 7 wikilinks to file-level relative links; heading locators kept as label text",
+        "Converted 1 Obsidian callout markers to ordinary blockquotes"
+      ]
+    },
+    {
+      "source_filename": "工程判断力训练与能力评估手册.md",
+      "source_sha256": "062930f7d709c5bbb6aa1cff38c9df66c07d9957b3f4a0d7f31668e828c7cde7",
+      "path": "training-and-assessment-handbook.md",
+      "export_sha256": "6dba649cc2aeb998ee5d8d0efb527ce8bfc84c01fc64fbc74e7900e800914576",
+      "transformations": [
+        "UTF-8 without BOM; LF; final newline",
+        "Added dated public-export notice without upgrading historical research status",
+        "Renamed to training-and-assessment-handbook.md",
+        "Converted 12 wikilinks to file-level relative links; heading locators kept as label text",
+        "Converted 1 Obsidian callout markers to ordinary blockquotes"
+      ]
+    },
+    {
+      "source_filename": "AI时代工程判断与人机协作手册.md",
+      "source_sha256": "887724f67a154819b1af04cbe365461456031b0643b56c4e7f02f528178008fa",
+      "path": "human-ai-collaboration-handbook.md",
+      "export_sha256": "512359a9a48f7e8761750cb78712f3d12bcd9b7e253364b2b4635ffb79b7922b",
+      "transformations": [
+        "UTF-8 without BOM; LF; final newline",
+        "Added dated public-export notice without upgrading historical research status",
+        "Renamed to human-ai-collaboration-handbook.md",
+        "Converted 8 wikilinks to file-level relative links; heading locators kept as label text",
+        "Converted 1 Obsidian callout markers to ordinary blockquotes"
+      ]
+    },
+    {
+      "source_filename": "工程判断案例库.md",
+      "source_sha256": "45433453b884eb3b7fae5e42d4e308b4aca35ef0eafb63b35b1fdb7f76a748ce",
+      "path": "case-library.md",
+      "export_sha256": "d408e87623ff9ef0bd8b07173697695fab722fe2e8d2affa30f0134f60bf9d45",
+      "transformations": [
+        "UTF-8 without BOM; LF; final newline",
+        "Added dated public-export notice without upgrading historical research status",
+        "Renamed to case-library.md",
+        "Converted 4 wikilinks to file-level relative links; heading locators kept as label text",
+        "Converted 6 Obsidian callout markers to ordinary blockquotes"
+      ]
+    },
+    {
+      "source_filename": "工程判断实践模板包.md",
+      "source_sha256": "3a6b5ccca03ca2bdb2afab3fdf1ed4fc1923411b0de84fc362b6b77b459e6883",
+      "path": "practice-templates.md",
+      "export_sha256": "3921e8af3753b2bdb7b08775afb18eb5e1f8bc5df8e13349d4d9bbe3ceb7ee78",
+      "transformations": [
+        "UTF-8 without BOM; LF; final newline",
+        "Added dated public-export notice without upgrading historical research status",
+        "Renamed to practice-templates.md",
+        "Converted 5 wikilinks to file-level relative links; heading locators kept as label text",
+        "Converted 1 Obsidian callout markers to ordinary blockquotes"
+      ]
+    },
+    {
+      "source_filename": "既有研究审计与第二阶段研究缺口.md",
+      "source_sha256": "2d90fbbaceda3f4d97e2bb1235ae915e8359c5a40489202f31dd64d3e61880e9",
+      "path": "baseline-audit.md",
+      "export_sha256": "dff5eab379a25f5054a1db081870daeb90734461b91659feb06875177d93db9d",
+      "transformations": [
+        "UTF-8 without BOM; LF; final newline",
+        "Added dated public-export notice without upgrading historical research status",
+        "Renamed to baseline-audit.md",
+        "Converted 4 wikilinks to file-level relative links; heading locators kept as label text",
+        "Converted 1 Obsidian callout markers to ordinary blockquotes",
+        "Replaced unresolved legacy citation marker with evidence-gap description"
+      ]
+    },
+    {
+      "source_filename": "plan.md",
+      "source_sha256": "98ba327d6f49b2e5850d9430ff07d025ce12854a6bf2969ddc25dc8b6369dcb2",
+      "path": "research-plan.md",
+      "export_sha256": "b68f4a5c5d4c41c087b8b8a8741e3f5273658ed64a3573a40c504b67c3eb2e9b",
+      "transformations": [
+        "UTF-8 without BOM; LF; final newline",
+        "Added dated public-export notice without upgrading historical research status",
+        "Renamed to research-plan.md",
+        "Removed private task absolute location and filename; retained input identity",
+        "Removed residual local-directory relationship from private-input description"
+      ]
+    },
+    {
+      "source_filename": "sources.md",
+      "source_sha256": "eb50735699917315b655b53fa03cc24678c58ef928e37f61ed762656788d5dbd",
+      "path": "sources.md",
+      "export_sha256": "19ce929b99f8937fd027cab5cdf82f4eeb902044b01c761c370e2d8c3f0efd81",
+      "transformations": [
+        "UTF-8 without BOM; LF; final newline",
+        "Added dated public-export notice without upgrading historical research status",
+        "Converted 4 wikilinks to file-level relative links; heading locators kept as label text",
+        "Removed private task absolute location and filename; retained input identity",
+        "Replaced local baseline absolute path with title only: 工程思维.md",
+        "Replaced local baseline absolute path with title only: 软件工程思维.md",
+        "Replaced local baseline absolute path with title only: 游戏工程.md",
+        "Replaced local baseline absolute path with title only: 工程-软件-游戏.md",
+        "Omitted third-party original wording for ai-02; redistribution permission not established; retained evidence identity, source URL, locator, analysis and uncertainty",
+        "Omitted third-party original wording for ai-03; redistribution permission not established; retained evidence identity, source URL, locator, analysis and uncertainty",
+        "Omitted third-party original wording for game-12; redistribution permission not established; retained evidence identity, source URL, locator, analysis and uncertainty",
+        "Omitted third-party original wording for game-24; redistribution permission not established; retained evidence identity, source URL, locator, analysis and uncertainty",
+        "Omitted third-party original wording for game-25; redistribution permission not established; retained evidence identity, source URL, locator, analysis and uncertainty",
+        "Omitted third-party original wording for ai-10; redistribution permission not established; retained evidence identity, source URL, locator, analysis and uncertainty",
+        "Appended full MIT permission/disclaimer with original UniTask and NGO copyright notices for retained licensed excerpts; no relicensing of other sources",
+        "Percent-encoded parentheses in three DOI link destinations for the repository Markdown subset; decoded URLs and visible DOI labels unchanged."
+      ]
+    },
+    {
+      "source_filename": "report.md",
+      "source_sha256": "5914f86e704911af6469b93c0168472efafab06c1a44967ef5cd7e3929818c17",
+      "path": "research-overview.md",
+      "export_sha256": "c9caa070fedc6d96a16838b566aef00d5bdecaac9095196d0a84c5d18c377054",
+      "transformations": [
+        "UTF-8 without BOM; LF; final newline",
+        "Added dated public-export notice without upgrading historical research status",
+        "Renamed to research-overview.md",
+        "Converted 12 wikilinks to file-level relative links; heading locators kept as label text",
+        "Converted 1 Obsidian callout markers to ordinary blockquotes"
+      ]
+    },
+    {
+      "source_filename": "blog.md",
+      "source_sha256": "501713ff93641fa3c14e0efbf37161f75fd1700a33266ac88b49aa46a92f44be",
+      "path": "late-icon-callback-tutorial.md",
+      "export_sha256": "0660b5fd47c9dd87d273d9fbb2658d395eba151a31d574355a107bf2d28f93e1",
+      "transformations": [
+        "UTF-8 without BOM; LF; final newline",
+        "Added dated public-export notice without upgrading historical research status",
+        "Renamed to late-icon-callback-tutorial.md",
+        "Converted 8 wikilinks to file-level relative links; heading locators kept as label text",
+        "Converted 1 Obsidian callout markers to ordinary blockquotes"
+      ]
+    },
+    {
+      "source_filename": "review.md",
+      "source_sha256": "58108289eeb22662c6eeaf6334b816ca47182137b5b653600a113087a1726d93",
+      "path": "research-review.md",
+      "export_sha256": "957d8504bf2bd1292b0eb8c07060a98c47afdcdc64f76ecbc8fa782fe9434251",
+      "transformations": [
+        "UTF-8 without BOM; LF; final newline",
+        "Added dated public-export notice without upgrading historical research status",
+        "Renamed to research-review.md",
+        "Converted 4 wikilinks to file-level relative links; heading locators kept as label text"
+      ]
+    },
+    {
+      "source_filename": "_research_cognition.md",
+      "source_sha256": "778ad11ec3218ad790204cb6310c93a176ff3382c8ff374927108c011ad8c579",
+      "path": "cognition-evidence-notes.md",
+      "export_sha256": "e93ea70e73a15a636037f22bce49a8d3d7fb37b94b220100dea8995cfa3a0a62",
+      "transformations": [
+        "UTF-8 without BOM; LF; final newline",
+        "Added dated public-export notice without upgrading historical research status",
+        "Renamed to cognition-evidence-notes.md",
+        "Converted 1 Obsidian callout markers to ordinary blockquotes",
+        "Full-content review found independent evidence notes, not raw conversation or private prompt; no recorded instructions executed",
+        "Percent-encoded parentheses in three DOI link destinations for the repository Markdown subset; decoded URLs and visible DOI labels unchanged."
+      ]
+    },
+    {
+      "source_filename": "_research_ai.md",
+      "source_sha256": "9c48e7a43ca091d9ee6175473b06e619aec2c3427ae1ccafc98fb9b7c81b091f",
+      "path": "ai-evidence-notes.md",
+      "export_sha256": "4125077fbd812fe1b092f95f12fbd3073b37a6e1b2141a0edd4b9f5cc786fbdf",
+      "transformations": [
+        "UTF-8 without BOM; LF; final newline",
+        "Added dated public-export notice without upgrading historical research status",
+        "Renamed to ai-evidence-notes.md",
+        "Converted 2 Obsidian callout markers to ordinary blockquotes",
+        "Generalized absolute workspace-instruction location; no configuration exported",
+        "Full-content review found independent evidence notes, not raw conversation or private prompt; no recorded instructions executed",
+        "Omitted third-party original wording for ai-02; redistribution permission not established; retained evidence identity, source URL, locator, analysis and uncertainty",
+        "Omitted third-party original wording for ai-03; redistribution permission not established; retained evidence identity, source URL, locator, analysis and uncertainty",
+        "Omitted third-party original wording for ai-10; redistribution permission not established; retained evidence identity, source URL, locator, analysis and uncertainty"
+      ]
+    },
+    {
+      "source_filename": "_research_unity.md",
+      "source_sha256": "8ab50b44a8b9bca3d4fa0d8b2c42a1a406ed436c68362bfc8f39f9a999eaba81",
+      "path": "unity-source-evidence-notes.md",
+      "export_sha256": "f2d67d3aebf8629d95ea36fad443651942f01146735484110ccb33530e920f44",
+      "transformations": [
+        "UTF-8 without BOM; LF; final newline",
+        "Added dated public-export notice without upgrading historical research status",
+        "Renamed to unity-source-evidence-notes.md",
+        "Converted 3 Obsidian callout markers to ordinary blockquotes",
+        "Full-content review found independent evidence notes, not raw conversation or private prompt; no recorded instructions executed",
+        "Omitted third-party original wording for game-12; redistribution permission not established; retained evidence identity, source URL, locator, analysis and uncertainty",
+        "Omitted third-party original wording for game-24; redistribution permission not established; retained evidence identity, source URL, locator, analysis and uncertainty",
+        "Omitted third-party original wording for game-25; redistribution permission not established; retained evidence identity, source URL, locator, analysis and uncertainty",
+        "Appended full MIT permission/disclaimer with original UniTask and NGO copyright notices for retained licensed excerpts; no relicensing of other sources"
+      ]
+    },
+    {
+      "source_filename": null,
+      "source_sha256": null,
+      "path": "README.md",
+      "export_sha256": "05aa87574c79839d57fd3a5822e0508045c4b9d683c0f074c7beb6e7f5e18eca",
+      "transformations": [
+        "Generated topic navigation and export disclosure; not a source research artifact"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "source_filename": "topic.json",
+      "source_sha256": "a928120396799e70e65864d182f6d3f316418f2e3af9f6c02540ba6a2b6e5d8d",
+      "reason": "Private source checkpoint and state excluded; verified read-only"
+    },
+    {
+      "source_filename": "sources.md",
+      "evidence_id": "ai-02",
+      "scope": "third-party original wording",
+      "reason": "Redistribution permission not established; public copy retains identity and limitations, not original quotation"
+    },
+    {
+      "source_filename": "sources.md",
+      "evidence_id": "ai-03",
+      "scope": "third-party original wording",
+      "reason": "Redistribution permission not established; public copy retains identity and limitations, not original quotation"
+    },
+    {
+      "source_filename": "sources.md",
+      "evidence_id": "game-12",
+      "scope": "third-party original wording",
+      "reason": "Redistribution permission not established; public copy retains identity and limitations, not original quotation"
+    },
+    {
+      "source_filename": "sources.md",
+      "evidence_id": "game-24",
+      "scope": "third-party original wording",
+      "reason": "Redistribution permission not established; public copy retains identity and limitations, not original quotation"
+    },
+    {
+      "source_filename": "sources.md",
+      "evidence_id": "game-25",
+      "scope": "third-party original wording",
+      "reason": "Redistribution permission not established; public copy retains identity and limitations, not original quotation"
+    },
+    {
+      "source_filename": "sources.md",
+      "evidence_id": "ai-10",
+      "scope": "third-party original wording",
+      "reason": "Redistribution permission not established; public copy retains identity and limitations, not original quotation"
+    },
+    {
+      "source_filename": "_research_ai.md",
+      "evidence_id": "ai-02",
+      "scope": "third-party original wording",
+      "reason": "Redistribution permission not established; public copy retains identity and limitations, not original quotation"
+    },
+    {
+      "source_filename": "_research_ai.md",
+      "evidence_id": "ai-03",
+      "scope": "third-party original wording",
+      "reason": "Redistribution permission not established; public copy retains identity and limitations, not original quotation"
+    },
+    {
+      "source_filename": "_research_ai.md",
+      "evidence_id": "ai-10",
+      "scope": "third-party original wording",
+      "reason": "Redistribution permission not established; public copy retains identity and limitations, not original quotation"
+    },
+    {
+      "source_filename": "_research_unity.md",
+      "evidence_id": "game-12",
+      "scope": "third-party original wording",
+      "reason": "Redistribution permission not established; public copy retains identity and limitations, not original quotation"
+    },
+    {
+      "source_filename": "_research_unity.md",
+      "evidence_id": "game-24",
+      "scope": "third-party original wording",
+      "reason": "Redistribution permission not established; public copy retains identity and limitations, not original quotation"
+    },
+    {
+      "source_filename": "_research_unity.md",
+      "evidence_id": "game-25",
+      "scope": "third-party original wording",
+      "reason": "Redistribution permission not established; public copy retains identity and limitations, not original quotation"
+    },
+    {
+      "source_filename": null,
+      "scope": "private task specification, raw sessions, local configuration/credentials and downloaded full texts",
+      "reason": "Not in public whitelist; task location and filename removed from two documents; generic reusable templates retained as unexecuted documentation"
+    }
+  ],
+  "source_checkpoint_verification": {
+    "algorithm": "SHA-256",
+    "artifact_count": 16,
+    "hash_matches": 16,
+    "byte_size_matches": 16,
+    "mismatches": [],
+    "source_modified": false
+  },
+  "verification": {
+    "status": "passed independent local static checks",
+    "repository_code_executed": false,
+    "network_access": false,
+    "git_commit_or_push": false,
+    "exit_code": 0,
+    "markdown_files": 17,
+    "local_links": 128,
+    "external_url_occurrences_preserved": 234,
+    "evidence_ids": 71,
+    "read_status_counts": {
+      "read": 32,
+      "access_failed": 33,
+      "discovered": 6
+    },
+    "readme_lines": 50,
+    "checks": [
+      "source checkpoint and source-byte stability",
+      "export SHA-256",
+      "exact whitelist",
+      "UTF-8 without BOM / LF / terminal newline",
+      "one H1 outside balanced fences",
+      "no wikilinks / reference links / local heading fragments / legacy citation markers",
+      "no identified machine-local paths or private prompt filename",
+      "relative link existence, case and repository containment",
+      "unchanged external URL occurrences",
+      "unchanged evidence ID and explicit status occurrences"
+    ],
+    "not_run": [
+      "repository unittest",
+      "scripts/check_docs.py",
+      "network source/URL checks",
+      "Unity compilation or execution",
+      "Markdown/Mermaid GUI rendering",
+      "human research review"
+    ]
+  },
+  "original_research_status": {
+    "version": "0.9",
+    "stage": "awaiting_review",
+    "human_review": "not_received",
+    "publication_status": "private_unpublished_not_authorized",
+    "note": "Historical status only; current public authorization is not technical review or experiment validation"
+  },
+  "execution_log": [
+    {
+      "command": "python -I - (inline export helper)",
+      "exit_code": 2,
+      "result": "Long shell command failed parsing before Python; no writes"
+    },
+    {
+      "command": "python -I - (inline export helper)",
+      "exit_code": 1,
+      "result": "Preflight path regex failed before any writes"
+    },
+    {
+      "command": "python -I - (shortened inline export helper)",
+      "exit_code": 0,
+      "result": "16 public copies and initial manifest created; source checkpoint matched"
+    },
+    {
+      "command": "python -I - (rights filtering)",
+      "exit_code": 0,
+      "result": "12 omissions across six evidence IDs; MIT notices preserved"
+    },
+    {
+      "command": "python -I - (initial static checks)",
+      "exit_code": 1,
+      "result": "Checker counted only H3 IDs and a narrative status example; checker corrected"
+    },
+    {
+      "command": "python -I - (second static checks)",
+      "exit_code": 1,
+      "result": "Checker misidentified URL scheme as drive path and included prose in URL tokens; checker corrected; no source repair"
+    },
+    {
+      "command": "python -I - (targeted checker diagnosis)",
+      "exit_code": 0,
+      "result": "Confirmed only validator parsing issues, no local-path findings"
+    },
+    {
+      "command": "python -I - (independent static checks)",
+      "exit_code": 0,
+      "result": "17 Markdown; 128 local links; 234 preserved external URL occurrences; 71 IDs; no issues"
+    }
+  ],
+  "integration_validation": {
+    "initial_repository_check": "25 unit tests passed; document checker rejected DOI parentheses in two documents",
+    "fix": "Six DOI destination occurrences percent-encoded without changing decoded URLs; source files unchanged",
+    "final_repository_check": "See repository CHANGELOG for integrated final result."
+  }
+}

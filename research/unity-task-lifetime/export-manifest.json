@@ -1,0 +1,108 @@
+{
+  "source_topic_id": "20261105-unity-task-lifetime",
+  "exported_on": "2026-11-12",
+  "source_stage": "awaiting_review",
+  "source_human_review": "pending",
+  "public_authorization": "User authorized public export; authorization is not academic review or experimental validation. Local export only; no commit or push.",
+  "records": [
+    {
+      "source_filename": "plan.md",
+      "source_sha256": "83ef5c3d69078d32de8c7e85e0f76668055c5a6f5ab2b775c62803b4ddd2a086",
+      "path": "plan.md",
+      "export_sha256": "83ef5c3d69078d32de8c7e85e0f76668055c5a6f5ab2b775c62803b4ddd2a086",
+      "transformations": [
+        "No textual changes; preserve the source research and evidence limitations."
+      ]
+    },
+    {
+      "source_filename": "sources.md",
+      "source_sha256": "8cea12f9c07e76bb520bd87eccfffa55196561607b4bfb2d5febecb06274262f",
+      "path": "sources.md",
+      "export_sha256": "5f8c3bdbe4f07fd06e02522dc3cbac54875e3a189a01f6d12b237394e31444d9",
+      "transformations": [
+        "Replace four Unity Reference-Only source-code quotations with equivalent behavioral paraphrases; retain attribution, license uncertainty, fixed source URLs and claim boundaries."
+      ]
+    },
+    {
+      "source_filename": "report.md",
+      "source_sha256": "6aae2a23521601bb9ff81bed9fed5eb7cc1cb7bc84cac829677088c17da695d0",
+      "path": "report.md",
+      "export_sha256": "772365326ec5b514d95e3195299b2ee48889d9a5984274f971fb47a11189435f",
+      "transformations": [
+        "Convert Obsidian wikilinks to standard file-level relative links.",
+        "Convert Obsidian warning callouts to standard Markdown blockquotes."
+      ]
+    },
+    {
+      "source_filename": "blog.md",
+      "source_sha256": "3099ee18f50a3b392f11affc7aae8cb01c80a132e860e93dfebe5aa96a0a2ec1",
+      "path": "blog.md",
+      "export_sha256": "f4c1c2b03337b9616f9254319d67344dd9e3e3ed308c15b38984e16c228935be",
+      "transformations": [
+        "Convert Obsidian wikilinks to standard file-level relative links.",
+        "Convert Obsidian warning callouts to standard Markdown blockquotes."
+      ]
+    },
+    {
+      "source_filename": "review.md",
+      "source_sha256": "6f82e087d3dac448d6d1fc52b7f4d17e008b955aded4c3e15484accb2bb1f3ff",
+      "path": "review.md",
+      "export_sha256": "6f82e087d3dac448d6d1fc52b7f4d17e008b955aded4c3e15484accb2bb1f3ff",
+      "transformations": [
+        "No textual changes; preserve the source research and evidence limitations."
+      ]
+    },
+    {
+      "source_filename": null,
+      "source_sha256": null,
+      "path": "README.md",
+      "export_sha256": "c776a0d4ac12735c923b63b5e7455f94aae7f2d69d2b1bcab3e550021c10e5be",
+      "transformations": [
+        "Generated public-export introduction, source-stage explanation, AI disclosure, review/rights boundaries and rollback scope; not a source research artifact."
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "source_filename": "topic.json",
+      "reason": "Private workflow state and checkpoint metadata; checked read-only, not exported."
+    }
+  ],
+  "source_checkpoint_verification": [
+    {
+      "source_filename": "plan.md",
+      "expected_sha256": "83ef5c3d69078d32de8c7e85e0f76668055c5a6f5ab2b775c62803b4ddd2a086",
+      "actual_sha256": "83ef5c3d69078d32de8c7e85e0f76668055c5a6f5ab2b775c62803b4ddd2a086",
+      "status": "match"
+    },
+    {
+      "source_filename": "sources.md",
+      "expected_sha256": "8cea12f9c07e76bb520bd87eccfffa55196561607b4bfb2d5febecb06274262f",
+      "actual_sha256": "8cea12f9c07e76bb520bd87eccfffa55196561607b4bfb2d5febecb06274262f",
+      "status": "match"
+    },
+    {
+      "source_filename": "report.md",
+      "expected_sha256": "6aae2a23521601bb9ff81bed9fed5eb7cc1cb7bc84cac829677088c17da695d0",
+      "actual_sha256": "6aae2a23521601bb9ff81bed9fed5eb7cc1cb7bc84cac829677088c17da695d0",
+      "status": "match"
+    },
+    {
+      "source_filename": "blog.md",
+      "expected_sha256": "3099ee18f50a3b392f11affc7aae8cb01c80a132e860e93dfebe5aa96a0a2ec1",
+      "actual_sha256": "3099ee18f50a3b392f11affc7aae8cb01c80a132e860e93dfebe5aa96a0a2ec1",
+      "status": "match"
+    },
+    {
+      "source_filename": "review.md",
+      "expected_sha256": "6f82e087d3dac448d6d1fc52b7f4d17e008b955aded4c3e15484accb2bb1f3ff",
+      "actual_sha256": "6f82e087d3dac448d6d1fc52b7f4d17e008b955aded4c3e15484accb2bb1f3ff",
+      "status": "match"
+    }
+  ],
+  "scope_notes": [
+    "Explicit filename whitelist; no source changes, network access, repository code execution or research additions.",
+    "Original publication_status and review history describe the source snapshot, not the current public authorization.",
+    "Generated README has null source_filename/source_sha256. The manifest does not hash itself."
+  ]
+}

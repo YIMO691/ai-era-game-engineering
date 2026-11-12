@@ -4,7 +4,7 @@
 
 先阅读[项目宗旨：从实现代码，到理解系统与承担工程结果](docs/project-manifesto.md)，了解项目为什么存在、核心问题及研究边界。
 
-**当前没有完成独立来源核验或 Unity 实验。** 宗旨附有 7 条外部来源 URL，但本仓库尚未逐条核对。两份原始研究报告仍保留不可追溯的导出引用，原任务书未提供；报告中的案例数字与 AI 效率结论也未独立核验。详见[导入与证据缺口说明](docs/import-notes.md)。
+**公开文档不等于研究结论已获验证。** 宗旨与两份原始导入报告的引用缺口仍未补齐，详见[导入与证据缺口说明](docs/import-notes.md)。后续专题各自保留来源阅读范围、源码取证及未验证项，不能用某一专题的核对记录替其他报告背书；本次发布没有新增 Unity 实验或人工研究审核。
 
 ## 核心问题
 
@@ -41,7 +41,20 @@
 | [贡献指南](CONTRIBUTING.md) | 范围、引用、AI 披露和检查要求 |
 | [变更记录](CHANGELOG.md) | 实际文档建设与后续状态更新 |
 
-## 当前专题：代码优美与工程品质
+## 研究专题
+
+[研究总目录](research/README.md)统一六个专题的公开阅读入口：
+
+- [AI代码质量工作流](research/ai-code-quality-workflow/README.md)
+- [AI-CQEP工程实践文稿与模板](research/ai-cqep/README.md)
+- [客户端代码质量](research/client-code-quality/README.md)
+- [Unity异步任务生命周期](research/unity-task-lifetime/README.md)
+- [工程判断与人机协作](research/engineering-judgment/README.md)
+- [代码优美与工程品质](research/code-aesthetics/README.md)
+
+公开快照与私有编辑源分离；本轮范围、排除项和维护规则见[研究发布说明](research/PUBLICATION.md)。
+
+### 代码优美与工程品质
 
 [代码优美论研究目录](research/code-aesthetics/README.md)整理了Batch01理论与证据审校，以及Batch02的一组界面请求材料设计。**独立内容审校为PARTIAL，代码与参与者实验未执行，人工研究审核仍pending。** 公开入库不升级研究可信度。
 
