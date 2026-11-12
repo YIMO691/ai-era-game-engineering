@@ -41,6 +41,14 @@
 | [贡献指南](CONTRIBUTING.md) | 范围、引用、AI 披露和检查要求 |
 | [变更记录](CHANGELOG.md) | 实际文档建设与后续状态更新 |
 
+## 当前专题：代码优美与工程品质
+
+[代码优美论研究目录](research/code-aesthetics/README.md)整理了Batch01理论与证据审校，以及Batch02的一组界面请求材料设计。**独立内容审校为PARTIAL，代码与参与者实验未执行，人工研究审核仍pending。** 公开入库不升级研究可信度。
+
+- [先读审校结论](research/code-aesthetics/audit/conclusion.md)，再看[构念与测量](research/code-aesthetics/batch02/constructs.md)。
+- [材料母版](research/code-aesthetics/batch02/ui-request-materials.md)与[评分协议](research/code-aesthetics/batch02/scoring-protocol.md)分开；后者含答案，不用于未暴露题面的参与者。
+- [公开整理与验证记录](research/code-aesthetics/PUBLICATION.md)说明来源映射、路径清理、许可和未验证项。
+
 ## 本地检查
 
 在仓库根目录执行；检查范围与已记录结果见[变更记录](CHANGELOG.md)。

@@ -1,0 +1,234 @@
+{
+  "exported_on": "2026-11-11",
+  "source_version": "0.3-audit+batch02-draft.1",
+  "source_topic_sha256": "d13199c8ef0067111b33e0a130e1c8a96c9dfdeb7443b1121ae6853d161e52b8",
+  "research_status": "PARTIAL",
+  "human_research_review": "pending",
+  "experiment_status": "not-run",
+  "publication_authorization": "User explicitly selected this public repository for the organized research drafts.",
+  "transformations": [
+    "Directory organization",
+    "File-level relative Markdown links; heading names retained in labels",
+    "Local path prefix redaction",
+    "One H1 per document and GitHub callout normalization",
+    "Publication and historical-scope notices",
+    "Five two-space hard breaks in two historical documents converted to backslash hard breaks"
+  ],
+  "excluded": [
+    "06_Claude深度研究Prompt.md",
+    "09_Claude交叉审校Prompt_Batch01-A.md",
+    "Local duplicate navigation/plan/report replaced by README",
+    "topic.json and private checkpoints",
+    "ZIP files, downloaded source documents, scripts and raw conversation logs"
+  ],
+  "records": [
+    {
+      "source_filename": "01_思想基础与理论溯源研究报告.md",
+      "source_sha256": "531e5afa0b48aa7a7c6c6963bbd001d1904fddf29992b411f1c0f35099ff936f",
+      "path": "batch01/foundations.md",
+      "export_sha256": "0ef19cfd2e8d00f717c2ea5ce5b5bffc60f26012bf038fba51c2a151a2f746bc",
+      "wikilinks_converted": 14,
+      "local_prefixes_removed": 0
+    },
+    {
+      "source_filename": "02_核心文献注释书目.md",
+      "source_sha256": "691a1239f473d548d453ef07a79887f58318a337907d3ed1c5318be35afb9292",
+      "path": "batch01/bibliography.md",
+      "export_sha256": "e29e626bb1e501f152925f492cac995da2fd91fef99e0d81985b3cd89d742300",
+      "wikilinks_converted": 9,
+      "local_prefixes_removed": 0
+    },
+    {
+      "source_filename": "03_概念与理论关系图.md",
+      "source_sha256": "1aa94d9c366b485e1268d013df6ec3f6a0cb823391b0c25e6b72dc0dee368a1f",
+      "path": "batch01/concept-map.md",
+      "export_sha256": "bb6c42329187388544dab19567371109d227586e5d92bf1755d4e7baf39986e6",
+      "wikilinks_converted": 5,
+      "local_prefixes_removed": 0
+    },
+    {
+      "source_filename": "04_代码优美论初步理论框架.md",
+      "source_sha256": "274d818ace2ba2ba2a6f0f624d6ac2ea27496efdc919794a8e0adaa544db32c3",
+      "path": "batch01/framework.md",
+      "export_sha256": "c4988022998a80684b9615b8520622ccd25ee49e44232be044866b1e39451c9c",
+      "wikilinks_converted": 9,
+      "local_prefixes_removed": 0
+    },
+    {
+      "source_filename": "08_认知科学与程序理解补充研究.md",
+      "source_sha256": "dc0d7eead82346630a52239db0e0e3a2dd29bf006aa8d8b1e9544b728779bd27",
+      "path": "batch01/cognition.md",
+      "export_sha256": "0a85ef010970150548e74ed0699e4e5e345584bf5bc9b70a03a2031203277ffe",
+      "wikilinks_converted": 4,
+      "local_prefixes_removed": 0
+    },
+    {
+      "source_filename": "05_Batch02研究问题与计划.md",
+      "source_sha256": "5165b4bd5e5128b396352c12c16083f515a8ad0ceaa1ee9e267c2292ce765529",
+      "path": "batch02/research-plan.md",
+      "export_sha256": "7f632278f29fa0b1bf1263b4e493c42704dbcd160037905825f49f3d0b03d738",
+      "wikilinks_converted": 7,
+      "local_prefixes_removed": 0
+    },
+    {
+      "source_filename": "15_Batch02研究启动条件.md",
+      "source_sha256": "cb271a924611f0636d926ee956471360bc1326773d4d963a7a4f6d4cde2f1743",
+      "path": "batch02/entry-gates.md",
+      "export_sha256": "2c755a471cf81779c6edc0fe0153510c2707b7392d49d74975fb6bf6bfed6e8b",
+      "wikilinks_converted": 4,
+      "local_prefixes_removed": 0
+    },
+    {
+      "source_filename": "16_Batch02构念与测量草案.md",
+      "source_sha256": "6651a92f4dbf5fa4bfdd2a1b00fff6713bc26d8431c57b85a4ec04fc394643ea",
+      "path": "batch02/constructs.md",
+      "export_sha256": "df19f49863935f6988a51deeea43cbbc56c3a6e7e97ed1ca5f8e8e3528a270eb",
+      "wikilinks_converted": 9,
+      "local_prefixes_removed": 0
+    },
+    {
+      "source_filename": "17_Batch02界面请求材料草案.md",
+      "source_sha256": "be3e1138ca246882685f9c1cb683dee3d7fa53909dc40ad832d2a9890b4a042b",
+      "path": "batch02/ui-request-materials.md",
+      "export_sha256": "aff4a409ddce5af816e68119cc4b5584a9c529259bdf495c040fbd43c534ef56",
+      "wikilinks_converted": 2,
+      "local_prefixes_removed": 0
+    },
+    {
+      "source_filename": "18_Batch02评分与可行性协议.md",
+      "source_sha256": "cb232a1fba72b700a351ced3d2e40d4ef35f495a23038f26c97fb1e98ee739b4",
+      "path": "batch02/scoring-protocol.md",
+      "export_sha256": "8c423b8bbd098af36c0eefbfea24fb09f95f3826cb37a27ac31a91fda67fc9c7",
+      "wikilinks_converted": 3,
+      "local_prefixes_removed": 0
+    },
+    {
+      "source_filename": "12_Batch01-B核心论断证据审校.md",
+      "source_sha256": "7ee148ce6f2f830850c1f3fdaafb4cb6cead999051fdfd303a647d1106761ba8",
+      "path": "audit/claim-evidence-matrix.md",
+      "export_sha256": "5dadc84f5024ff80752fe8782279bfcba938979507ace8011f46511c4427c633",
+      "wikilinks_converted": 5,
+      "local_prefixes_removed": 0
+    },
+    {
+      "source_filename": "13_Batch01-B修订差异与决策记录.md",
+      "source_sha256": "c828de3333670626bb09fd04cc19a6d9ae9828190bb08bbb21da748d00abb143",
+      "path": "audit/revision-decisions.md",
+      "export_sha256": "d7123d12d405ebffa17a9caac3836d2f0f5440152123f6628494ff3db2f75445",
+      "wikilinks_converted": 4,
+      "local_prefixes_removed": 0
+    },
+    {
+      "source_filename": "14_Batch01内容审校结论.md",
+      "source_sha256": "ca77e73b9e25a4749cf06a3bff42dfe9f906dee21366a7f5444b1611466213d6",
+      "path": "audit/conclusion.md",
+      "export_sha256": "5d94ffc37c322f6da01d9654b73f8abca480a77abb424c0ba97aec9c6bc1c8fb",
+      "wikilinks_converted": 7,
+      "local_prefixes_removed": 0
+    },
+    {
+      "source_filename": "audit-aesthetics-craft.md",
+      "source_sha256": "4e7d5a9e2c39ae1243f139abfee6cf2dfd2b91bd5596169e3c313d14dcd11987",
+      "path": "audit/aesthetics-craft.md",
+      "export_sha256": "e7b506e9e47dcf2f3e727b453d67abd345b50f753372912d6796b215c8136ddc",
+      "wikilinks_converted": 0,
+      "local_prefixes_removed": 8
+    },
+    {
+      "source_filename": "audit-cognition.md",
+      "source_sha256": "9ec22ff32215ea9fb6a9bdbb4188616dbe8824b43b01945e15392780af209bc9",
+      "path": "audit/cognition.md",
+      "export_sha256": "4ccd9065ea7d2e041c7773f070dbc6dae625d0323c74b5d5b9535462b27d81b1",
+      "wikilinks_converted": 3,
+      "local_prefixes_removed": 3
+    },
+    {
+      "source_filename": "audit-lean.md",
+      "source_sha256": "00fbb64c11e530ee9f28da4eaac0eb1652c0f3ae611c670e3c5c07183aec1bf0",
+      "path": "audit/lean.md",
+      "export_sha256": "de9369fbd4d97ce1706cc45eb36be8f18973a2c54ffd8da91cbbf361af57cf9c",
+      "wikilinks_converted": 0,
+      "local_prefixes_removed": 0
+    },
+    {
+      "source_filename": "audit-quality-ai.md",
+      "source_sha256": "9bb86687331a405e5a59dc1ac46b3fca4e5d8a3e3eff086b6f51291cecc58490",
+      "path": "audit/quality-ai.md",
+      "export_sha256": "cd4a8679004a5436294c3f988aef369206686f2edde94099eca24480ca819d74",
+      "wikilinks_converted": 0,
+      "local_prefixes_removed": 4
+    },
+    {
+      "source_filename": "review.md",
+      "source_sha256": "c5e008b9acc239847f2aecf11c112ada23826a13569928c4cc347d5378e49e05",
+      "path": "audit/review.md",
+      "export_sha256": "273499bb48d9c897d3eed303bc31ade208e5641f50fb604992af5bccdbee93d0",
+      "wikilinks_converted": 5,
+      "local_prefixes_removed": 0
+    },
+    {
+      "source_filename": "sources.md",
+      "source_sha256": "8bd275e420099bc422c1ff14e87048950914c627310efb9ac02d5c750dea987e",
+      "path": "evidence/sources.md",
+      "export_sha256": "3d4e783108480153da1f39578abf2468b089496864c28156c5b5e68cb2f3fcb5",
+      "wikilinks_converted": 14,
+      "local_prefixes_removed": 0
+    },
+    {
+      "source_filename": "07_Batch01-A核心文献原文核验与证据修订记录.md",
+      "source_sha256": "e2916208baf7fdf90a3e98dc211d719e9642a56af8d0acf895cfd66fd847b0a1",
+      "path": "history/batch01-a-verification.md",
+      "export_sha256": "bdc7d081bf42e2cc903b878e5e65e2323865f6fc6d25ca13eeb9d3152c6006ef",
+      "wikilinks_converted": 5,
+      "local_prefixes_removed": 0
+    },
+    {
+      "source_filename": "10_独立交叉核验与勘误记录.md",
+      "source_sha256": "7d3e780578a3861c791975f4cb06023dec0ef51dc7b9411e42ed21f33f74fe26",
+      "path": "history/prior-crosscheck.md",
+      "export_sha256": "dc982a6ee9941296fe51b36356287e8e3ddc31bd7a92763d2f51734b99c43a81",
+      "wikilinks_converted": 0,
+      "local_prefixes_removed": 0
+    },
+    {
+      "source_filename": "11_接收检查与归档修订记录.md",
+      "source_sha256": "f77bbf9ebff0bdbd77623bb895fccc6a37b9d522c595217c4ea4bde6e33ae51f",
+      "path": "history/intake-record.md",
+      "export_sha256": "22a680e56bc56a4f6cac1dcaeebc1f476b15c4fe95ae6b17b7ecd07ef2364122",
+      "wikilinks_converted": 0,
+      "local_prefixes_removed": 0
+    },
+    {
+      "source_filename": "evidence-aesthetics.md",
+      "source_sha256": "d146c0365e47add5238cb9e060bff82e726558d3cbaaddb26ec666eeb29c15ae",
+      "path": "history/aesthetics-evidence.md",
+      "export_sha256": "22b30a49f874f66b4f0a04c366221942b61a1a1d541a77edb43746ed19edf5fb",
+      "wikilinks_converted": 3,
+      "local_prefixes_removed": 0
+    },
+    {
+      "source_filename": "evidence-cognition.md",
+      "source_sha256": "1e7c6e192518938d0fde0097cd425c999d84fc502ec7726034cc6fc4fda859ec",
+      "path": "history/cognition-evidence.md",
+      "export_sha256": "3328d5db6b6a5dadb903d89cebddfd1a093edbd0e1715a7d6ba36c2a0abe56dd",
+      "wikilinks_converted": 2,
+      "local_prefixes_removed": 0
+    },
+    {
+      "source_filename": "evidence-lean.md",
+      "source_sha256": "e034cc2f305e6d9d40b687c89b677f5d67ae726405a4aa6453af5775228b85ef",
+      "path": "history/lean-evidence.md",
+      "export_sha256": "b29eaf9c24ad36c9e23385447f692190ce73f2182d58d079cbfe241c88c8cb32",
+      "wikilinks_converted": 3,
+      "local_prefixes_removed": 1
+    },
+    {
+      "source_filename": "blog.md",
+      "source_sha256": "4530828440ca20e08987aed187319761186f91755574d52df51ccd78aba5b3a6",
+      "path": "guides/ui-lifecycle-and-craft.md",
+      "export_sha256": "92080187e7d7dc63ad6f3e585aa274cc1d4fa3380b76d4361dd9a727ec95d8a2",
+      "wikilinks_converted": 8,
+      "local_prefixes_removed": 0
+    }
+  ]
+}
