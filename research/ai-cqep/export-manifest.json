@@ -1,0 +1,117 @@
+{
+  "source_topic_id": "20261105-ai-cqep",
+  "exported_on": "2026-11-12",
+  "source_stage": "unknown",
+  "checkpoint_verification": {
+    "status": "matched",
+    "checked_count": 3,
+    "basis": "source AI-CQEP.md frontmatter checkpoint_sha256",
+    "limitations": "只验证源字节与所列检查点一致，不证明事实、人工审核或运行效果。 核心文件自身无可用独立检查点；无 topic.json，阶段 unknown。"
+  },
+  "records": [
+    {
+      "source_filename": "AI-CQEP.md",
+      "source_sha256": "8c947dbe7c151aa74643849f07cade54c889c6c27b418102b5ed7f5838777e71",
+      "path": "AI-CQEP.md",
+      "export_sha256": "378dc285968e11c30ff918e766e3669fe8905cbe0e67fc4836f0fbfc6fd64990",
+      "transformations": [
+        "以 UTF-8（无 BOM）、LF 和末尾换行输出；保留研究结论、证据缺口、许可证与第三方署名。",
+        "移除原稿 YAML frontmatter；原稿阶段与版本由 README 说明，历史检查不升级为本次验证。",
+        "排除 R3 私有会话描述、R4 私有项目/知识库观察和映射细节；保留编号、研究未运行边界与不可公开复核提示。",
+        "将 10 个 wikilink 转为文件级相对链接；跨课题只指向规划中的公开研究目录。",
+        "添加公开导出说明，区分原稿历史/通用模板与实际配置、研究审核和实验验证。",
+        "将未定义为链接的方括号来源编号 R1/R2 等改为行内代码标识，避免相邻编号被解析为参考式链接；来源登记仍保留。"
+      ]
+    },
+    {
+      "source_filename": "CLAUDE-ADOPTION.md",
+      "source_sha256": "adde0da438fa834ea5f5e799dc8139de53fae06f345166a51115365acba0f87a",
+      "path": "CLAUDE-ADOPTION.md",
+      "export_sha256": "8cedfb57f8f3e5b5d05061e76400cddd53b04f8c04a4b5860797facbe5977f8e",
+      "transformations": [
+        "以 UTF-8（无 BOM）、LF 和末尾换行输出；保留研究结论、证据缺口、许可证与第三方署名。",
+        "移除原稿 YAML frontmatter；原稿阶段与版本由 README 说明，历史检查不升级为本次验证。",
+        "排除整个私有项目文档映射章节并以缺口提示替代；删除其他段落中的私有项目身份。",
+        "将 3 个 wikilink 转为文件级相对链接；跨课题只指向规划中的公开研究目录。",
+        "添加公开导出说明，区分原稿历史/通用模板与实际配置、研究审核和实验验证。"
+      ]
+    },
+    {
+      "source_filename": "PROJECT-CONTRACT-TEMPLATE.md",
+      "source_sha256": "fcacf50b187accb1d381d12afb372530cb43bb35554839e111ff4a881d85b828",
+      "path": "PROJECT-CONTRACT-TEMPLATE.md",
+      "export_sha256": "721e1e23c03853ab62d80bbeed2b33e746211b1d83b35a17da4240acaabe1e99",
+      "transformations": [
+        "以 UTF-8（无 BOM）、LF 和末尾换行输出；保留研究结论、证据缺口、许可证与第三方署名。",
+        "移除原稿 YAML frontmatter；原稿阶段与版本由 README 说明，历史检查不升级为本次验证。",
+        "将 3 个 wikilink 转为文件级相对链接；跨课题只指向规划中的公开研究目录。",
+        "添加公开导出说明，区分原稿历史/通用模板与实际配置、研究审核和实验验证。"
+      ]
+    },
+    {
+      "source_filename": "QUICK-REFERENCE.md",
+      "source_sha256": "a83b1db10671d7650f004cd96e835459a81448412399ac480ea9633c9e295147",
+      "path": "QUICK-REFERENCE.md",
+      "export_sha256": "84fe490cb1145f3918f1e9e0711b63cfd9e02f5319d5465b04585d60e7d1190a",
+      "transformations": [
+        "以 UTF-8（无 BOM）、LF 和末尾换行输出；保留研究结论、证据缺口、许可证与第三方署名。",
+        "移除原稿 YAML frontmatter；原稿阶段与版本由 README 说明，历史检查不升级为本次验证。",
+        "将 3 个 wikilink 转为文件级相对链接；跨课题只指向规划中的公开研究目录。",
+        "添加公开导出说明，区分原稿历史/通用模板与实际配置、研究审核和实验验证。"
+      ]
+    },
+    {
+      "source_filename": null,
+      "source_sha256": null,
+      "path": "README.md",
+      "export_sha256": "327f828c326e5ae401ca953452a6e19e50973d6b44a9180b00147f96dfde7a3c",
+      "transformations": [
+        "本次新建公开导出入口；说明内容、原稿阶段、授权/审核/实验区别、隐私排除和验证范围，无单一源文件。"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "source_filename": "AI-CQEP.md",
+      "section": "附录 A 的 R3 私有会话来源描述",
+      "reason": "不公开私有会话/提示内容；保留稳定来源 ID、设计要求性质和未公开缺口。"
+    },
+    {
+      "source_filename": "AI-CQEP.md",
+      "section": "附录 A 的 R4 具体项目/知识库身份、阅读范围及项目映射主张；附录 B 的相关身份",
+      "reason": "原稿明确不授予私有材料公开分发权；排除具体观察细节，不将其改写为可公开核验的案例。"
+    },
+    {
+      "source_filename": "CLAUDE-ADOPTION.md",
+      "section": "第 4 节及正文中的私有项目标识",
+      "reason": "私有项目/知识库映射的公开分发权未明确；整节排除并保留证据缺口，其他泛化处移除项目身份。"
+    }
+  ],
+  "manifest_scope": "path 均相对于本清单目录；新建 README 的源字段为 null；清单不自哈希。没有导出源元数据、原始会话、实际配置、凭据或下载全文。",
+  "export_verification": {
+    "date": "2026-11-12",
+    "method": "临时自编 Python 标准库脚本，以 python -I 执行；不是运行仓库代码。",
+    "final_exit_code": 0,
+    "source_records_verified": 4,
+    "export_records_verified": 5,
+    "checks": [
+      "源文件 SHA-256 与 records 一致；导出文件 SHA-256 与 records 一致；清单不自哈希。",
+      "两课题共 18 个源文件与导出前快照一致，无源修改。",
+      "UTF-8 无 BOM、LF、末尾换行；Markdown 单 H1、围栏闭合；README 少于 100 行。",
+      "无 wikilinks、参考式链接定义或本地标题片段；相对链接均在仓库内且目标存在。",
+      "逐文件外部 URL 集合与源文档相同，包括原始定位片段；无新网络访问。",
+      "实际本机绝对路径与私有项目身份已移除；通用路径占位符和第三方公开署名保留。"
+    ],
+    "correction_history": [
+      "首次长内联导出命令因 shell 引号解析失败，exit 2；未启动 Python，改用独立临时脚本。",
+      "首次外部 URL 校验发现相邻来源引用合并丢失定位，exit 1；已分别展开，保留全部来源 URL。",
+      "随后结构校验识别到相邻 R1/R2 编号可被当作参考式链接，exit 1；已改行内编号标识并重跑通过。"
+    ],
+    "not_run": [
+      "仓库 tests 和 scripts/check_docs.py（用户禁止运行仓库代码）",
+      "联网/外链内容复核、GUI 渲染",
+      "工具安装、Unity/Player/设备实验、真实功能试点或收益验证",
+      "git commit、push、PR 或发布"
+    ]
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "source_topic_id": "20261105-ai-code-quality-workflow",
+  "exported_on": "2026-11-12",
+  "source_stage": "awaiting_review",
+  "checkpoint_verification": {
+    "status": "matched",
+    "checked_count": 13,
+    "basis": "source topic.json",
+    "limitations": "只验证源字节与所列检查点一致，不证明事实、人工审核或运行效果。"
+  },
+  "records": [
+    {
+      "source_filename": "adoption-plan.md",
+      "source_sha256": "875a740a06c1f671045823e078c53702a34018481f9b86fd5faf0c3b627b0293",
+      "path": "adoption-plan.md",
+      "export_sha256": "f0192b4e77fbcac49fdb32ba4b8c2bcc4f6b0ef84003e4a5d49063e682bd59f4",
+      "transformations": [
+        "以 UTF-8（无 BOM）、LF 和末尾换行输出；保留研究结论、证据缺口、许可证与第三方署名。",
+        "移除原稿 YAML frontmatter；原稿阶段与版本由 README 说明，历史检查不升级为本次验证。",
+        "将 2 个 wikilink 转为文件级相对链接；跨课题只指向规划中的公开研究目录。",
+        "添加公开导出说明，区分原稿历史/通用模板与实际配置、研究审核和实验验证。"
+      ]
+    },
+    {
+      "source_filename": "capability-matrix.md",
+      "source_sha256": "95a4b21b4c0596b424d33d784d5c5db5476316a23093792a393920ffb5d693c7",
+      "path": "capability-matrix.md",
+      "export_sha256": "3493740aacb833159de03f09969f74976a553235c0868211e53f87f8247fc751",
+      "transformations": [
+        "以 UTF-8（无 BOM）、LF 和末尾换行输出；保留研究结论、证据缺口、许可证与第三方署名。",
+        "移除原稿 YAML frontmatter；原稿阶段与版本由 README 说明，历史检查不升级为本次验证。",
+        "将 3 个 wikilink 转为文件级相对链接；跨课题只指向规划中的公开研究目录。",
+        "添加公开导出说明，区分原稿历史/通用模板与实际配置、研究审核和实验验证。"
+      ]
+    },
+    {
+      "source_filename": "claude-code-configuration.md",
+      "source_sha256": "9efd7c075fa6f5e762a063329f67d799c85f20cfad059939c8dbe978a3cfbe6e",
+      "path": "claude-code-configuration.md",
+      "export_sha256": "14beb55eca355656e11429c9f3cee6ea25f1cd0529109ee7e3e054779ce79005",
+      "transformations": [
+        "以 UTF-8（无 BOM）、LF 和末尾换行输出；保留研究结论、证据缺口、许可证与第三方署名。",
+        "移除原稿 YAML frontmatter；原稿阶段与版本由 README 说明，历史检查不升级为本次验证。",
+        "将 1 个 wikilink 转为文件级相对链接；跨课题只指向规划中的公开研究目录。",
+        "将围栏内模板标题降为 H2，仅保留正文一个 H1；不改变模板约束。",
+        "添加公开导出说明，区分原稿历史/通用模板与实际配置、研究审核和实验验证。"
+      ]
+    },
+    {
+      "source_filename": "evidence-ecc.md",
+      "source_sha256": "1e5af09d16cec3f54b439e31c2087fb65c99045fbb245d840f9bb72104883d5c",
+      "path": "evidence-ecc.md",
+      "export_sha256": "dc987db7838c21598d03b6af00903e91ae89da414be9c8a1131e689bc14849a1",
+      "transformations": [
+        "以 UTF-8（无 BOM）、LF 和末尾换行输出；保留研究结论、证据缺口、许可证与第三方署名。",
+        "移除原稿 YAML frontmatter；原稿阶段与版本由 README 说明，历史检查不升级为本次验证。",
+        "将实际本机绝对工作目录/下载缓存路径替换为 <trusted-working-directory> 或 <isolated-download-cache>/；不公开原路径、用户名或临时目录身份。",
+        "添加公开导出说明，区分原稿历史/通用模板与实际配置、研究审核和实验验证。"
+      ]
+    },
+    {
+      "source_filename": "evidence-official.md",
+      "source_sha256": "535d8c2956fc8e356f5527259c10b346c5fe048aea083fd0bf04205a0e764992",
+      "path": "evidence-official.md",
+      "export_sha256": "0cd4e3a5c2a963fca2dbafc250a4eedac5390f4beb655d935faca2c8689fcaa2",
+      "transformations": [
+        "以 UTF-8（无 BOM）、LF 和末尾换行输出；保留研究结论、证据缺口、许可证与第三方署名。",
+        "移除原稿 YAML frontmatter；原稿阶段与版本由 README 说明，历史检查不升级为本次验证。",
+        "将实际本机绝对工作目录/下载缓存路径替换为 <trusted-working-directory> 或 <isolated-download-cache>/；不公开原路径、用户名或临时目录身份。",
+        "将 1 个 wikilink 转为文件级相对链接；跨课题只指向规划中的公开研究目录。",
+        "添加公开导出说明，区分原稿历史/通用模板与实际配置、研究审核和实验验证。"
+      ]
+    },
+    {
+      "source_filename": "evidence-openhands.md",
+      "source_sha256": "284df1a9c14315fcd8031ad744798ef4b7c0787a84a37569846ca720dc11f043",
+      "path": "evidence-openhands.md",
+      "export_sha256": "d4942a06343f8b189860e67b324b7d0f3a496f8a3200f92749fc2958e76b5191",
+      "transformations": [
+        "以 UTF-8（无 BOM）、LF 和末尾换行输出；保留研究结论、证据缺口、许可证与第三方署名。",
+        "移除原稿 YAML frontmatter；原稿阶段与版本由 README 说明，历史检查不升级为本次验证。",
+        "将实际本机绝对工作目录/下载缓存路径替换为 <trusted-working-directory> 或 <isolated-download-cache>/；不公开原路径、用户名或临时目录身份。",
+        "将参考式链接（含简写引用）展开为内联链接；外部 URL 及其原定位片段逐字保留。",
+        "添加公开导出说明，区分原稿历史/通用模板与实际配置、研究审核和实验验证。",
+        "相邻简写来源编号分别展开，避免将两个来源误合并为一个参考式链接；保留全部外部来源 URL。"
+      ]
+    },
+    {
+      "source_filename": "evidence-tools.md",
+      "source_sha256": "f81001282464e236fdc1f304f75cfe13657d2f9d5b41852d3a168f1b3f357121",
+      "path": "evidence-tools.md",
+      "export_sha256": "d942f9f1e26016b7b1a4bcb9429fc7cf7e6377b09b58f436b5932f878ee6abb8",
+      "transformations": [
+        "以 UTF-8（无 BOM）、LF 和末尾换行输出；保留研究结论、证据缺口、许可证与第三方署名。",
+        "移除原稿 YAML frontmatter；原稿阶段与版本由 README 说明，历史检查不升级为本次验证。",
+        "将实际本机绝对工作目录/下载缓存路径替换为 <trusted-working-directory> 或 <isolated-download-cache>/；不公开原路径、用户名或临时目录身份。",
+        "添加公开导出说明，区分原稿历史/通用模板与实际配置、研究审核和实验验证。"
+      ]
+    },
+    {
+      "source_filename": "implementation-guide.md",
+      "source_sha256": "fbe15006be9ac749345539cea5e6b3c8b480d323053ce9d88bcc6e0685fa044f",
+      "path": "implementation-guide.md",
+      "export_sha256": "c680c90fae183356ebf89591e3da0f0d75c78c4cb737eb45675a0ceca1561b2c",
+      "transformations": [
+        "以 UTF-8（无 BOM）、LF 和末尾换行输出；保留研究结论、证据缺口、许可证与第三方署名。",
+        "移除原稿 YAML frontmatter；原稿阶段与版本由 README 说明，历史检查不升级为本次验证。",
+        "将 7 个 wikilink 转为文件级相对链接；跨课题只指向规划中的公开研究目录。",
+        "添加公开导出说明，区分原稿历史/通用模板与实际配置、研究审核和实验验证。"
+      ]
+    },
+    {
+      "source_filename": "research-report.md",
+      "source_sha256": "c99415664038152c6e23e6bf3e1fadb93b61544baf47f86e389fabe29b806068",
+      "path": "research-report.md",
+      "export_sha256": "8cfd2d94e545c53a3afca5bf28e66e0292c54125f23138b77c0500e6a9df81c2",
+      "transformations": [
+        "以 UTF-8（无 BOM）、LF 和末尾换行输出；保留研究结论、证据缺口、许可证与第三方署名。",
+        "移除原稿 YAML frontmatter；原稿阶段与版本由 README 说明，历史检查不升级为本次验证。",
+        "将 7 个 wikilink 转为文件级相对链接；跨课题只指向规划中的公开研究目录。",
+        "添加公开导出说明，区分原稿历史/通用模板与实际配置、研究审核和实验验证。"
+      ]
+    },
+    {
+      "source_filename": "review.md",
+      "source_sha256": "080e1833e7334c15a20caefe7691359f9f6e7448a0c058ceb90734e9c5bcfd17",
+      "path": "review.md",
+      "export_sha256": "2c88178ed2c26f28358626aed2e72f433837ac948815c1774818cd4bf664a85d",
+      "transformations": [
+        "以 UTF-8（无 BOM）、LF 和末尾换行输出；保留研究结论、证据缺口、许可证与第三方署名。",
+        "移除原稿 YAML frontmatter；原稿阶段与版本由 README 说明，历史检查不升级为本次验证。",
+        "将未公开 topic.json 的恢复指向替换为公开 README/清单，保留原稿历史检查记录。",
+        "添加公开导出说明，区分原稿历史/通用模板与实际配置、研究审核和实验验证。"
+      ]
+    },
+    {
+      "source_filename": "sources.md",
+      "source_sha256": "f9535bc557434d8dd4caf83e0e8844b0c56d4367a7d11d7fe8980acf6ea7c421",
+      "path": "sources.md",
+      "export_sha256": "22769602954c2a109df672a01789c21e2aeb796618e7e77ccace6e8be6af055f",
+      "transformations": [
+        "以 UTF-8（无 BOM）、LF 和末尾换行输出；保留研究结论、证据缺口、许可证与第三方署名。",
+        "移除原稿 YAML frontmatter；原稿阶段与版本由 README 说明，历史检查不升级为本次验证。",
+        "将前置课题的私有工作区路径替换为已规划公开目录引用。",
+        "将 4 个 wikilink 转为文件级相对链接；跨课题只指向规划中的公开研究目录。",
+        "添加公开导出说明，区分原稿历史/通用模板与实际配置、研究审核和实验验证。"
+      ]
+    },
+    {
+      "source_filename": "unity-csharp-adaptation.md",
+      "source_sha256": "e9d33ba1f1995898445b67e4dc2a1a2d9f27a894012c3066dc564fbd24e6ba18",
+      "path": "unity-csharp-adaptation.md",
+      "export_sha256": "e0d47b3a3d8cb52454bcf8ccc67059ed7139820def04b52b1d2c6de569d1317d",
+      "transformations": [
+        "以 UTF-8（无 BOM）、LF 和末尾换行输出；保留研究结论、证据缺口、许可证与第三方署名。",
+        "移除原稿 YAML frontmatter；原稿阶段与版本由 README 说明，历史检查不升级为本次验证。",
+        "将 2 个 wikilink 转为文件级相对链接；跨课题只指向规划中的公开研究目录。",
+        "添加公开导出说明，区分原稿历史/通用模板与实际配置、研究审核和实验验证。"
+      ]
+    },
+    {
+      "source_filename": null,
+      "source_sha256": null,
+      "path": "README.md",
+      "export_sha256": "35cc1309cf2ac3bec0f6d7a0cb00a6d64d5d132ac093b43996f062383e5bf2fa",
+      "transformations": [
+        "本次新建公开导出入口；说明内容、原稿阶段、授权/审核/实验区别、隐私排除和验证范围，无单一源文件。"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "source_filename": "topic.json",
+      "reason": "私有课题元数据和恢复控制文件，不公开；原始阶段与检查点核对结果仅在 README/清单摘要中说明。"
+    },
+    {
+      "source_filename": "plan.md",
+      "reason": "内部研究任务书、分工及写入权限约定；必要研究方法已在报告与证据正文保留。"
+    }
+  ],
+  "manifest_scope": "path 均相对于本清单目录；新建 README 的源字段为 null；清单不自哈希。没有导出源元数据、原始会话、实际配置、凭据或下载全文。",
+  "export_verification": {
+    "date": "2026-11-12",
+    "method": "临时自编 Python 标准库脚本，以 python -I 执行；不是运行仓库代码。",
+    "final_exit_code": 0,
+    "source_records_verified": 12,
+    "export_records_verified": 13,
+    "checks": [
+      "源文件 SHA-256 与 records 一致；导出文件 SHA-256 与 records 一致；清单不自哈希。",
+      "两课题共 18 个源文件与导出前快照一致，无源修改。",
+      "UTF-8 无 BOM、LF、末尾换行；Markdown 单 H1、围栏闭合；README 少于 100 行。",
+      "无 wikilinks、参考式链接定义或本地标题片段；相对链接均在仓库内且目标存在。",
+      "逐文件外部 URL 集合与源文档相同，包括原始定位片段；无新网络访问。",
+      "实际本机绝对路径与私有项目身份已移除；通用路径占位符和第三方公开署名保留。"
+    ],
+    "correction_history": [
+      "首次长内联导出命令因 shell 引号解析失败，exit 2；未启动 Python，改用独立临时脚本。",
+      "首次外部 URL 校验发现相邻来源引用合并丢失定位，exit 1；已分别展开，保留全部来源 URL。",
+      "随后结构校验识别到相邻 R1/R2 编号可被当作参考式链接，exit 1；已改行内编号标识并重跑通过。"
+    ],
+    "not_run": [
+      "仓库 tests 和 scripts/check_docs.py（用户禁止运行仓库代码）",
+      "联网/外链内容复核、GUI 渲染",
+      "工具安装、Unity/Player/设备实验、真实功能试点或收益验证",
+      "git commit、push、PR 或发布"
+    ]
+  }
+}

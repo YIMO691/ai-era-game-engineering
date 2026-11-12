@@ -29,6 +29,22 @@ I-03 末尾列出的 DORA、METR、Microsoft Research、NIST、Unity 和 Google 
 
 Q-06 优先服务首个候选实验；其他数字优先用于纠正易传播的效果结论。优先级不表示认可主张，也不表示应先扩充资料数量再研究。
 
+## 代码优美论专题来源（2026-11-11）
+
+[专题目录](code-aesthetics/README.md)及其[唯一来源账本](code-aesthetics/evidence/sources.md)登记36项来源，使用独立的`ER-20261111-CA-*`稳定编号，不与本页I/Q编号合并。该专题独立审校为PARTIAL；12项重点来源未取得直接原文，前轮全文声明不作为当前核验。
+
+专题I02/I04等提供与本页Q-02/Q-01有关的候选入口及统计边界，但不能仅凭相同数字宣称恢复了原报告引用映射；本页原导入记录及原报告保持不变。没有新增本项目效果测量。
+
+## 其他专题来源账本（2026-11-12公开整理）
+
+- [AI代码质量工作流](ai-code-quality-workflow/sources.md)
+- [客户端代码质量](client-code-quality/sources.md)
+- [Unity异步任务生命周期](unity-task-lifetime/sources.md)
+- [工程判断](engineering-judgment/sources.md)
+- [AI-CQEP文稿入口](ai-cqep/README.md)：没有独立的来源账本或状态文件，不能推定其核验完成。
+
+各专题原有编号和阅读状态保持独立；公开整理日期不是文献访问日期。本轮未新增外部来源访问，也不因专题涉及相同案例而宣称恢复了原导入报告的引用映射。
+
 ## 新外部来源的登记字段
 
 找到真实材料后逐条填写；未取得的值写“未提供”或“未核验”，不造标题、作者、URL 或访问日期。
