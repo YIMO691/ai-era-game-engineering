@@ -2,6 +2,10 @@
 
 这里汇集经用户授权公开的研究文稿快照，不是已验证结论库。研究审核、发布授权和实验验证分别记录；目录齐全或CI通过不提升证据等级。
 
+## 最新文章
+
+[代码优美论：AI时代，为什么仍要把代码写好](code-aesthetics/final/article.md)（v1.0）：讨论品质动机、精益迁移、AI成本、Unity/C#案例及停止条件。写作定稿不等于研究验证通过；[证据与取舍说明](code-aesthetics/final/evidence-notes.md)保留具体边界。
+
 ## 按问题阅读
 
 | 专题 | 阅读重点 | 状态边界 |
@@ -11,7 +15,7 @@
 | [客户端代码质量](client-code-quality/README.md) | 质量判断、审查、教学示例与训练 | 以本专题来源与审查记录为准；公开不表示生产适用性已验证 |
 | [Unity异步任务生命周期](unity-task-lifetime/README.md) | 销毁、对象池复用、取消与旧回包回写 | 机制说明及示意代码保留未验证项；不是已运行的Unity实验 |
 | [工程判断与人机协作](engineering-judgment/README.md) | 决策模型、案例、源码阅读、训练和评估 | 文献事实、综合推论、教学模型和待验证效果分开 |
-| [代码优美与工程品质](code-aesthetics/README.md) | 工程品质动机、精益迁移、AI成本条件及UI请求材料 | Batch01-B为PARTIAL；Batch02未执行，人工研究审核pending |
+| [代码优美与工程品质](code-aesthetics/README.md) | 最终文章、工程判断卡及可追溯的研究材料 | v1.0写作完成；证据PARTIAL，实验未执行，人工研究审核pending |
 
 ## 使用边界
 

@@ -1,0 +1,33 @@
+{
+  "exported_on": "2026-11-12",
+  "source_version": "1.0",
+  "editorial_status": "final",
+  "evidence_status": "PARTIAL",
+  "human_review_status": "pending",
+  "experiment_status": "not-run",
+  "publication_authorization": "User requested submission, merge and README organization for the final article in the existing public repository.",
+  "path_base": "this manifest directory",
+  "transformations": [
+    "Convert Obsidian links to public file-level relative Markdown links",
+    "Mark publication status as authorized public snapshot without upgrading research status",
+    "Omit private task wording, local Git troubleshooting and execution-plan link; reference public publication record instead"
+  ],
+  "excluded": [
+    "Private plan.md and topic.json",
+    "Raw conversations, local paths, downloaded sources and ZIP files"
+  ],
+  "records": [
+    {
+      "source_filename": "article.md",
+      "source_sha256": "c462446567d7e7d0fdf8a5f651e4e55cfc99fa22b42ed7aebd031263a895d502",
+      "path": "article.md",
+      "export_sha256": "2eb696ec7e3d8518ca3237c495e9ce5850cdc724aa5ff9a7136f075a0e1dae93"
+    },
+    {
+      "source_filename": "evidence-notes.md",
+      "source_sha256": "c72b5a699484103e835d54ddfdb48ad9a0b01edc791d6850116af9635d42d0ca",
+      "path": "evidence-notes.md",
+      "export_sha256": "4c932065f0f1431471eecb972d64210c35023689ca9971e08d7cb9587a76f66a"
+    }
+  ]
+}
