@@ -146,6 +146,11 @@ class DocumentChecks(unittest.TestCase):
         self.assertIn("docs/project-manifesto.md", checker.NAVIGATION)
         self.assertIn("docs/manifesto.md", checker.NAVIGATION)
 
+    def test_stage_review_and_glossary_are_required_and_linked(self):
+        for name in ("docs/stage-review-2026-11.md", "docs/glossary.md"):
+            self.assertIn(name, checker.REQUIRED)
+            self.assertIn(name, checker.NAVIGATION)
+
 
 if __name__ == "__main__":
     unittest.main()
