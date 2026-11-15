@@ -1,0 +1,37 @@
+{
+  "id": "code-aesthetics",
+  "title": "代码优美与工程品质",
+  "question": "AI时代为什么仍要把代码写好；何时抽象、重构或停止？",
+  "entry": "final/article.md",
+  "maturity": "drafted",
+  "status": {
+    "editorial": "final",
+    "human_review": "pending",
+    "evidence": "partial",
+    "experiment": "not-run"
+  },
+  "domains": [
+    "aesthetics",
+    "code-quality",
+    "ai-workflow"
+  ],
+  "axes": [
+    "ownership",
+    "evidence",
+    "bound"
+  ],
+  "readers": [
+    "practitioner",
+    "lead",
+    "researcher"
+  ],
+  "related": [
+    "client-code-quality",
+    "engineering-judgment",
+    "unity-task-lifetime"
+  ],
+  "edit_source": "public",
+  "provenance": "export-manifest.json",
+  "first_public": "2026-11-11",
+  "last_revised": "2026-11-15"
+}

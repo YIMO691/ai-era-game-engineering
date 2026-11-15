@@ -95,8 +95,8 @@ class DocumentChecks(unittest.TestCase):
     def make_imports(self):
         records = []
         for path, source, role in (
-            ("docs/manifesto.md", "deep-research-report (2).md", "baseline"),
-            ("docs/historical/deep-research-draft.md", "deep-research-report (1).md", "historical-draft"),
+            ("archive/imports/manifesto.md", "deep-research-report (2).md", "baseline"),
+            ("archive/imports/deep-research-draft.md", "deep-research-report (1).md", "historical-draft"),
         ):
             file = self.write(path, "# Original\n\nciteunresolved")
             body = file.read_bytes()
@@ -104,7 +104,7 @@ class DocumentChecks(unittest.TestCase):
                             "sha256": hashlib.sha256(body).hexdigest(), "bytes": len(body),
                             "exceptions": ["export-citations", "original-format"],
                             "reason": "Preserve supplied original, not verified evidence."})
-        self.write("docs/imports.json", json.dumps({"records": records}))
+        self.write(checker.REGISTRY, json.dumps({"records": records}))
         return records
 
     def test_registered_imports_keep_exact_bytes(self):
@@ -117,20 +117,20 @@ class DocumentChecks(unittest.TestCase):
 
     def test_changed_import_not_exempt(self):
         self.make_imports()
-        self.write("docs/manifesto.md", "# Changed\n")
+        self.write("archive/imports/manifesto.md", "# Changed\n")
         errors, preserved = checker.check_imports(self.root)
         self.assert_error(errors, "integrity mismatch")
-        self.assertNotIn("docs/manifesto.md", preserved)
+        self.assertNotIn("archive/imports/manifesto.md", preserved)
 
     def test_arbitrary_import_exception_rejected(self):
         records = self.make_imports()
         records[0]["path"] = "README.md"
-        self.write("docs/imports.json", json.dumps({"records": records}))
+        self.write(checker.REGISTRY, json.dumps({"records": records}))
         errors, _ = checker.check_imports(self.root)
         self.assert_error(errors, "exactly the two approved")
 
     def test_invalid_import_json_reported(self):
-        self.write("docs/imports.json", "{")
+        self.write(checker.REGISTRY, "{")
         errors, preserved = checker.check_imports(self.root)
         self.assert_error(errors, "invalid import registry")
         self.assertEqual(set(), preserved)
@@ -139,13 +139,22 @@ class DocumentChecks(unittest.TestCase):
         errors = checker.check_repository(self.root)
         self.assert_error(errors, "required file missing")
 
-    def test_project_manifesto_is_required(self):
-        self.assertIn("docs/project-manifesto.md", checker.REQUIRED)
+    def test_preface_archive_and_decisions_are_required(self):
+        for name in ("book/00-preface.md", "archive/README.md", "docs/decisions.md"):
+            self.assertIn(name, checker.REQUIRED)
+        self.assertIn("archive/README.md", checker.NAVIGATION)
 
-    def test_readme_requires_both_manifesto_and_report(self):
-        self.assertIn("docs/project-manifesto.md", checker.NAVIGATION)
-        self.assertIn("docs/manifesto.md", checker.NAVIGATION)
+    def test_table_of_contents_must_link_every_book_file(self):
+        self.write("book/00-preface.md", "# 前言\n")
+        self.write("book/01-one.md", "# 第1章\n")
+        self.write("README.md", "# 书\n\n[前言](book/00-preface.md)\n")
+        errors = checker.check_repository(self.root)
+        self.assert_error(errors, "README navigation missing: book/01-one.md")
+        self.assertFalse(any("book/00-preface.md" in e and "navigation" in e for e in errors), errors)
 
+    def test_repository_book_is_complete(self):
+        root = Path(__file__).resolve().parents[1]
+        self.assertEqual([], checker.check_repository(root))
 
 if __name__ == "__main__":
     unittest.main()

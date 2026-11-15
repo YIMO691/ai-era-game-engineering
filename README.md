@@ -1,66 +1,70 @@
-# AI 时代游戏客户端工程研究
+# 一名 Unity 客户端工程师的成长：AI 时代的思考与学习
 
-以 Unity / C# 商业游戏客户端为实践场景，研究如何定义问题、理解系统、做出取舍，并用证据对交付结果负责，而不是比较代码产量或积累技术名词。
+当 AI 让“写出代码”越来越便宜，一名 Unity 客户端工程师还要学什么，怎样才算真正成长？这本书一项一项地去学、去想、去验证，每一项都问三个问题：**责任**（此刻归谁）、**证据**（凭什么相信）、**限度**（做到哪里为止）。优化是贯穿全书的另一条线。
 
-## 从这里开始
+这是一本进行中的书：[学习路线](book/roadmap.md)列出了 89 个条目，已经写成的章节只是起点。已写成章节的观点都是**有依据、待检验的工程主张**：人工研究审核尚未发生，也没有执行过实验。详见[前言](book/00-preface.md)。
 
-- **了解项目：** [项目宗旨：从实现代码，到理解系统与承担工程结果](docs/project-manifesto.md)。
-- **阅读最新文章：** [代码优美论：AI时代，为什么仍要把代码写好](research/code-aesthetics/final/article.md)。从品质动机、精益迁移和UI旧回包案例，讨论AI成本、工程取舍与停止条件。
-- **按问题查找：** [六个研究专题](research/README.md)。各专题保留自己的来源、适用边界和未验证项。
+## 目录
 
-**文章定稿、公开入库和研究验证是三件事。** 代码优美论v1.0是证据受限的批判性综合文章，不是实证论文；证据状态仍为PARTIAL，人工研究审核待完成，没有运行代码或读者实验。原始导入报告的引用缺口也仍保留，详见[导入与证据缺口说明](docs/import-notes.md)。
+**[前言](book/00-preface.md)**：这是一本什么书，怎样读
 
-## 研究专题
+**[学习路线](book/roadmap.md)**：全书骨架。89 个可单独学习的条目分属八篇，每项标出核心问题、前置条目与本书覆盖情况，并附优化线索引。
 
-| 专题 | 主要问题与阅读入口 |
-|---|---|
-| [代码优美与工程品质](research/code-aesthetics/README.md) | [最终文章](research/code-aesthetics/final/article.md)：为什么写好代码，何时抽象、重构或停止；[证据与取舍](research/code-aesthetics/final/evidence-notes.md) |
-| [Unity异步任务生命周期](research/unity-task-lifetime/README.md) | 销毁、对象池复用、取消与旧回包回写的责任边界 |
-| [客户端代码质量](research/client-code-quality/README.md) | 如何判断质量、开展审查，并把案例用于学习与训练 |
-| [工程判断与人机协作](research/engineering-judgment/README.md) | 决策模型、源码阅读、案例与能力评估的边界 |
-| [AI代码质量工作流](research/ai-code-quality-workflow/README.md) | 工具能力、证据、最小采用路线及Unity/C#适配 |
-| [AI-CQEP工程实践文稿与模板](research/ai-cqep/README.md) | 工程实践体系、采用说明与通用契约模板 |
+**第一篇　出发与方法**
 
-专题不是已验证结论库，模板不是已部署配置。需要追溯研究过程时，再阅读专题内的来源账本、审校记录和设计草案；不必先完成实验才能阅读最终文章。
+- [1.1　从实现代码到对结果负责](book/part1-method/1-1-from-code-to-responsibility.md)：工程能力不是代码产量，而是从问题到交付结果的完整责任。
+- [1.2　为什么仍要把代码写好](book/part1-method/1-2-why-write-good-code.md)：让意图、约束与代价更容易被理解，让改变有依据，也让改进能够适时停止。
+- [1.3　工程判断](book/part1-method/1-3-engineering-judgment.md)：作出可反驳的预测，找能改变决定的证据，事后更新一条带条件的规则。
+- [1.4　三个问题：责任、证据与限度](book/part1-method/1-4-ownership-evidence-bound.md)：全书方法的来源，以及第一阶段研究的缺口。
 
-## 核心问题与方法
+**第二篇　运行时基础**：待学习（F1–F7，从“Unity 的一帧”开始）
 
-- 什么行为与结果，能区分“实现功能”和“对系统负责”？
-- 架构、性能、资源所有权与异步生命周期如何相互制约？
-- AI改变哪些成本，哪些约束、判断与交付责任仍须明确？
-- 什么依据支持一次改进，什么反例要求修订，做到哪里应该停止？
+**第三篇　系统建模**
 
-研究从具体问题与约束出发，区分来源事实、案例、综合推论和待验证假设。需要主张实际效果时，提供相应实验或明确缺口；概念文章则保留其有限结论，不为定稿无限扩张研究。选择Unity/C#是为了落到运行时、设备、生命周期和生产约束，不预设结论适用于所有软件领域。
+- [3.1　迟到的结果：谁拒绝，谁释放](book/part3-system/3-1-the-late-result.md)：await 返回后，执行位置、提交资格、资源归属是三个问题；不再需要不等于不再负责。
+- 待学习：状态与数据流 S1–S7、架构与模块化 A1–A8
 
-## 方法、来源与历史
+**第四篇　性能与优化**：待学习（优化思维 OP1–OP7、性能与内存 P1–P13）
 
-| 文档 | 用途 |
-|---|---|
-| [研究方法](docs/research-method.md) | 证据规则、实验要求与可复制记录 |
-| [来源登记](research/sources.md) | 原始材料缺口及各专题来源入口 |
-| [路线图](docs/roadmap.md) | 早期研究路线与验收条件；当前专题进展以各自入口为准 |
-| [原始深度研究报告](docs/manifesto.md) | 保真研究输入，不等同于项目宗旨或已证实成果 |
-| [历史草稿](docs/historical/deep-research-draft.md) | 追溯早期能力模型，不作为现行标准 |
-| [公开范围与维护](research/PUBLICATION.md) | 白名单导出、单一编辑源及发布边界 |
-| [Obsidian 阅读说明](docs/obsidian.md) | 本地入口与公开快照的关系 |
-| [贡献指南](CONTRIBUTING.md) | 范围、引用、AI披露与检查要求 |
-| [变更记录](CHANGELOG.md) | 已发生的改动和实际验证结果 |
+**第五篇　资源、网络与数据**：待学习（资源、构建与迭代 R1–R6，网络与同步 N1–N6，数据与持久化 D1–D3）
 
-私有研究版本是编辑源，公开仓库保存经授权的可追溯快照，不双向自动同步。原报告中的能力分级是待检验提案，不是行业标准或认证量表；不合并不同报告的模型。
+**第六篇　验证与可观测**：待学习（测试 T1–T5、可观测 O1–O5）
 
-## 本地检查
+**第七篇　代码与工艺**
 
-在仓库根目录执行，无需安装额外依赖：
+- [7.1　客户端代码质量](book/part7-craft/7-1-client-code-quality.md)：好代码让必要的行为、状态、依赖与约束可被可靠理解、验证和修改。
+- 待学习：重构、技术债、读懂陌生系统、设计评审等（J3–J7）
+
+**第八篇　AI 协作与团队**
+
+- [8.1　AI 工作链](book/part8-ai-team/8-1-ai-quality-chain.md)：把约束、最小修改、可执行检查、定向审查与反馈接成可追溯的链。
+- [8.2　AI-CQEP：一份最小工程协议](book/part8-ai-team/8-2-ai-cqep-protocol.md)：八条约束、六个阶段与按风险裁剪的验证。
+- 待学习：AI 辅助调试、权限安全、对自身能力的影响，以及团队与交付 L1–L7
+
+**附录**
+
+- [附录A　工程实践规则](book/appendix-a-practice-rules.md)：57 条带编号与证据等级的规则。
+- [附录B　术语与分级对照](book/appendix-b-glossary.md)
+- [附录C　核心命题索引](book/appendix-c-propositions.md)：22 条承重命题的性质、状态、证据与推翻条件。
+- [附录D　案例库](book/appendix-d-cases.md)：UniTask 与 NGO 的源码案例。
+- [附录E　编码与审查清单](book/appendix-e-review-checklist.md)
+- [附录F　AI-CQEP 速查卡](book/appendix-f-ai-cqep-quick-reference.md)
+- [附录G　记录模板](book/appendix-g-record-templates.md)
+- [附录H　研究方法](book/appendix-h-research-method.md)
+
+## 研究档案与维护
+
+[研究档案](archive/README.md)保存已写成章节的来源登记、证据笔记、审校记录、延伸手册和原始输入报告，并逐份写明退役理由；正文的引用仍然指向那里。结构上的决定记在[决策记录](docs/decisions.md)，改动和实际验证结果记在[变更记录](CHANGELOG.md)，参与方式见[贡献指南](CONTRIBUTING.md)。
+
+本仓库是全部内容唯一的编辑源。在仓库根目录运行以下命令，可以检查文档格式、仓库内链接、目录完整性与两份保真导入件，无需安装依赖：
 
 ```bash
 python -I -m unittest discover -s tests -p 'test_*.py' -v
 python -I scripts/check_docs.py
 ```
 
-检查只覆盖支持的文档约定、仓库内链接及保真导入件，不证明研究事实、外链内容、Unity行为或页面渲染正确。远端结果见[GitHub Actions](https://github.com/YIMO691/ai-era-game-engineering/actions)。
+这些检查不证明研究事实、外链内容、Unity 行为或页面渲染正确。远端结果见[GitHub Actions](https://github.com/YIMO691/ai-era-game-engineering/actions)。
 
-## 参与与许可
+## 许可
 
-欢迎提供可定位的来源、反例、可复现实验及有依据的修订。不为活跃度更新，不承诺会话外自动持续研究。
-
-原创文档与图示采用CC BY 4.0，原创独立代码、测试和工作流采用MIT，署名YIMO691。适用范围与第三方例外以[LICENSE](LICENSE)为准；缺失引用不意味着第三方材料获得重新授权。
+原创文档与图示采用 CC BY 4.0，原创独立代码、测试和工作流采用 MIT，署名 YIMO691。适用范围与第三方例外以[LICENSE](LICENSE)为准；缺失引用不意味着第三方材料获得重新授权。

@@ -1,4 +1,4 @@
-"""Check this repository's deliberately small Markdown subset, offline."""
+"""Check this book repository's deliberately small Markdown subset, offline."""
 
 import hashlib
 import json
@@ -10,24 +10,22 @@ from urllib.parse import unquote, urlsplit
 
 
 IMPORTS = {
-    "docs/manifesto.md": ("deep-research-report (2).md", "baseline"),
-    "docs/historical/deep-research-draft.md": (
+    "archive/imports/manifesto.md": ("deep-research-report (2).md", "baseline"),
+    "archive/imports/deep-research-draft.md": (
         "deep-research-report (1).md", "historical-draft"
     ),
 }
+REGISTRY = "archive/imports/imports.json"
 REQUIRED = (
     "README.md", "CONTRIBUTING.md", "CHANGELOG.md", "LICENSE",
-    "LICENSES/CC-BY-4.0.txt", "LICENSES/MIT.txt", "docs/imports.json",
-    "docs/import-notes.md", "docs/project-manifesto.md", "docs/research-method.md", "docs/roadmap.md",
-    "docs/obsidian.md", "research/sources.md", *IMPORTS,
+    "LICENSES/CC-BY-4.0.txt", "LICENSES/MIT.txt", REGISTRY, *IMPORTS,
+    "book/00-preface.md", "archive/README.md", "docs/decisions.md",
     "scripts/check_docs.py", "tests/test_check_docs.py",
     ".github/workflows/docs.yml", ".gitignore", ".gitattributes",
 )
-NAVIGATION = (
-    "docs/project-manifesto.md", "docs/manifesto.md", "docs/import-notes.md", "docs/research-method.md",
-    "research/sources.md", "docs/roadmap.md", "docs/obsidian.md",
-    "CONTRIBUTING.md", "CHANGELOG.md", "LICENSE",
-)
+# Besides every chapter and appendix in book/, the README must link these.
+NAVIGATION = ("archive/README.md", "docs/decisions.md", "CONTRIBUTING.md", "CHANGELOG.md", "LICENSE")
+BOOK = "book"
 LINK = re.compile(r"!?\[[^\[\]\n]*\]\(([^\s()<>]+)\)")
 ANCHOR = re.compile(r'<a id="([A-Za-z][A-Za-z0-9_-]*)"></a>')
 FENCE = re.compile(r"^ {0,3}(`{3,}|~{3,})(.*)$")
@@ -61,7 +59,7 @@ def prose(text):
 def check_imports(root):
     errors, preserved = [], set()
     try:
-        records = json.loads((root / "docs/imports.json").read_text(encoding="utf-8"))["records"]
+        records = json.loads((root / REGISTRY).read_text(encoding="utf-8"))["records"]
         if (not isinstance(records, list) or len(records) != 2
                 or {r["path"] for r in records} != set(IMPORTS)):
             return ["import registry must contain exactly the two approved paths"], preserved
@@ -169,7 +167,10 @@ def check_repository(root):
         try:
             visible, _ = prose(readme.read_text(encoding="utf-8"))
             targets = {match[1] for match in LINK.finditer(visible)}
-            errors.extend(f"README navigation missing: {name}" for name in NAVIGATION if name not in targets)
+            book = root / BOOK
+            chapters = sorted(p.relative_to(root).as_posix() for p in book.rglob("*.md")) if book.is_dir() else []
+            errors.extend(f"README navigation missing: {name}" for name in (*chapters, *NAVIGATION)
+                          if name not in targets)
         except UnicodeError:
             pass  # check_markdown already reports invalid UTF-8.
     return errors
@@ -184,6 +185,7 @@ def main():
         print(f"FAILED: {len(errors)} document check(s)")
         return 1
     print("PASS: required files, scoped Markdown format, local links and README navigation")
+    print("PASS: README table of contents links every chapter and appendix in book/")
     print("PASS: both registered imports match their recorded SHA-256 and byte counts")
     print("EXCEPTIONS: only the two exact imports retain original formatting/export citations")
     print("NOT VERIFIED: external evidence, external URLs, Mermaid syntax/rendering, Obsidian UI, Unity behavior")

@@ -1,0 +1,73 @@
+{
+  "description": "知识库受控词表。每个取值写成“短名：说明”；新增取值先在此登记，检查器只接受这里列出的值。",
+  "maturity": {
+    "proposed": "提出：问题已登记，尚无成稿",
+    "investigating": "调研：正在收集来源与案例",
+    "drafted": "成稿：主文档完成，人工研究审核未发生",
+    "reviewed": "已审：有权限的人完成人工研究审核",
+    "tested": "已检验：至少一项承重主张有实际执行的实验或观测",
+    "stable": "稳定：经审核与检验，近期无未处理的反证",
+    "retired": "退役：被取代或不再维护，保留供追溯"
+  },
+  "editorial": {
+    "draft": "草稿：仍在写作或待作者确认",
+    "final": "定稿：本轮写作完成，不代表研究验证"
+  },
+  "human_review": {
+    "pending": "待审：人工研究审核尚未发生",
+    "unknown": "未知：无状态记录，不推定已审",
+    "passed": "已审：有权限的人完成人工研究审核"
+  },
+  "evidence": {
+    "partial": "部分核验：承重来源存在已登记缺口",
+    "sufficient": "已核验：承重来源均已核对"
+  },
+  "experiment": {
+    "not-run": "未执行：没有运行代码或参与者实验",
+    "partial": "部分执行：部分实验已执行并记录",
+    "run": "已执行：承重实验已执行并记录"
+  },
+  "edit_source": {
+    "public": "本仓库：本仓库为唯一编辑源"
+  },
+  "axes": {
+    "ownership": "责任：此刻归谁、何时失效、谁承担后果",
+    "evidence": "证据：凭什么相信、证据能否支持这类主张",
+    "bound": "限度：做到哪里为止、深度是否与后果相称"
+  },
+  "domains": {
+    "async-lifecycle": "异步与生命周期",
+    "resource-ownership": "资源归属与释放",
+    "code-quality": "代码质量与表达",
+    "code-review": "审查与验证",
+    "architecture": "架构与设计取舍",
+    "performance": "性能",
+    "ai-workflow": "AI 协作工作流",
+    "engineering-judgment": "工程判断",
+    "learning": "学习、训练与评估",
+    "aesthetics": "品质动机与工程审美",
+    "research-method": "研究方法"
+  },
+  "readers": {
+    "practitioner": "一线工程师",
+    "lead": "技术负责人与审查者",
+    "learner": "学习者与带教者",
+    "researcher": "研究者"
+  },
+  "claim_type": {
+    "source-fact": "来源事实",
+    "case": "特定案例",
+    "inference": "综合推论",
+    "logic": "逻辑论证",
+    "stance": "价值或规范立场",
+    "distinction": "概念区分",
+    "hypothesis": "待验证假设"
+  },
+  "claim_status": {
+    "proposed": "提出：尚无专门支撑",
+    "supported": "有支撑：在所列证据范围内成立",
+    "contested": "受质疑：存在未解决的冲突或核验缺口",
+    "refuted": "已推翻：被反证否定，保留供追溯",
+    "withdrawn": "已撤回：表述不当或被合并"
+  }
+}
