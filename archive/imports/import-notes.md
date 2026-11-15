@@ -2,7 +2,7 @@
 
 ## 项目宗旨、研究报告与后续研究
 
-[项目宗旨](../../book/01-from-code-to-responsibility.md)说明研究目的、核心问题与研究纲领；[原始深度研究报告](manifesto.md)和[历史草稿](deep-research-draft.md)保留已有论证、案例和待核验判断；后续研究按[研究方法](../../book/appendix-h-research-method.md)逐步核验并修正认识。这三层不是三套能力模型。
+[项目宗旨](../../book/part1-method/1-1-from-code-to-responsibility.md)说明研究目的、核心问题与研究纲领；[原始深度研究报告](manifesto.md)和[历史草稿](deep-research-draft.md)保留已有论证、案例和待核验判断；后续研究按[研究方法](../../book/appendix-h-research-method.md)逐步核验并修正认识。这三层不是三套能力模型。
 
 | 材料 | 当前用途 | 版本与模型边界 |
 |---|---|---|
@@ -15,7 +15,7 @@
 ## 独立宗旨的导入记录
 
 - 用户提供的文件：`AI时代的游戏客户端工程能力_项目宗旨与研究纲领.md`。
-- 导入日期：2026-10-30；目标：[docs/project-manifesto.md](../../book/01-from-code-to-responsibility.md)。
+- 导入日期：2026-10-30；目标：[docs/project-manifesto.md](../../book/part1-method/1-1-from-code-to-responsibility.md)。
 - 首次导入为原始字节副本：18,692 字节；保留标题、副标题、论证、参考资料及 Markdown 硬换行。
 - 首次导入 SHA-256：`45433f53ac64a9b81cc28e74980a100b1d30021a4551bbb54a6e704cc10c6366`。这是版本溯源记录，不是事实或来源真实性证明。
 - 原文列出 7 条外部来源 URL；目前仅确认这些链接存在于输入文件，没有独立访问和核对其内容。原文有关外部资料检验过程的表述是提供文档的一部分，不代表本次入库已经执行该过程。

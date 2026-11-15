@@ -10,7 +10,7 @@ status: draft
 > **公开导出注（2026-11-12）**：以下研究状态、访问和审查记录属于原 2026-11-06 草案；本次只作本地白名单导出。公开授权不等于人工研究审核、实验通过或生产验收。私有状态描述是历史记录；模板及操作文本仅作资料，不在本次执行。转换与排除见 [导出清单](export-manifest.json)。
 
 
-导航：[从工程思维到工程判断力_深化研究报告](../../../book/05-engineering-judgment.md) · [成熟项目源码阅读与设计还原手册](source-reading-handbook.md) · [AI时代工程判断与人机协作手册](human-ai-collaboration-handbook.md) · [工程判断实践模板包](../../../book/appendix-g-record-templates.md)
+导航：[从工程思维到工程判断力_深化研究报告](../../../book/part1-method/1-3-engineering-judgment.md) · [成熟项目源码阅读与设计还原手册](source-reading-handbook.md) · [AI时代工程判断与人机协作手册](human-ai-collaboration-handbook.md) · [工程判断实践模板包](../../../book/appendix-g-record-templates.md)
 
 > **warning** — 这是什么，不是什么
 > 本手册的 M7、L1–L5、Rubric 和周计划是**待实际评估的训练设计**，不是行业统一职级、招聘标准或经验证的心理量表。12 周是建立反馈习惯的起点，不保证达到某职级。认知与学习论文的读取状态见 [sources](sources.md)；不能把跨领域学习结果直接宣称为游戏工程训练效果。

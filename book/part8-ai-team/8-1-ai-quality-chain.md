@@ -1,22 +1,22 @@
-# 第6章　AI 工作链
+# 8.1　AI 工作链
 
 *原题：AI时代的高质量代码生成与工程实践体系*
 
-> **本章导读**：进入第四部分：AI 时代的工作方式。本章的问题是：让 AI 写出高质量代码，靠的是更强的生成工具，还是更好的工作链？本章对候选工具做了静态源码取证，结论是把项目约束、最小修改、可执行检查、定向审查与反馈接起来，比安装全套插件更值得。
+> **本章导读**：第八篇讨论 AI 协作与团队。本章的问题是：让 AI 写出高质量代码，靠的是更强的生成工具，还是更好的工作链？本章对候选工具做了静态源码取证，结论是把项目约束、最小修改、可执行检查、定向审查与反馈接起来，比安装全套插件更值得。
 
-> **本章证据状态**：原稿 2026-11-05，awaiting_review，人工研究审核 pending。这是**静态源码研究与采用设计**，不是工具效果实验：继承旧题指定的七份正文并核对旧快照；读取用户指定候选的 README、定义、关键实现、依赖与许可，并补充四类 C#/Unity 工具；所有仓库固定完整 SHA，来源唯一登记于[sources](../archive/research/ai-code-quality-workflow/sources.md)。候选安装、插件执行、业务工程修改、Unity 编译与测试、目标设备 Profiling、人工对照均未进行。Claude Code 三份宿主文档及 Unity analyzer 导入文档在访问的安全验证阶段失败（F1/F2），没有正文，因此 Rules 自动匹配、完整 Hooks 语义、用户的 Unity/UTF/Roslyn 版本与发布包兼容仍未知，本题不交付可直接启用的 Hook 配置或已验证的 Unity 测试命令。
+> **本章证据状态**：原稿 2026-11-05，awaiting_review，人工研究审核 pending。这是**静态源码研究与采用设计**，不是工具效果实验：继承旧题指定的七份正文并核对旧快照；读取用户指定候选的 README、定义、关键实现、依赖与许可，并补充四类 C#/Unity 工具；所有仓库固定完整 SHA，来源唯一登记于[sources](../../archive/research/ai-code-quality-workflow/sources.md)。候选安装、插件执行、业务工程修改、Unity 编译与测试、目标设备 Profiling、人工对照均未进行。Claude Code 三份宿主文档及 Unity analyzer 导入文档在访问的安全验证阶段失败（F1/F2），没有正文，因此 Rules 自动匹配、完整 Hooks 语义、用户的 Unity/UTF/Roslyn 版本与发布包兼容仍未知，本题不交付可直接启用的 Hook 配置或已验证的 Unity 测试命令。
 
 ## 结论
 
 **最值得采用的不是一个“好代码生成器”，而是把项目约束、最小修改、可执行检查、定向审查和规则反馈接成一条可追溯的工作链。** 对当前 Unity/C# 使用者，推荐保留现有 Claude Code，先复用旧指南和工程已有工具；没有证据支持现在新增 `client-code-quality` Skill、安装全套插件或更换 Agent 平台。
 
-本报告与[能力矩阵](../archive/research/ai-code-quality-workflow/capability-matrix.md)回答“选什么、为什么”；采用方案、配置设计、Unity 适配和实施指南回答“以后如何小步验证”。
+本报告与[能力矩阵](../../archive/research/ai-code-quality-workflow/capability-matrix.md)回答“选什么、为什么”；采用方案、配置设计、Unity 适配和实施指南回答“以后如何小步验证”。
 
 ## 1 问题不在于再写一套 Clean Code
 
 **本节结论：新增价值是把已有的质量知识映射到具体决策点，并分清每一层工具能负责什么。**
 
-前置的[第4章（客户端代码质量）](04-client-code-quality.md)已经提供质量指南、案例、审查清单和训练路线。本题要回答的是它们在工作流中落在哪里：
+前置的[第7.1章（客户端代码质量）](../part7-craft/7-1-client-code-quality.md)已经提供质量指南、案例、审查清单和训练路线。本题要回答的是它们在工作流中落在哪里：
 
 1. 开始任务时：读哪些事实，哪些知识按需带入？
 2. 改代码时：哪些契约不可动，何时必须停下来确认？
@@ -105,7 +105,7 @@ Skill 调用可信 CLI，经认证把 diff 及所需上下文发送到 CodeRabbi
 
 这是与当前约束匹配的设计判断，不是普遍最优。若后续授权试点证明某个单项插件在相同任务与预算下减少人工返工或漏缺陷，且不扩大 diff，可以保留；若它只多输出意见、引入风格噪声或增加权限成本，就不采用。若重复流程无法稳定触发且已有提示确实不足，才比较专用 Skill：先测触发，再测任务效果，两者不能互相替代。
 
-当前证据只允许进入“文稿待人工审核”，不允许宣称方案已部署、代码已验证、质量已提升或发布就绪。最终核验记录见[review](../archive/research/ai-code-quality-workflow/review.md)。后续综合见 [第7章（AI-CQEP）](07-ai-cqep-protocol.md)，可执行规则见[附录A（工程实践指南）](appendix-a-practice-rules.md)第 6、7 章。
+当前证据只允许进入“文稿待人工审核”，不允许宣称方案已部署、代码已验证、质量已提升或发布就绪。最终核验记录见[review](../../archive/research/ai-code-quality-workflow/review.md)。后续综合见 [第8.2章（AI-CQEP）](8-2-ai-cqep-protocol.md)，可执行规则见[附录A（工程实践指南）](../appendix-a-practice-rules.md)第 6、7 章。
 
 ## 本章小结
 
@@ -114,7 +114,9 @@ Skill 调用可信 CLI，经认证把 diff 及所需上下文发送到 CodeRabbi
 - 推荐保留现有工具链，先复用已有规范与工程工具，再小步验证。
 - 本章是静态研究与采用设计，候选工具未安装、未运行。
 
-上一章：[第5章　工程判断](05-engineering-judgment.md)
-下一章：[第7章　AI-CQEP：一份最小工程协议](07-ai-cqep-protocol.md)
+上一章：[7.1　客户端代码质量](../part7-craft/7-1-client-code-quality.md)
+下一章：[8.2　AI-CQEP：一份最小工程协议](8-2-ai-cqep-protocol.md)
 
-返回[目录](../README.md)。
+本章在[学习路线](../roadmap.md)中的位置与尚待学习的相关条目，见对应篇的条目表。
+
+返回[目录](../../README.md)。

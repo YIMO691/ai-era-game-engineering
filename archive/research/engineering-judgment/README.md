@@ -8,7 +8,7 @@
 ## 阅读入口
 
 - [当前结论与导航](research-overview.md)
-- [深化研究报告](../../../book/05-engineering-judgment.md)
+- [深化研究报告](../../../book/part1-method/1-3-engineering-judgment.md)
 - [基线审计与证据缺口](baseline-audit.md)
 - [模型与决策手册](decision-handbook.md)
 - [源码阅读与设计还原](source-reading-handbook.md)

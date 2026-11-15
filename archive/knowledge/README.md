@@ -89,27 +89,27 @@
 
 | 编号 | 证据位置 |
 |---|---|
-| K-001 | [第 1–2 节：三个问题与固定源码的四条边界](../../book/03-the-late-result.md)；[C1/C2 的反例结构](../../book/appendix-d-cases.md)；[命题一的跨专题对齐](../../book/08-ownership-evidence-bound.md) |
-| K-002 | [第 2.1、4 节：取消入口与资源交接协议](../../book/03-the-late-result.md)；[8.3 超时要说清是哪一层停止](../../book/04-client-code-quality.md)；[Unity/C# 适配案例的契约](../../book/07-ai-cqep-protocol.md) |
-| K-003 | [2.3、3 节：对象有效性不等于请求身份](../../book/03-the-late-result.md)；[第五节贯穿案例](../../book/02-why-write-good-code.md) |
-| K-004 | [C1，固定 SHA 静态阅读，未运行](../../book/appendix-d-cases.md)；[5.1 节](../../book/05-engineering-judgment.md) |
-| K-005 | [C2，固定 SHA 静态阅读，未运行](../../book/appendix-d-cases.md)；[5.2 节](../../book/05-engineering-judgment.md) |
-| K-006 | [如何描述证据](../../book/appendix-h-research-method.md)；[命题二](../../book/08-ownership-evidence-bound.md) |
-| K-007 | [命题二与状态词表](../../book/08-ownership-evidence-bound.md)；[状态词表](../../book/appendix-b-glossary.md) |
-| K-008 | [人机职责与独立验证](../research/engineering-judgment/human-ai-collaboration-handbook.md)；[第六节：更多候选不等于更多独立证据](../../book/02-why-write-good-code.md) |
+| K-001 | [第 1–2 节：三个问题与固定源码的四条边界](../../book/part3-system/3-1-the-late-result.md)；[C1/C2 的反例结构](../../book/appendix-d-cases.md)；[命题一的跨专题对齐](../../book/part1-method/1-4-ownership-evidence-bound.md) |
+| K-002 | [第 2.1、4 节：取消入口与资源交接协议](../../book/part3-system/3-1-the-late-result.md)；[8.3 超时要说清是哪一层停止](../../book/part7-craft/7-1-client-code-quality.md)；[Unity/C# 适配案例的契约](../../book/part8-ai-team/8-2-ai-cqep-protocol.md) |
+| K-003 | [2.3、3 节：对象有效性不等于请求身份](../../book/part3-system/3-1-the-late-result.md)；[第五节贯穿案例](../../book/part1-method/1-2-why-write-good-code.md) |
+| K-004 | [C1，固定 SHA 静态阅读，未运行](../../book/appendix-d-cases.md)；[5.1 节](../../book/part1-method/1-3-engineering-judgment.md) |
+| K-005 | [C2，固定 SHA 静态阅读，未运行](../../book/appendix-d-cases.md)；[5.2 节](../../book/part1-method/1-3-engineering-judgment.md) |
+| K-006 | [如何描述证据](../../book/appendix-h-research-method.md)；[命题二](../../book/part1-method/1-4-ownership-evidence-bound.md) |
+| K-007 | [命题二与状态词表](../../book/part1-method/1-4-ownership-evidence-bound.md)；[状态词表](../../book/appendix-b-glossary.md) |
+| K-008 | [人机职责与独立验证](../research/engineering-judgment/human-ai-collaboration-handbook.md)；[第六节：更多候选不等于更多独立证据](../../book/part1-method/1-2-why-write-good-code.md) |
 | K-009 | [C2 中 XML 默认值与签名不一致、关服测试的 oracle 问题](../../book/appendix-d-cases.md) |
-| K-010 | [第 3–4 节：分析深度与分级协议](../research/engineering-judgment/decision-handbook.md)；[4.1 风险裁剪](../../book/07-ai-cqep-protocol.md)；[命题三](../../book/08-ownership-evidence-bound.md) |
-| K-011 | [1 节关键修订第 5 条](../../book/05-engineering-judgment.md)；[第 4 节：最小有效分级协议](../research/engineering-judgment/decision-handbook.md) |
-| K-012 | [4.3 本文的对齐](../../book/08-ownership-evidence-bound.md)；[变更风险分级](../../book/appendix-b-glossary.md) |
-| K-013 | [第 5 节：S1–S6 停止规则](../research/engineering-judgment/decision-handbook.md)；[第七节停止信号](../../book/02-why-write-good-code.md) |
-| K-014 | [第六节：从生成收益到品质收益](../../book/02-why-write-good-code.md) |
-| K-015 | [第六节](../../book/02-why-write-good-code.md)；[命题五](../../book/08-ownership-evidence-bound.md) |
-| K-016 | [第 8 节](../../book/05-engineering-judgment.md)；[正文已读](../research/engineering-judgment/ai-evidence-notes.md) |
-| K-017 | [第 8 节](../../book/05-engineering-judgment.md)；[正文已读](../research/engineering-judgment/ai-evidence-notes.md) |
-| K-018 | [正文引用](../../book/01-from-code-to-responsibility.md)；[Q-01/Q-02 未核验，URL 未提供](../research/sources.md) |
-| K-019 | [第二节](../../book/02-why-write-good-code.md) |
-| K-020 | [第三节](../../book/02-why-write-good-code.md)；[第 6 节：抽象与必要复杂性](../../book/04-client-code-quality.md)；[第 6 节：抽象与复用](../research/engineering-judgment/decision-handbook.md)；[5.3 复用与新增抽象的闸门](../../book/07-ai-cqep-protocol.md) |
-| K-021 | [结论](../../book/06-ai-quality-chain.md)；[11.2 如何检验](../../book/07-ai-cqep-protocol.md) |
-| K-022 | [第 9 节](../../book/05-engineering-judgment.md)；[十四域×五级与十二周设计](../research/engineering-judgment/training-and-assessment-handbook.md) |
+| K-010 | [第 3–4 节：分析深度与分级协议](../research/engineering-judgment/decision-handbook.md)；[4.1 风险裁剪](../../book/part8-ai-team/8-2-ai-cqep-protocol.md)；[命题三](../../book/part1-method/1-4-ownership-evidence-bound.md) |
+| K-011 | [1 节关键修订第 5 条](../../book/part1-method/1-3-engineering-judgment.md)；[第 4 节：最小有效分级协议](../research/engineering-judgment/decision-handbook.md) |
+| K-012 | [4.3 本文的对齐](../../book/part1-method/1-4-ownership-evidence-bound.md)；[变更风险分级](../../book/appendix-b-glossary.md) |
+| K-013 | [第 5 节：S1–S6 停止规则](../research/engineering-judgment/decision-handbook.md)；[第七节停止信号](../../book/part1-method/1-2-why-write-good-code.md) |
+| K-014 | [第六节：从生成收益到品质收益](../../book/part1-method/1-2-why-write-good-code.md) |
+| K-015 | [第六节](../../book/part1-method/1-2-why-write-good-code.md)；[命题五](../../book/part1-method/1-4-ownership-evidence-bound.md) |
+| K-016 | [第 8 节](../../book/part1-method/1-3-engineering-judgment.md)；[正文已读](../research/engineering-judgment/ai-evidence-notes.md) |
+| K-017 | [第 8 节](../../book/part1-method/1-3-engineering-judgment.md)；[正文已读](../research/engineering-judgment/ai-evidence-notes.md) |
+| K-018 | [正文引用](../../book/part1-method/1-1-from-code-to-responsibility.md)；[Q-01/Q-02 未核验，URL 未提供](../research/sources.md) |
+| K-019 | [第二节](../../book/part1-method/1-2-why-write-good-code.md) |
+| K-020 | [第三节](../../book/part1-method/1-2-why-write-good-code.md)；[第 6 节：抽象与必要复杂性](../../book/part7-craft/7-1-client-code-quality.md)；[第 6 节：抽象与复用](../research/engineering-judgment/decision-handbook.md)；[5.3 复用与新增抽象的闸门](../../book/part8-ai-team/8-2-ai-cqep-protocol.md) |
+| K-021 | [结论](../../book/part8-ai-team/8-1-ai-quality-chain.md)；[11.2 如何检验](../../book/part8-ai-team/8-2-ai-cqep-protocol.md) |
+| K-022 | [第 9 节](../../book/part1-method/1-3-engineering-judgment.md)；[十四域×五级与十二周设计](../research/engineering-judgment/training-and-assessment-handbook.md) |
 
 返回[项目首页](../../README.md)。

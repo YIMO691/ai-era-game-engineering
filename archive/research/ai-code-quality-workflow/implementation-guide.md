@@ -6,7 +6,7 @@
 
 本轮完成的是固定源码研究、横向比较和待审方案；**本指南没有执行安装、配置写入、额外付费评测/服务启用、向新增第三方审查服务上传代码或业务工程修改。** 研究文稿待人工审核也不代表这些操作获批。F1/F2缺口仍在：宿主完整Rules/Hooks语义与用户Unity/UTF/analyzer兼容未核验。
 
-最短阅读顺序：[报告结论](../../../book/06-ai-quality-chain.md) → [候选矩阵](capability-matrix.md) → [最小采用方案](adoption-plan.md) → 本文。配置与Unity风险分别见[配置设计](claude-code-configuration.md)和[专项适配](unity-csharp-adaptation.md)。
+最短阅读顺序：[报告结论](../../../book/part8-ai-team/8-1-ai-quality-chain.md) → [候选矩阵](capability-matrix.md) → [最小采用方案](adoption-plan.md) → 本文。配置与Unity风险分别见[配置设计](claude-code-configuration.md)和[专项适配](unity-csharp-adaptation.md)。
 
 ## 1. 可交给Claude Code的首个实施任务
 

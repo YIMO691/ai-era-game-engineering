@@ -5,7 +5,7 @@
 ## 内容与阅读顺序
 
 - [日常精简协议](../../../book/appendix-f-ai-cqep-quick-reference.md)：工作方式与风险裁剪。
-- [核心协议](../../../book/07-ai-cqep-protocol.md)：八条原则、六阶段责任、Unity/C# 教学推演及证据边界。
+- [核心协议](../../../book/part8-ai-team/8-2-ai-cqep-protocol.md)：八条原则、六阶段责任、Unity/C# 教学推演及证据边界。
 - [项目契约模板](PROJECT-CONTRACT-TEMPLATE.md)：只补已有规范缺口；占位符不是工程事实、授权或可执行配置。
 - [采用说明](CLAUDE-ADOPTION.md)：通用采用建议与任务模板；私有项目映射已排除。
 - [导出清单](export-manifest.json)：来源、SHA-256、转换与排除记录。

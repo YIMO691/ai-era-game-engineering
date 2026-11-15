@@ -1,10 +1,10 @@
-# 第5章　工程判断
+# 1.3　工程判断
 
 *原题：从工程思维到工程判断力（v0.9）*
 
-> **本章导读**：前四章不断要求“按后果决定深度”“事前写下停止条件”。本章把这些要求本身作为研究对象：工程判断力是什么，能否拆解、训练和评价，AI 时代人应强化什么。本章提出七个综合模型、Tier 1–3 分级与 S1–S6 停止规则，并用 UniTask 与 NGO 的两个源码发现作为案例。它是全书“限度”一轴的主章。
+> **本章导读**：1.1、1.2 两章反复要求“按后果决定深度”“事前写下停止条件”。本章把这些要求本身作为研究对象：工程判断力是什么，能否拆解、训练和评价，AI 时代人应强化什么。本章提出七个综合模型、Tier 1–3 分级与 S1–S6 停止规则，并用 UniTask 与 NGO 的两个源码发现作为案例。本书把这里的最小方法用在每一项学习上：先写预测，再找能改变决定的证据，最后写一条带条件的规则。
 
-> **本章证据状态**：v0.9 研究与实践草案（2026-11-06），人工研究审核 pending。四份基线已全文阅读；C1 UniTask 2.5.10、C2 NGO 1.9.1 已读取固定源码、相应测试与公开讨论，但未运行。AI 部分只有两项研究正文成功取得；认知/学习文献只有检索片段。C3 SQLite、C4 Linux、C5 Kubernetes、C6 SWE-agent 未完成一手材料核查。没有编译、Unity PlayMode、真机测量、训练实验或用户人工审核。因此七模型、训练体系、三场景和协议是**研究综合模型/实践设计**，不是心理机制验证、训练因果验证、生产验证或国际标准；**“六个充分一手案例”和“七模型均获实际案例验证”的原始验收条件尚未满足。**公开授权不等于人工审核或实验通过；转换与排除见 [导出清单](../archive/research/engineering-judgment/export-manifest.json)。
+> **本章证据状态**：v0.9 研究与实践草案（2026-11-06），人工研究审核 pending。四份基线已全文阅读；C1 UniTask 2.5.10、C2 NGO 1.9.1 已读取固定源码、相应测试与公开讨论，但未运行。AI 部分只有两项研究正文成功取得；认知/学习文献只有检索片段。C3 SQLite、C4 Linux、C5 Kubernetes、C6 SWE-agent 未完成一手材料核查。没有编译、Unity PlayMode、真机测量、训练实验或用户人工审核。因此七模型、训练体系、三场景和协议是**研究综合模型/实践设计**，不是心理机制验证、训练因果验证、生产验证或国际标准；**“六个充分一手案例”和“七模型均获实际案例验证”的原始验收条件尚未满足。**公开授权不等于人工审核或实验通过；转换与排除见 [导出清单](../../archive/research/engineering-judgment/export-manifest.json)。
 
 ## 0. 执行摘要、导航与验收边界
 
@@ -22,15 +22,15 @@
 
 | 需要做什么 | 入口 |
 |---|---|
-| 看输入报告审计与版本风险 | [既有研究审计与第二阶段研究缺口](../archive/research/engineering-judgment/baseline-audit.md) |
-| 判断方案、抽象/重构、深浅和停止 | [工程判断模型与决策手册](../archive/research/engineering-judgment/decision-handbook.md) |
-| 进入陌生工程、读源码与设计历史 | [成熟项目源码阅读与设计还原手册](../archive/research/engineering-judgment/source-reading-handbook.md) |
-| 评估十四域、安排十二周训练 | [工程判断力训练与能力评估手册](../archive/research/engineering-judgment/training-and-assessment-handbook.md) |
-| 委派 AI、独立验收、保留能力 | [AI时代工程判断与人机协作手册](../archive/research/engineering-judgment/human-ai-collaboration-handbook.md) |
-| 研究真实源码与待补案例 | [附录D（工程判断案例库）](appendix-d-cases.md) |
-| 直接拿去做任务记录 | [附录G（工程判断实践模板包）](appendix-g-record-templates.md) |
-| 查出处、读取范围、允许措辞 | [sources](../archive/research/engineering-judgment/sources.md) |
-| 查审查结果和剩余阻塞 | [review](../archive/research/engineering-judgment/research-review.md) |
+| 看输入报告审计与版本风险 | [既有研究审计与第二阶段研究缺口](../../archive/research/engineering-judgment/baseline-audit.md) |
+| 判断方案、抽象/重构、深浅和停止 | [工程判断模型与决策手册](../../archive/research/engineering-judgment/decision-handbook.md) |
+| 进入陌生工程、读源码与设计历史 | [成熟项目源码阅读与设计还原手册](../../archive/research/engineering-judgment/source-reading-handbook.md) |
+| 评估十四域、安排十二周训练 | [工程判断力训练与能力评估手册](../../archive/research/engineering-judgment/training-and-assessment-handbook.md) |
+| 委派 AI、独立验收、保留能力 | [AI时代工程判断与人机协作手册](../../archive/research/engineering-judgment/human-ai-collaboration-handbook.md) |
+| 研究真实源码与待补案例 | [附录D（工程判断案例库）](../appendix-d-cases.md) |
+| 直接拿去做任务记录 | [附录G（工程判断实践模板包）](../appendix-g-record-templates.md) |
+| 查出处、读取范围、允许措辞 | [sources](../../archive/research/engineering-judgment/sources.md) |
+| 查审查结果和剩余阻塞 | [review](../../archive/research/engineering-judgment/research-review.md) |
 
 本报告使用：**事实/研究发现**（原文支持）、**案例观察**（限定项目/版本）、**综合模型**、**实践建议**、**假设/待核**。后四种不能伪装成同一种实证强度。
 
@@ -57,7 +57,7 @@
 6. 帧时间需看任务依赖/CPU-GPU 流水及实测分布；感知反馈、远端显示、权威确认分开，不把简化式当通用测量模型。
 7. AI 相互赞同不是独立 oracle，也没有由短期卸载直接推出长期退化的证据。
 
-详细定位与研究地图见 [既有研究审计与第二阶段研究缺口](../archive/research/engineering-judgment/baseline-audit.md)，原四文未修改。
+详细定位与研究地图见 [既有研究审计与第二阶段研究缺口](../../archive/research/engineering-judgment/baseline-audit.md)，原四文未修改。
 
 ## 2. 研究地图与当前能回答的强度
 
@@ -142,7 +142,7 @@ C1 中，再背一遍 await 语法不如查“取消包装是否调用带清理�
 - **输入/输出**：任务、版本、权限、后果与事实 → 条件化决定、最小实施边界、验收/恢复、残余未知和负责人。
 - **适用/局限**：小任务四问即可；质量属性评分不能遮蔽不兼容/安全硬门槛，不保证结果。
 - **案例演示**：C2 handler true 与 authority false+手动回池，是在不同角色责任下比较真实方案，而不是“对象池总更好”。
-- **训练/评价**：对相同约束列备选并预测失败；看是否捏造选项/分数、是否被反例改判。详见 [工程判断模型与决策手册](../archive/research/engineering-judgment/decision-handbook.md)。
+- **训练/评价**：对相同约束列备选并预测失败；看是否捏造选项/分数、是否被反例改判。详见 [工程判断模型与决策手册](../../archive/research/engineering-judgment/decision-handbook.md)。
 
 ### M3. 源码阅读知识转化模型
 
@@ -151,7 +151,7 @@ C1 中，再背一遍 await 语法不如查“取消包装是否调用带清理�
 - **输入/输出**：固定源码/测试/历史与具体问题 → 可追溯案例卡、条件规则、不可照搬项。
 - **适用/局限**：维护/对比阅读；动态内容、原生黑盒、服务端和部署不在可见源码内，静态不能取代运行。
 - **案例演示**：C1 README 的取消成本理由与研究者对归池条件的解释分开；C2 XML 与公共签名冲突。
-- **训练/评价**：逐步开放材料，独立反事实与近迁移；不按读文件数评分。详见 [成熟项目源码阅读与设计还原手册](../archive/research/engineering-judgment/source-reading-handbook.md)。
+- **训练/评价**：逐步开放材料，独立反事实与近迁移；不按读文件数评分。详见 [成熟项目源码阅读与设计还原手册](../../archive/research/engineering-judgment/source-reading-handbook.md)。
 
 ### M4. 成熟项目适配模型
 
@@ -178,7 +178,7 @@ C1 中，再背一遍 await 语法不如查“取消包装是否调用带清理�
 - **输入/输出**：任务/版本/Tier/许可上下文/验收 → 最小可审查产物、真实验证、限制和风险接受。
 - **适用/局限**：AI 能否节时受任务与审核成本影响；人无能力审核时应缩小范围/求助，不能用模型自信兜底。
 - **案例演示**：用 C1/C2 源码训练 AI 契约审查；C6 SWE-agent 只能提供待核框架，**不构成已完成真实工具案例验证**。
-- **训练/评价**：人先预测、AI 反方、独立反例、无 AI 变式；分测时间/正确性/维护/学习。详见 [AI时代工程判断与人机协作手册](../archive/research/engineering-judgment/human-ai-collaboration-handbook.md)。
+- **训练/评价**：人先预测、AI 反方、独立反例、无 AI 变式；分测时间/正确性/维护/学习。详见 [AI时代工程判断与人机协作手册](../../archive/research/engineering-judgment/human-ai-collaboration-handbook.md)。
 
 ### M7. 工程能力成长模型
 
@@ -187,7 +187,7 @@ C1 中，再背一遍 await 语法不如查“取消包装是否调用带清理�
 - **输入/输出**：能力域基线、任务难度/熟悉性、指导条件、外部反馈 → 多任务行为证据、下一薄弱项，不是统一“能力指数”。
 - **适用/局限**：可用练习/真实授权任务；无对照不能归因训练，短期保持不等于远迁移；L1–L5 和晋级门槛未经效度验证。
 - **案例演示**：C1/C2 提供隐藏答案/边界变式材料；**没有学员数据，不能称成长模型已被案例验证有效**。
-- **训练/评价**：十四域分别用行为锚点评分，多个新任务/独立审阅/延迟迁移，记录流程成本。详见 [工程判断力训练与能力评估手册](../archive/research/engineering-judgment/training-and-assessment-handbook.md)。
+- **训练/评价**：十四域分别用行为锚点评分，多个新任务/独立审阅/延迟迁移，记录流程成本。详见 [工程判断力训练与能力评估手册](../../archive/research/engineering-judgment/training-and-assessment-handbook.md)。
 
 ## 5. 从源码理解到设计理由：两条真实静态发现
 
@@ -213,7 +213,7 @@ NGO 1.9.1 固定 SHA `7d27c5141123e3b9f31419ccca7768a640a45d56`。正常动态�
 
 一条好规则写成：当【环境/约束】时，【策略】可能优于【替代】，因为【因果机制】；依据【版本/路径/历史/运行】，代价【成本】，除非【边界变化】；下次用【新预测】验证。
 
-不能只写“用 token”“加接口”“所有池都一样”。完整六案及四案缺口见 [附录D（工程判断案例库）](appendix-d-cases.md)。
+不能只写“用 token”“加接口”“所有池都一样”。完整六案及四案缺口见 [附录D（工程判断案例库）](../appendix-d-cases.md)。
 
 ## 6. 成熟项目决策、复杂度与停止
 
@@ -323,7 +323,7 @@ EVSI 的形式表达可帮助问“拿到什么结果会改选”，但本包没
 
 自动化偏差是“因自动建议而少查/错信”的风险描述；认知卸载是把部分工作交给工具，不必然有害。长期技能退化是需要长期证据的问题，不能从短期任务或非软件实验推定。安全/学习反向候选已保留，尚未读原文，不作确定结论。
 
-最小协作：人先写目标/风险/预测→有界委派→AI 附事实/未知/路径→外部 oracle/运行/独立 review→有权限的人批准→定期无 AI 变式任务。完整矩阵和验收见 [AI时代工程判断与人机协作手册](../archive/research/engineering-judgment/human-ai-collaboration-handbook.md)。
+最小协作：人先写目标/风险/预测→有界委派→AI 附事实/未知/路径→外部 oracle/运行/独立 review→有权限的人批准→定期无 AI 变式任务。完整矩阵和验收见 [AI时代工程判断与人机协作手册](../../archive/research/engineering-judgment/human-ai-collaboration-handbook.md)。
 
 ## 9. 训练、评价与最小个人系统
 
@@ -443,7 +443,7 @@ Tier 1 四问；Tier 2 一页数据/owner/影响/备选/验证；Tier 3 才展�
 - **边界**：不同团队需对齐正式流程；个人模板不替代授权/安全/发布门禁。
 - **行动**：低风险只四问，每周复查哪些记录真的改过决定，保留有用字段并用真实结果评估。
 
-本节中的 cog/game/ai/method 简写均对应 [sources](../archive/research/engineering-judgment/sources.md) 的完整 `ER-20261106-…`，不额外生成来源。
+本节中的 cog/game/ai/method 简写均对应 [sources](../../archive/research/engineering-judgment/sources.md) 的完整 `ER-20261106-…`，不额外生成来源。
 
 ## 11. 局限、反证与后续研究
 
@@ -473,7 +473,7 @@ Tier 1 四问；Tier 2 一页数据/owner/影响/备选/验证；Tier 3 才展�
 
 ## 12. 参考资料与研究状态
 
-完整书目、版本、路径、读范围、短引、限制与允许措辞只在 [sources](../archive/research/engineering-judgment/sources.md) 登记，避免手册之间出现相互矛盾的重复元数据。
+完整书目、版本、路径、读范围、短引、限制与允许措辞只在 [sources](../../archive/research/engineering-judgment/sources.md) 登记，避免手册之间出现相互矛盾的重复元数据。
 
 主要已读证据为本地基线、C1/C2 的固定项目材料、Peng 等 v1 与 METR 2026 官方跟进；其余为待核候选。相关普通链接均在 sources 中，不使用无法解析的会话 citation 标记。
 
@@ -486,7 +486,9 @@ Tier 1 四问；Tier 2 一页数据/owner/影响/备选/验证；Tier 3 才展�
 - 停止有六个条件（S1–S6），时间用完不等于风险消失。
 - 七个模型与训练体系是待验证的综合设计，不是已验证的量表。
 
-上一章：[第4章　客户端代码质量](04-client-code-quality.md)
-下一章：[第6章　AI 工作链](06-ai-quality-chain.md)
+上一章：[1.2　为什么仍要把代码写好](1-2-why-write-good-code.md)
+下一章：[1.4　三个问题：责任、证据与限度](1-4-ownership-evidence-bound.md)
 
-返回[目录](../README.md)。
+本章在[学习路线](../roadmap.md)中的位置与尚待学习的相关条目，见对应篇的条目表。
+
+返回[目录](../../README.md)。

@@ -62,7 +62,7 @@ Peng 等 v1 的标准化 JavaScript HTTP server 任务有完成者节时结果�
 4. 需要学习路线看 [工程判断力训练与能力评估手册](training-and-assessment-handbook.md)：十四域×五级、十二周与半年至一年；都是待验证设计。
 5. 用 AI 前看 [AI时代工程判断与人机协作手册](human-ai-collaboration-handbook.md)；不要上传未经授权私有代码。
 6. 学习者文章 [blog](late-icon-callback-tutorial.md) 从一次晚到图标的教学题出发，不替代技术验收。
-7. 完整模型、三场景与十二问：[从工程思维到工程判断力_深化研究报告](../../../book/05-engineering-judgment.md)。
+7. 完整模型、三场景与十二问：[从工程思维到工程判断力_深化研究报告](../../../book/part1-method/1-3-engineering-judgment.md)。
 8. 引用只认 [sources](sources.md)；实际审查与阻塞见 [review](research-review.md)；执行与恢复见 [plan](research-plan.md) 及 `topic.json`。
 
 **最小个人系统：一张任务卡、一组真实证据、一条条件规则。**先观察它是否改善实际预测、验证和交付，再决定增加哪些流程，而不是以文档量证明成长。

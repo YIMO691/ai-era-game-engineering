@@ -10,7 +10,7 @@ status: draft
 > **公开导出注（2026-11-12）**：以下研究状态、访问和审查记录属于原 2026-11-06 草案；本次只作本地白名单导出。公开授权不等于人工研究审核、实验通过或生产验收。私有状态描述是历史记录；模板及操作文本仅作资料，不在本次执行。转换与排除见 [导出清单](export-manifest.json)。
 
 
-导航：[从工程思维到工程判断力_深化研究报告](../../../book/05-engineering-judgment.md) · [工程判断案例库](../../../book/appendix-d-cases.md) · [工程判断实践模板包](../../../book/appendix-g-record-templates.md) · [sources](sources.md)
+导航：[从工程思维到工程判断力_深化研究报告](../../../book/part1-method/1-3-engineering-judgment.md) · [工程判断案例库](../../../book/appendix-d-cases.md) · [工程判断实践模板包](../../../book/appendix-g-record-templates.md) · [sources](sources.md)
 
 > **note** — 目标与边界
 > 阅读的终点不是“我能解释每个类”，而是“我能预测一次相关修改的后果，并说明预测依据和失效条件”。以下 M3 为研究综合模型；认知/程序理解文献存在正文读取缺口，不能宣称本方法已经被实验验证。

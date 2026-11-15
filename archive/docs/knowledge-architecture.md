@@ -8,7 +8,7 @@
 
 **本节结论：仓库积累的是“问题、回答与回答的可信程度”，三者必须一起保存，才能在长期修订中不失真。**
 
-[项目宗旨](../../book/01-from-code-to-responsibility.md)把研究单位定为“一个可回答、可证伪的问题”。因此这个知识库的基本内容不是一组正确答案，而是：
+[项目宗旨](../../book/part1-method/1-1-from-code-to-responsibility.md)把研究单位定为“一个可回答、可证伪的问题”。因此这个知识库的基本内容不是一组正确答案，而是：
 
 1. **问题**：要解释什么现象，在什么范围内。
 2. **回答**：机制模型、案例、推论和实践建议。
@@ -36,10 +36,10 @@
 
 | 层 | 回答什么 | 位置 | 变化节奏 |
 |---|---|---|---|
-| L0 宗旨与方法 | 为什么研究、怎样算证据、知识库如何组织 | [项目宗旨](../../book/01-from-code-to-responsibility.md)、[研究方法](../../book/appendix-h-research-method.md)、本文、[术语与分级对照](../../book/appendix-b-glossary.md)、[决策记录](../../docs/decisions.md) | 很少；改动需记录决策 |
+| L0 宗旨与方法 | 为什么研究、怎样算证据、知识库如何组织 | [项目宗旨](../../book/part1-method/1-1-from-code-to-responsibility.md)、[研究方法](../../book/appendix-h-research-method.md)、本文、[术语与分级对照](../../book/appendix-b-glossary.md)、[决策记录](../../docs/decisions.md) | 很少；改动需记录决策 |
 | L1 专题 | 一个问题的完整研究：正文、来源、案例、审校 | `research/<专题>/` | 研究推进时 |
 | L2 命题 | 跨专题、承重、可被反驳的主张及其证据位置 | [命题登记](../knowledge/claims.json) | 专题修订、新证据或反例出现时 |
-| L3 综合与实践 | 阶段性综合与可执行规则 | [阶段性综合](../../book/08-ownership-evidence-bound.md)、[工程实践指南](../../book/appendix-a-practice-rules.md) | 每个研究阶段 |
+| L3 综合与实践 | 阶段性综合与可执行规则 | [阶段性综合](../../book/part1-method/1-4-ownership-evidence-bound.md)、[工程实践指南](../../book/appendix-a-practice-rules.md) | 每个研究阶段 |
 | L4 档案 | 原始输入、历史草稿、导出来源记录、变更记录 | [原始深度研究报告](../imports/manifesto.md)、[历史草稿](../imports/deep-research-draft.md)、各专题 `export-manifest.json`、[变更记录](../../CHANGELOG.md) | 只追加，不改写 |
 
 另有一个**导航面**：[知识地图](../knowledge/README.md)。它不保存新内容，只从 L1 与 L2 的数据生成。
@@ -69,7 +69,7 @@
 
 全部取值登记在[受控词表](../knowledge/vocabulary.json)，每个取值写成“短名：说明”。新增取值先改词表并说明含义，检查器拒绝词表以外的值。目录只按专题划分一次；其他维度都通过知识地图进入，避免同一文件因分类不同而出现多份。
 
-“责任—证据—限度”三轴来自[阶段性综合](../../book/08-ownership-evidence-bound.md)第 5 节，是本仓库的组织框架，不是已验证的理论。若后续研究发现某类知识不适合放进三轴，应先在词表中新增轴并记录决策，而不是硬塞。
+“责任—证据—限度”三轴来自[阶段性综合](../../book/part1-method/1-4-ownership-evidence-bound.md)第 5 节，是本仓库的组织框架，不是已验证的理论。若后续研究发现某类知识不适合放进三轴，应先在词表中新增轴并记录决策，而不是硬塞。
 
 ## 5 专题契约
 
@@ -112,7 +112,7 @@
 | 稳定 | 已审、已检验，近期没有未处理的反证 | 同上 |
 | 退役 | 被取代或不再维护；保留文件供追溯 | — |
 
-当前六个专题都处于“成稿”。从“成稿”走到“已审”，是[阶段性综合](../../book/08-ownership-evidence-bound.md)第 9 节列出的优先事项之一。
+当前六个专题都处于“成稿”。从“成稿”走到“已审”，是[阶段性综合](../../book/part1-method/1-4-ownership-evidence-bound.md)第 9 节列出的优先事项之一。
 
 ## 6 命题登记
 

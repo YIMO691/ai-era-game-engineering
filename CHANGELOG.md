@@ -1,8 +1,19 @@
 # 变更记录
 
+## 2026-11-15 — 重新定义为成长之书
+
+- 按所有者的定义，全书改为《一名 Unity 客户端工程师的成长：AI 时代的思考与学习》（[决策记录](docs/decisions.md) D-006）。前言与目录据此重写，“责任、证据、限度”改为每学一项都问的三个问题。
+- [学习路线](book/roadmap.md)升为全书骨架，从附录I 移出，共八篇 89 个条目：
+  - 新增第四篇“性能与优化”，包括优化思维 OP1–OP7；
+  - 补充 P11 物理、动画与粒子开销，P12 着色器变体，P13 资源导入与压缩，R6 开发迭代效率；
+  - 新增优化线索引。覆盖情况：已成章 6、点到 46、空白 37。
+- 已写成的八章按篇重新编号并移入 `book/partN-*/`：1.1–1.4（方法），3.1，7.1，8.1，8.2。全仓库链接与章节引用自动改写，导读与上下章导航按新的阅读顺序更新。各章正文与证据状态未改。
+- 检查器改为递归检查 `book/` 下所有文件都已列入目录。[贡献指南](CONTRIBUTING.md)写明新章节的位置与命名规则。
+- 实际执行（Linux／Python 3.13）：26项unittest通过，`python -I scripts/check_docs.py`退出0，`git diff --check`无输出。
+
 ## 2026-11-15 — 学习版图与路线
 
-- 新增[附录I　学习版图与路线](book/appendix-i-learning-roadmap.md)：78 个可单独学习的条目，分十二个领域、六个阶段。领域包括运行时基础、状态与数据流、架构与模块化、性能与内存、资源与构建、网络与同步、数据与持久化、测试、可观测、判断与工艺、AI 协作、团队与交付。
+- 新增[附录I　学习版图与路线](book/roadmap.md)：78 个可单独学习的条目，分十二个领域、六个阶段。领域包括运行时基础、状态与数据流、架构与模块化、性能与内存、资源与构建、网络与同步、数据与持久化、测试、可观测、判断与工艺、AI 协作、团队与交付。
 - 每个条目写明核心问题、重要性、本书覆盖情况（已覆盖 6、点到 41、空白 31）和前置条目，并附统一的学习方法与学习记录表。只列条目，未写各项正文。
 - 目录、前言与第8章增加入口。
 - 实际执行（Linux／Python 3.13）：26项unittest通过，`python -I scripts/check_docs.py`退出0，`git diff --check`无输出。
@@ -33,7 +44,7 @@
 
 ## 2026-11-15 — 专题主文档改写
 
-- 按仓库所有者选择，直接改写六个专题的主文档，而不是另建精编版：[Unity异步任务生命周期](book/03-the-late-result.md)、[客户端代码质量](book/04-client-code-quality.md)、[AI代码质量工作流](book/06-ai-quality-chain.md)、[AI-CQEP核心协议](book/07-ai-cqep-protocol.md)与[日常精简协议](book/appendix-f-ai-cqep-quick-reference.md)、[工程判断报告](book/05-engineering-judgment.md)与[研究入口](archive/research/engineering-judgment/research-overview.md)、[代码优美论](book/02-why-write-good-code.md)。
+- 按仓库所有者选择，直接改写六个专题的主文档，而不是另建精编版：[Unity异步任务生命周期](book/part3-system/3-1-the-late-result.md)、[客户端代码质量](book/part7-craft/7-1-client-code-quality.md)、[AI代码质量工作流](book/part8-ai-team/8-1-ai-quality-chain.md)、[AI-CQEP核心协议](book/part8-ai-team/8-2-ai-cqep-protocol.md)与[日常精简协议](book/appendix-f-ai-cqep-quick-reference.md)、[工程判断报告](book/part1-method/1-3-engineering-judgment.md)与[研究入口](archive/research/engineering-judgment/research-overview.md)、[代码优美论](book/part1-method/1-2-why-write-good-code.md)。
 - 改写内容：分散的导出说明、验收警告与状态提示合并为开头一段“状态”；各节以“本节结论”开头；前三份报告重组了章节与措辞；AI-CQEP 增加“协议一览”；代码优美论只增加“核心论点一览”，正文未动。观点、来源、编号体系（U1–U8、P1–P6、Tier、S1–S6、M1–M7）与证据状态未改，未新增来源。
 - 公开文件与私有编辑源自此分叉：各专题导出清单保留原 `export_sha256`，为修改过的记录新增 `public_revision`（日期、新哈希、说明）。
 - 撤下同一 PR 中先前新增的 `research/digests/`，首页、研究专题目录、检查器与测试同步移除其入口。
@@ -47,7 +58,7 @@
 
 ## 2026-11-15 — 第一阶段综合、术语对照与路线图状态
 
-- 新增[阶段性综合：责任、证据与限度](book/08-ownership-evidence-bound.md)：提炼六个专题的五项共同命题，提出“责任—证据—限度”框架，统一分析迟到回包案例，对第一阶段作批判性评估并给出下一阶段优先级。综合继承各专题证据状态，不升级任何结论；文中框架与对齐关系标为综合推论，待仓库所有者审阅。
+- 新增[阶段性综合：责任、证据与限度](book/part1-method/1-4-ownership-evidence-bound.md)：提炼六个专题的五项共同命题，提出“责任—证据—限度”框架，统一分析迟到回包案例，对第一阶段作批判性评估并给出下一阶段优先级。综合继承各专题证据状态，不升级任何结论；文中框架与对齐关系标为综合推论，待仓库所有者审阅。
 - 新增[术语与分级对照](book/appendix-b-glossary.md)：对齐所有权与生命周期术语、Tier 1–3与AI-CQEP L/M/H及判断卡、三套能力等级、停止条件和状态词表；只作阅读索引，不合并或裁决模型。
 - [路线图](archive/docs/roadmap.md)“当前状态”列按各专题记录更新：证据链为部分进行，首个候选问题已完成静态机制分析但未建工程；验收条件与历史段落未改。
 - 首页“从这里开始”与方法表、[研究专题目录](archive/research/README.md)增加两份新文档入口；首页68行。检查器把两份新文档加入必备文件与首页导航，新增1项测试。
@@ -57,7 +68,7 @@
 
 ## 2026-11-12 — 代码优美论最终文章与阅读入口整理
 
-- 新增[代码优美论v1.0最终文章](book/02-why-write-good-code.md)及[证据与取舍说明](archive/research/code-aesthetics/final/evidence-notes.md)。正文涵盖品质动机、审美与工程效果的区别、精益迁移、UI旧回包案例、AI成本与停止条件；不把思想实验写成运行结果。
+- 新增[代码优美论v1.0最终文章](book/part1-method/1-2-why-write-good-code.md)及[证据与取舍说明](archive/research/code-aesthetics/final/evidence-notes.md)。正文涵盖品质动机、审美与工程效果的区别、精益迁移、UI旧回包案例、AI成本与停止条件；不把思想实验写成运行结果。
 - 完成一轮有限AI编辑审查并修复1处请求完成／结果处理的措辞歧义。写作定稿不升级研究证据；PARTIAL、人工研究审核pending、实验not-run保留。
 - 首页改为“从这里开始 → 六专题 → 方法与历史 → 检查与许可”，专题与研究总目录优先链接最终文章，原实验材料转为可选后续，不删除研究与历史材料。
 - 两份新公开副本使用标准相对链接；公开状态与本地过程说明按发布目的调整，不导出私有执行计划、topic.json或任务原话。新增独立导出清单，原26份研究材料的清单不改，私有源文稿不改。
@@ -85,7 +96,7 @@
 
 ## 2026-10-30 — 区分项目宗旨与研究报告
 
-- 按用户提供的完整原文新增[项目宗旨与研究纲领](book/01-from-code-to-responsibility.md)，不从旧报告重新编写宗旨，也不改变原文观点和参考资料。
+- 按用户提供的完整原文新增[项目宗旨与研究纲领](book/part1-method/1-1-from-code-to-responsibility.md)，不从旧报告重新编写宗旨，也不改变原文观点和参考资料。
 - 两份原始研究报告的内容、路径及导入清单保持不变；`docs/manifesto.md` 的旧路径保留，但入口明确标为原始深度研究报告，不再与正式宗旨混用。
 - README、相关说明和 Obsidian 本地入口按“项目宗旨 → 研究报告 → 后续研究”明确角色；不新增能力框架、实验工程或大规模研究任务。
 - 登记宗旨原文的版本和 SHA-256；宗旨包含的 7 条外部来源 URL 仅为原文提供的核验线索，本次没有独立访问或证实其内容。

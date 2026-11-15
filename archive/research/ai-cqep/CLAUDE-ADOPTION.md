@@ -6,7 +6,7 @@
 
 本文是采用提案，不是已应用配置或自动门禁。只修订四份研究文档，没有修改业务项目的规则、代码、权限、全局配置。自然语言指令不提供操作系统隔离，也不能保证模型自动遵守。
 
-[核心协议](../../../book/07-ai-cqep-protocol.md) 按需查阅；[精简工作流](../../../book/appendix-f-ai-cqep-quick-reference.md) 用于快速了解；[契约模板](PROJECT-CONTRACT-TEMPLATE.md) 仅补现有工程事实的必要缺口。四份不是每任务必读清单，也不要求全部搬入项目。
+[核心协议](../../../book/part8-ai-team/8-2-ai-cqep-protocol.md) 按需查阅；[精简工作流](../../../book/appendix-f-ai-cqep-quick-reference.md) 用于快速了解；[契约模板](PROJECT-CONTRACT-TEMPLATE.md) 仅补现有工程事实的必要缺口。四份不是每任务必读清单，也不要求全部搬入项目。
 
 ## 1. 采用一次，日常给需求，不反复给协议
 

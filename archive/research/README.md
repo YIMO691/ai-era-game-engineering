@@ -4,7 +4,7 @@
 
 ## 最新文章
 
-[代码优美论：AI时代，为什么仍要把代码写好](../../book/02-why-write-good-code.md)（v1.0）：讨论品质动机、精益迁移、AI成本、Unity/C#案例及停止条件。写作定稿不等于研究验证通过；[证据与取舍说明](code-aesthetics/final/evidence-notes.md)保留具体边界。
+[代码优美论：AI时代，为什么仍要把代码写好](../../book/part1-method/1-2-why-write-good-code.md)（v1.0）：讨论品质动机、精益迁移、AI成本、Unity/C#案例及停止条件。写作定稿不等于研究验证通过；[证据与取舍说明](code-aesthetics/final/evidence-notes.md)保留具体边界。
 
 ## 公开区修订（2026-11-15）
 
@@ -12,7 +12,7 @@
 
 ## 阶段综合
 
-可直接用于日常工作的规则见[工程实践指南](../../book/appendix-a-practice-rules.md)。[阶段性综合：责任、证据与限度](../../book/08-ownership-evidence-bound.md)提炼六个专题的共同命题，用贯穿多个专题的迟到回包案例作统一分析，并给出下一阶段议程。各专题术语与分级的对照见[术语与分级对照](../../book/appendix-b-glossary.md)。综合继承各专题的证据状态，不升级任何结论。
+可直接用于日常工作的规则见[工程实践指南](../../book/appendix-a-practice-rules.md)。[阶段性综合：责任、证据与限度](../../book/part1-method/1-4-ownership-evidence-bound.md)提炼六个专题的共同命题，用贯穿多个专题的迟到回包案例作统一分析，并给出下一阶段议程。各专题术语与分级的对照见[术语与分级对照](../../book/appendix-b-glossary.md)。综合继承各专题的证据状态，不升级任何结论。
 
 ## 按问题阅读
 

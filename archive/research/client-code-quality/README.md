@@ -4,7 +4,7 @@
 
 ## 阅读入口
 
-- [研究报告](../../../book/04-client-code-quality.md)：核心判断、方案取舍与证据边界。
+- [研究报告](../../../book/part7-craft/7-1-client-code-quality.md)：核心判断、方案取舍与证据边界。
 - [实用指南](code-quality-guide.md)与[审查清单](../../../book/appendix-e-review-checklist.md)：日常判断和通用教学模板。
 - [代码对照案例](unity-csharp-examples.md)：4 个固定源码分析案例、7 个原创教学案例。
 - [训练路线](training-route.md)：尚未执行的练习设计。

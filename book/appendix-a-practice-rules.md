@@ -10,7 +10,7 @@
 >
 > **它不是什么**：它不是经过实验验证的行业标准，也不保证照做就能写出好代码。本仓库至今没有运行过任何Unity实验或团队试用。规则中的“必须”表达的是本指南的规范立场，不是“已被证明有效”的实证结论。各规则的证据强度单独标注，请按标注而不是按措辞的强弱来判断可信度。
 >
-> 背景、论证与研究评估见[第8章（阶段性综合：责任、证据与限度）](08-ownership-evidence-bound.md)；术语对照见[附录B（术语与分级对照）](appendix-b-glossary.md)。
+> 背景、论证与研究评估见[第1.4章（阶段性综合：责任、证据与限度）](part1-method/1-4-ownership-evidence-bound.md)；术语对照见[附录B（术语与分级对照）](appendix-b-glossary.md)。
 
 ## 0 如何阅读和使用本指南
 
@@ -392,12 +392,12 @@ AI参与（工具、范围、可写权限、实际改动）：
 
 | 章节 | 主要来源 |
 |---|---|
-| 第1、6章 | [第2章（代码优美论）](02-why-write-good-code.md)、[附录H（研究方法）](appendix-h-research-method.md)、[决策手册](../archive/research/engineering-judgment/decision-handbook.md) |
+| 第1、6章 | [第1.2章（代码优美论）](part1-method/1-2-why-write-good-code.md)、[附录H（研究方法）](appendix-h-research-method.md)、[决策手册](../archive/research/engineering-judgment/decision-handbook.md) |
 | 第2、3章 | [决策手册](../archive/research/engineering-judgment/decision-handbook.md)、[附录F（AI-CQEP日常协议）](appendix-f-ai-cqep-quick-reference.md) |
-| 第4章 | [第3章（Unity异步任务生命周期）](03-the-late-result.md)、[附录D（工程判断案例库）](appendix-d-cases.md)、[第7章（AI-CQEP核心协议）](07-ai-cqep-protocol.md)、[第4章（客户端代码质量）](04-client-code-quality.md) |
-| 第5章 | [第4章（客户端代码质量）](04-client-code-quality.md)、[第2章（代码优美论）](02-why-write-good-code.md) |
-| 第7章 | [人机协作手册](../archive/research/engineering-judgment/human-ai-collaboration-handbook.md)、[第6章（AI代码质量工作流）](06-ai-quality-chain.md)、[第7章（AI-CQEP核心协议）](07-ai-cqep-protocol.md) |
-| 第8章 | [第5章（工程判断报告）](05-engineering-judgment.md)、[第6章（AI代码质量工作流）](06-ai-quality-chain.md) |
+| 第4章 | [第3.1章（Unity异步任务生命周期）](part3-system/3-1-the-late-result.md)、[附录D（工程判断案例库）](appendix-d-cases.md)、[第8.2章（AI-CQEP核心协议）](part8-ai-team/8-2-ai-cqep-protocol.md)、[第7.1章（客户端代码质量）](part7-craft/7-1-client-code-quality.md) |
+| 第5章 | [第7.1章（客户端代码质量）](part7-craft/7-1-client-code-quality.md)、[第1.2章（代码优美论）](part1-method/1-2-why-write-good-code.md) |
+| 第7章 | [人机协作手册](../archive/research/engineering-judgment/human-ai-collaboration-handbook.md)、[第8.1章（AI代码质量工作流）](part8-ai-team/8-1-ai-quality-chain.md)、[第8.2章（AI-CQEP核心协议）](part8-ai-team/8-2-ai-cqep-protocol.md) |
+| 第8章 | [第1.3章（工程判断报告）](part1-method/1-3-engineering-judgment.md)、[第8.1章（AI代码质量工作流）](part8-ai-team/8-1-ai-quality-chain.md) |
 
 **写作记录**：2026-11-15由Claude Code会话中的AI助手基于本仓库已有内容整理起草，未新增外部来源、未运行任何代码或实验，待仓库所有者审阅。规则编号与证据标签是本指南的组织方式，不代表各专题已采用。
 

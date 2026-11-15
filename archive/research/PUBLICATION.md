@@ -8,7 +8,7 @@
 
 ## 最终文章与合并授权（2026-11-12）
 
-在最终文章交付后，用户进一步要求提交、合并并整理README。本次在既有汇总分支增加[代码优美论v1.0](../../book/02-why-write-good-code.md)、必要的[证据说明](code-aesthetics/final/evidence-notes.md)及[独立清单](code-aesthetics/final/export-manifest.json)，整理首页与专题阅读入口，并将此前六专题汇总与本次文章一并提交到main。该授权取代下节仅针对首次汇总的“不自动合并”限制，不授权发布私有计划、元数据或整个笔记库，也不提升研究审核等级。
+在最终文章交付后，用户进一步要求提交、合并并整理README。本次在既有汇总分支增加[代码优美论v1.0](../../book/part1-method/1-2-why-write-good-code.md)、必要的[证据说明](code-aesthetics/final/evidence-notes.md)及[独立清单](code-aesthetics/final/export-manifest.json)，整理首页与专题阅读入口，并将此前六专题汇总与本次文章一并提交到main。该授权取代下节仅针对首次汇总的“不自动合并”限制，不授权发布私有计划、元数据或整个笔记库，也不提升研究审核等级。
 
 具体转换、AI协助及未验证项见[代码优美论发布记录](code-aesthetics/PUBLICATION.md)。公开结果以实际Git提交、PR和CI记录为准，本页的授权说明不预先宣称推送或合并成功。
 

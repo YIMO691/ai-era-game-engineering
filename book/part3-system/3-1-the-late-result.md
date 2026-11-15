@@ -1,10 +1,10 @@
-# 第3章　迟到的结果：谁拒绝，谁释放
+# 3.1　迟到的结果：谁拒绝，谁释放
 
 *原题：Unity 场景退出后，谁拒绝旧 Task 结果并释放资源？*
 
-> **本章导读**：第2章的界面案例提出了一个问题：旧请求的结果晚到时，它还有权更新界面吗？本章把这个问题放回 Unity 的固定版本源码中，把一次看似简单的 await 拆成三个不能互相推出的问题：在哪里执行、此刻还能不能提交、资源由谁释放。这是全书“责任”一轴最具体的一章。
+> **本章导读**：第1.2章的界面案例提出了一个问题：旧请求的结果晚到时，它还有权更新界面吗？本章把这个问题放回 Unity 的固定版本源码中，把一次看似简单的 await 拆成三个不能互相推出的问题：在哪里执行、此刻还能不能提交、资源由谁释放。这是全书“责任”一轴最具体的一章。
 
-> **本章证据状态**：源码支持的机制分析与设计提案，不是已运行验证的 Unity 方案。目标为 Unity 6000.0.85f2 的 `System.Threading.Tasks.Task` 与 MonoBehaviour 主线程入口；已读固定版本 C# reference，Unity/.NET 官方网页正文访问受阻；Task 上下文捕获、取消协议与原生销毁时序仍有证据缺口；示意代码未编译、未运行。人工研究审核 pending。来源 ID、定位与访问状态见[共用来源](../archive/research/unity-task-lifetime/sources.md)。
+> **本章证据状态**：源码支持的机制分析与设计提案，不是已运行验证的 Unity 方案。目标为 Unity 6000.0.85f2 的 `System.Threading.Tasks.Task` 与 MonoBehaviour 主线程入口；已读固定版本 C# reference，Unity/.NET 官方网页正文访问受阻；Task 上下文捕获、取消协议与原生销毁时序仍有证据缺口；示意代码未编译、未运行。人工研究审核 pending。来源 ID、定位与访问状态见[共用来源](../../archive/research/unity-task-lifetime/sources.md)。
 
 ## 结论
 
@@ -144,7 +144,7 @@ async Task ReceiveAsync(RequestId id, CancellationToken token)
 
 **能决定**：审查异步代码时分别追问线程、提交资格与资源归属；不因写了取消或 await 就默认生命周期问题已解决；提前取得需要的销毁 token；不把主线程队列当业务 owner。
 
-**还不能决定**：目标工程中某套 API 的精确退出顺序、Task continuation 的实际线程保证、某类资源的具体释放方法、性能收益，以及示意代码能否直接上线。补充官方契约后应同步复查本文与[教学文章](../archive/research/unity-task-lifetime/blog.md)。
+**还不能决定**：目标工程中某套 API 的精确退出顺序、Task continuation 的实际线程保证、某类资源的具体释放方法、性能收益，以及示意代码能否直接上线。补充官方契约后应同步复查本文与[教学文章](../../archive/research/unity-task-lifetime/blog.md)。
 
 ## 8 下次看到“await 后更新界面”时问的三个问题
 
@@ -152,7 +152,7 @@ async Task ReceiveAsync(RequestId id, CancellationToken token)
 2. **提交资格**：对象仍活之外，这是不是当前那次请求？
 3. **资源归属**：如果不收这个结果，谁释放它？收下以后又归谁？
 
-相关：本问题在[第2章（代码优美论）](02-why-write-good-code.md)中以角色面板案例出现，在[附录D（工程判断案例库）](appendix-d-cases.md)的 C1、C2 中有同构的源码反例，在 [第7章（AI-CQEP）](07-ai-cqep-protocol.md) 第 9 节被写成项目契约与验证矩阵；可执行规则见[附录A（工程实践指南）](appendix-a-practice-rules.md)第 4 章，术语见[附录B（术语与分级对照）](appendix-b-glossary.md)。
+相关：本问题在[第1.2章（代码优美论）](../part1-method/1-2-why-write-good-code.md)中以角色面板案例出现，在[附录D（工程判断案例库）](../appendix-d-cases.md)的 C1、C2 中有同构的源码反例，在 [第8.2章（AI-CQEP）](../part8-ai-team/8-2-ai-cqep-protocol.md) 第 9 节被写成项目契约与验证矩阵；可执行规则见[附录A（工程实践指南）](../appendix-a-practice-rules.md)第 4 章，术语见[附录B（术语与分级对照）](../appendix-b-glossary.md)。
 
 ## 本章小结
 
@@ -161,7 +161,9 @@ async Task ReceiveAsync(RequestId id, CancellationToken token)
 - 取消只是请求减少工作，不证明不会再返回资源；“不再需要”不等于“不再负责”。
 - 本章的机制来自静态源码阅读，示意代码未编译、未运行。
 
-上一章：[第2章　为什么仍要把代码写好](02-why-write-good-code.md)
-下一章：[第4章　客户端代码质量](04-client-code-quality.md)
+上一章：[1.4　三个问题：责任、证据与限度](../part1-method/1-4-ownership-evidence-bound.md)
+下一章：[7.1　客户端代码质量](../part7-craft/7-1-client-code-quality.md)
 
-返回[目录](../README.md)。
+本章在[学习路线](../roadmap.md)中的位置与尚待学习的相关条目，见对应篇的条目表。
+
+返回[目录](../../README.md)。

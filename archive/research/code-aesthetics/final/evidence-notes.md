@@ -10,7 +10,7 @@ publication_status: authorized-public-snapshot
 
 # 最终稿证据与取舍说明
 
-本文对应[代码优美论最终文章](../../../../book/02-why-write-good-code.md)，解释其论断身份与取舍，不建立第二份来源账本。完整历史来源仍由[原来源账本](../evidence/sources.md)维护；短编号A03等对应稳定ID前缀`ER-20261111-CA-`。
+本文对应[代码优美论最终文章](../../../../book/part1-method/1-2-why-write-good-code.md)，解释其论断身份与取舍，不建立第二份来源账本。完整历史来源仍由[原来源账本](../evidence/sources.md)维护；短编号A03等对应稳定ID前缀`ER-20261111-CA-`。
 
 ## 1. 定稿的含义与研究状态
 
@@ -80,4 +80,4 @@ publication_status: authorized-public-snapshot
 
 单纯增加参考文献数量、换用新模型、获得更多相同结论的AI自评，不自动构成新一轮研究理由。后续实验草案可以保留，不影响本轮文章交付结束。
 
-返回[最终文章](../../../../book/02-why-write-good-code.md)；公开范围与审校摘要见[发布记录](../PUBLICATION.md)；本地执行计划不随文章公开。
+返回[最终文章](../../../../book/part1-method/1-2-why-write-good-code.md)；公开范围与审校摘要见[发布记录](../PUBLICATION.md)；本地执行计划不随文章公开。

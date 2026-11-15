@@ -19,7 +19,7 @@ tags:
 现在再加一步：加载结果持有一个需要释放的资源。如果你发现 A 过期后直接 return，界面可能不再错，但资源是否有人归还？修好回写，不等于修好所有权。
 
 > **先说明这篇文章的证据边界**
-> 这是设计教学草稿，不是已实测教程。分析目标为 Unity 6000.0.85f2、System.Threading.Tasks.Task、MonoBehaviour 主线程入口。已读对应固定 C# reference；Unity/.NET 官方文档正文访问受阻，Task 调度/取消和原生销毁的契约仍需补证；没有编译示例、运行 Editor 或测量性能。共用 [来源登记](sources.md)，完整分析见 [研究报告](../../../book/03-the-late-result.md)。
+> 这是设计教学草稿，不是已实测教程。分析目标为 Unity 6000.0.85f2、System.Threading.Tasks.Task、MonoBehaviour 主线程入口。已读对应固定 C# reference；Unity/.NET 官方文档正文访问受阻，Task 调度/取消和原生销毁的契约仍需补证；没有编译示例、运行 Editor 或测量性能。共用 [来源登记](sources.md)，完整分析见 [研究报告](../../../book/part3-system/3-1-the-late-result.md)。
 
 ## 把异步结果当成一件需要签收的包裹
 

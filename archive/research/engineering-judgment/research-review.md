@@ -11,7 +11,7 @@ status: draft
 > **公开导出注（2026-11-12）**：以下研究状态、访问和审查记录属于原 2026-11-06 草案；本次只作本地白名单导出。公开授权不等于人工研究审核、实验通过或生产验收。私有状态描述是历史记录；模板及操作文本仅作资料，不在本次执行。转换与排除见 [导出清单](export-manifest.json)。
 
 
-导航：[report](research-overview.md) · [从工程思维到工程判断力_深化研究报告](../../../book/05-engineering-judgment.md) · [sources](sources.md) · [plan](research-plan.md)
+导航：[report](research-overview.md) · [从工程思维到工程判断力_深化研究报告](../../../book/part1-method/1-3-engineering-judgment.md) · [sources](sources.md) · [plan](research-plan.md)
 
 ## 1. 审查对象与权限
 

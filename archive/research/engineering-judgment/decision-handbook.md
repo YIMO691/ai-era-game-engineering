@@ -10,7 +10,7 @@ status: draft
 > **公开导出注（2026-11-12）**：以下研究状态、访问和审查记录属于原 2026-11-06 草案；本次只作本地白名单导出。公开授权不等于人工研究审核、实验通过或生产验收。私有状态描述是历史记录；模板及操作文本仅作资料，不在本次执行。转换与排除见 [导出清单](export-manifest.json)。
 
 
-导航：[从工程思维到工程判断力_深化研究报告](../../../book/05-engineering-judgment.md) · [工程判断案例库](../../../book/appendix-d-cases.md) · [工程判断实践模板包](../../../book/appendix-g-record-templates.md) · [sources](sources.md)
+导航：[从工程思维到工程判断力_深化研究报告](../../../book/part1-method/1-3-engineering-judgment.md) · [工程判断案例库](../../../book/appendix-d-cases.md) · [工程判断实践模板包](../../../book/appendix-g-record-templates.md) · [sources](sources.md)
 
 > **important** — 使用契约
 > 本手册的 M2、M4、M5、Tier、停止规则与分数解释均为**研究综合模型/实践建议**，不是国际标准或经心理测量验证的量表。来源阅读与运行验证缺口见 [review](research-review.md)。数字示例是教学假设，不是项目实测。
@@ -179,7 +179,7 @@ status: draft
 7. 实施前写可反驳预测；分小步，跑对应验证。
 8. 复盘：补充模型和条件规则，不把一次经验升级成通用法则。
 
-三个完整场景见 [从工程思维到工程判断力_深化研究报告 — 7. 三个成熟 Unity/C# 项目推演](../../../book/05-engineering-judgment.md)；它们是训练推演，不是企业实测案例。
+三个完整场景见 [从工程思维到工程判断力_深化研究报告 — 7. 三个成熟 Unity/C# 项目推演](../../../book/part1-method/1-3-engineering-judgment.md)；它们是训练推演，不是企业实测案例。
 
 ## 11. 模板入口与训练
 

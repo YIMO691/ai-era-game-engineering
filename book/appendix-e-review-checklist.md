@@ -2,7 +2,7 @@
 
 *原题：游戏客户端日常编码与 Code Review 清单*
 
-> **用途**：第4章的日常版本：必须修复、需要讨论、可选风格三档。
+> **用途**：第7.1章的日常版本：必须修复、需要讨论、可选风格三档。
 
 只评审本次改动及必要上下文，不顺手改造整个历史项目。清单是提醒漏项的工具，不是“勾完即正确”的认证。规则依据与限制见 [来源](../archive/research/client-code-quality/sources.md)、[指南](../archive/research/client-code-quality/code-quality-guide.md)。
 

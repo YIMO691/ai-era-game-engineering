@@ -12,21 +12,21 @@
 
 | 文件 | 内容与退役理由 | 对应章节 |
 |---|---|---|
-| [decision-handbook.md](research/engineering-judgment/decision-handbook.md) | 第5章的完整版：M2/M5 模型、分级协议、抽象与重构、技术债 | 第5章 |
-| [source-reading-handbook.md](research/engineering-judgment/source-reading-handbook.md) | 进入陌生工程、阅读源码与还原设计理由的方法 | 第5章 |
+| [decision-handbook.md](research/engineering-judgment/decision-handbook.md) | 第1.3章的完整版：M2/M5 模型、分级协议、抽象与重构、技术债 | 第1.3章 |
+| [source-reading-handbook.md](research/engineering-judgment/source-reading-handbook.md) | 进入陌生工程、阅读源码与还原设计理由的方法 | 第1.3章 |
 | [human-ai-collaboration-handbook.md](research/engineering-judgment/human-ai-collaboration-handbook.md) | 人机职责矩阵、委派合同与独立验证阶梯 | 第5、6章 |
-| [training-and-assessment-handbook.md](research/engineering-judgment/training-and-assessment-handbook.md) | 十四域×五级与十二周训练设计（未验证） | 第5章 |
-| [code-quality-guide.md](research/client-code-quality/code-quality-guide.md) | 第4章的实用指南版，与正文和附录E重叠 | 第4章 |
-| [unity-csharp-examples.md](research/client-code-quality/unity-csharp-examples.md) | 4 个固定源码案例与 7 个原创教学案例 | 第4章 |
-| [training-route.md](research/client-code-quality/training-route.md) | 质量训练路线（未执行） | 第4章 |
-| [ui-lifecycle-and-craft.md](research/code-aesthetics/guides/ui-lifecycle-and-craft.md) | UI 生命周期与工艺的实践指南 | 第2章 |
-| [capability-matrix.md](research/ai-code-quality-workflow/capability-matrix.md) | 候选工具的能力矩阵 | 第6章 |
-| [adoption-plan.md](research/ai-code-quality-workflow/adoption-plan.md) | 采用方案（设计，未执行） | 第6章 |
-| [claude-code-configuration.md](research/ai-code-quality-workflow/claude-code-configuration.md) | 配置设计（设计，未部署） | 第6章 |
-| [implementation-guide.md](research/ai-code-quality-workflow/implementation-guide.md) | 实施指南（设计，未执行） | 第6章 |
-| [unity-csharp-adaptation.md](research/ai-code-quality-workflow/unity-csharp-adaptation.md) | 工作链的 Unity/C# 适配 | 第6章 |
-| [PROJECT-CONTRACT-TEMPLATE.md](research/ai-cqep/PROJECT-CONTRACT-TEMPLATE.md) | 项目工程契约模板 | 第7章 |
-| [CLAUDE-ADOPTION.md](research/ai-cqep/CLAUDE-ADOPTION.md) | 协议的采用说明与任务模板 | 第7章 |
+| [training-and-assessment-handbook.md](research/engineering-judgment/training-and-assessment-handbook.md) | 十四域×五级与十二周训练设计（未验证） | 第1.3章 |
+| [code-quality-guide.md](research/client-code-quality/code-quality-guide.md) | 第7.1章的实用指南版，与正文和附录E重叠 | 第7.1章 |
+| [unity-csharp-examples.md](research/client-code-quality/unity-csharp-examples.md) | 4 个固定源码案例与 7 个原创教学案例 | 第7.1章 |
+| [training-route.md](research/client-code-quality/training-route.md) | 质量训练路线（未执行） | 第7.1章 |
+| [ui-lifecycle-and-craft.md](research/code-aesthetics/guides/ui-lifecycle-and-craft.md) | UI 生命周期与工艺的实践指南 | 第1.2章 |
+| [capability-matrix.md](research/ai-code-quality-workflow/capability-matrix.md) | 候选工具的能力矩阵 | 第8.1章 |
+| [adoption-plan.md](research/ai-code-quality-workflow/adoption-plan.md) | 采用方案（设计，未执行） | 第8.1章 |
+| [claude-code-configuration.md](research/ai-code-quality-workflow/claude-code-configuration.md) | 配置设计（设计，未部署） | 第8.1章 |
+| [implementation-guide.md](research/ai-code-quality-workflow/implementation-guide.md) | 实施指南（设计，未执行） | 第8.1章 |
+| [unity-csharp-adaptation.md](research/ai-code-quality-workflow/unity-csharp-adaptation.md) | 工作链的 Unity/C# 适配 | 第8.1章 |
+| [PROJECT-CONTRACT-TEMPLATE.md](research/ai-cqep/PROJECT-CONTRACT-TEMPLATE.md) | 项目工程契约模板 | 第8.2章 |
+| [CLAUDE-ADOPTION.md](research/ai-cqep/CLAUDE-ADOPTION.md) | 协议的采用说明与任务模板 | 第8.2章 |
 
 ## 二、研究记录：来源、证据与审校
 
@@ -35,27 +35,27 @@
 | 文件 | 内容与退役理由 |
 |---|---|
 | [sources.md](research/sources.md) | 早期两份原始报告的来源缺口登记（含 Q-01/Q-02） |
-| [sources.md](research/unity-task-lifetime/sources.md) | 第3章的来源登记 |
-| [plan.md](research/unity-task-lifetime/plan.md) | 第3章原研究计划 |
-| [review.md](research/unity-task-lifetime/review.md) | 第3章原审查记录 |
-| [sources.md](research/client-code-quality/sources.md) | 第4章的来源登记 |
-| [third-party-notices.md](research/client-code-quality/third-party-notices.md) | 第4章引用的第三方材料声明 |
-| [plan.md](research/client-code-quality/plan.md) | 第4章原研究计划 |
-| [review.md](research/client-code-quality/review.md) | 第4章原审查记录 |
-| [sources.md](research/engineering-judgment/sources.md) | 第5章的完整书目、版本与允许措辞 |
-| [research-plan.md](research/engineering-judgment/research-plan.md) | 第5章原研究计划 |
-| [research-review.md](research/engineering-judgment/research-review.md) | 第5章审查结果与剩余阻塞 |
-| [baseline-audit.md](research/engineering-judgment/baseline-audit.md) | 第5章对早期四份基线的审计 |
+| [sources.md](research/unity-task-lifetime/sources.md) | 第3.1章的来源登记 |
+| [plan.md](research/unity-task-lifetime/plan.md) | 第3.1章原研究计划 |
+| [review.md](research/unity-task-lifetime/review.md) | 第3.1章原审查记录 |
+| [sources.md](research/client-code-quality/sources.md) | 第7.1章的来源登记 |
+| [third-party-notices.md](research/client-code-quality/third-party-notices.md) | 第7.1章引用的第三方材料声明 |
+| [plan.md](research/client-code-quality/plan.md) | 第7.1章原研究计划 |
+| [review.md](research/client-code-quality/review.md) | 第7.1章原审查记录 |
+| [sources.md](research/engineering-judgment/sources.md) | 第1.3章的完整书目、版本与允许措辞 |
+| [research-plan.md](research/engineering-judgment/research-plan.md) | 第1.3章原研究计划 |
+| [research-review.md](research/engineering-judgment/research-review.md) | 第1.3章审查结果与剩余阻塞 |
+| [baseline-audit.md](research/engineering-judgment/baseline-audit.md) | 第1.3章对早期四份基线的审计 |
 | [ai-evidence-notes.md](research/engineering-judgment/ai-evidence-notes.md) | AI 实证研究的阅读笔记 |
 | [cognition-evidence-notes.md](research/engineering-judgment/cognition-evidence-notes.md) | 认知与学习文献的检索笔记（仅片段） |
 | [unity-source-evidence-notes.md](research/engineering-judgment/unity-source-evidence-notes.md) | UniTask 与 NGO 源码证据笔记 |
-| [sources.md](research/ai-code-quality-workflow/sources.md) | 第6章的来源登记 |
-| [evidence-official.md](research/ai-code-quality-workflow/evidence-official.md) | 第6章取证附录：官方生态 |
-| [evidence-ecc.md](research/ai-code-quality-workflow/evidence-ecc.md) | 第6章取证附录：ECC |
-| [evidence-openhands.md](research/ai-code-quality-workflow/evidence-openhands.md) | 第6章取证附录：OpenHands |
-| [evidence-tools.md](research/ai-code-quality-workflow/evidence-tools.md) | 第6章取证附录：质量工具 |
-| [review.md](research/ai-code-quality-workflow/review.md) | 第6章原审查记录 |
-| [evidence-notes.md](research/code-aesthetics/final/evidence-notes.md) | 第2章的证据与取舍说明 |
+| [sources.md](research/ai-code-quality-workflow/sources.md) | 第8.1章的来源登记 |
+| [evidence-official.md](research/ai-code-quality-workflow/evidence-official.md) | 第8.1章取证附录：官方生态 |
+| [evidence-ecc.md](research/ai-code-quality-workflow/evidence-ecc.md) | 第8.1章取证附录：ECC |
+| [evidence-openhands.md](research/ai-code-quality-workflow/evidence-openhands.md) | 第8.1章取证附录：OpenHands |
+| [evidence-tools.md](research/ai-code-quality-workflow/evidence-tools.md) | 第8.1章取证附录：质量工具 |
+| [review.md](research/ai-code-quality-workflow/review.md) | 第8.1章原审查记录 |
+| [evidence-notes.md](research/code-aesthetics/final/evidence-notes.md) | 第1.2章的证据与取舍说明 |
 | [sources.md](research/code-aesthetics/evidence/sources.md) | 代码优美论的来源登记 |
 | [conclusion.md](research/code-aesthetics/audit/conclusion.md) | 代码优美论内容审校结论 |
 | [claim-evidence-matrix.md](research/code-aesthetics/audit/claim-evidence-matrix.md) | 代码优美论主张—证据矩阵 |
@@ -89,16 +89,16 @@
 | 文件 | 内容与退役理由 |
 |---|---|
 | [README.md](research/README.md) | 旧的研究专题目录，由本书目录取代 |
-| [README.md](research/unity-task-lifetime/README.md) | 旧专题入口，由第3章导读取代 |
-| [README.md](research/client-code-quality/README.md) | 旧专题入口，由第4章导读取代 |
-| [README.md](research/engineering-judgment/README.md) | 旧专题入口，由第5章导读取代；含运行模型名（见决策记录 P4） |
-| [README.md](research/ai-code-quality-workflow/README.md) | 旧专题入口，由第6章导读取代 |
-| [README.md](research/ai-cqep/README.md) | 旧专题入口，由第7章导读取代 |
-| [README.md](research/code-aesthetics/README.md) | 旧专题入口，由第2章导读取代 |
-| [research-overview.md](research/engineering-judgment/research-overview.md) | 第5章的摘要版，与正文重复 |
-| [blog.md](research/unity-task-lifetime/blog.md) | 第3章的教学文章版，与正文重复 |
+| [README.md](research/unity-task-lifetime/README.md) | 旧专题入口，由第3.1章导读取代 |
+| [README.md](research/client-code-quality/README.md) | 旧专题入口，由第7.1章导读取代 |
+| [README.md](research/engineering-judgment/README.md) | 旧专题入口，由第1.3章导读取代；含运行模型名（见决策记录 P4） |
+| [README.md](research/ai-code-quality-workflow/README.md) | 旧专题入口，由第8.1章导读取代 |
+| [README.md](research/ai-cqep/README.md) | 旧专题入口，由第8.2章导读取代 |
+| [README.md](research/code-aesthetics/README.md) | 旧专题入口，由第1.2章导读取代 |
+| [research-overview.md](research/engineering-judgment/research-overview.md) | 第1.3章的摘要版，与正文重复 |
+| [blog.md](research/unity-task-lifetime/blog.md) | 第3.1章的教学文章版，与正文重复 |
 | [late-icon-callback-tutorial.md](research/engineering-judgment/late-icon-callback-tutorial.md) | 迟到回调教程，与第2、3章案例重复 |
-| [roadmap.md](docs/roadmap.md) | 早期路线图，由第8章“下一阶段议程”取代 |
+| [roadmap.md](docs/roadmap.md) | 早期路线图，由第1.4章“下一阶段议程”取代 |
 | [knowledge-architecture.md](docs/knowledge-architecture.md) | 知识库架构设计，由“整理成一本书”的决定取代（决策记录 D-005） |
 | [README.md](knowledge/README.md) | 生成的知识地图，由本书目录与附录C取代 |
 | [claims.json](knowledge/claims.json) | 命题登记数据，内容已写入附录C |

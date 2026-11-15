@@ -2,13 +2,13 @@
 
 *原题：AI-CQEP 日常精简协议*
 
-> **用途**：第7章协议的日常版本，一页可读完。
+> **用途**：第8.2章协议的日常版本，一页可读完。
 
-> **状态**：待审核提案，与[第7章（核心协议）](07-ai-cqep-protocol.md) 0.2.0 同步；是通用模板，不是任何项目的实际配置，不会自动覆盖项目现行流程或增加操作授权。来源与排除边界见 [README](../archive/research/ai-cqep/README.md) 和 [导出清单](../archive/research/ai-cqep/export-manifest.json)。
+> **状态**：待审核提案，与[第8.2章（核心协议）](part8-ai-team/8-2-ai-cqep-protocol.md) 0.2.0 同步；是通用模板，不是任何项目的实际配置，不会自动覆盖项目现行流程或增加操作授权。来源与排除边界见 [README](../archive/research/ai-cqep/README.md) 和 [导出清单](../archive/research/ai-cqep/export-manifest.json)。
 
 **日常主线：需求 → 有项目依据的方法级方案 → 一次整体人工审核 → 逐功能点实现 → 代码审查与联调 → 提测。** 本页用于查工作方式，不是每次需求必须重读或逐条提交的合规表。稳定项目规范由 AI 主动执行，不让人反复确认命名、注释、排版等已有约定。
 
-细则见 [第7章（核心协议）](07-ai-cqep-protocol.md)；已有规范就是 [项目工程契约](../archive/research/ai-cqep/PROJECT-CONTRACT-TEMPLATE.md) 的事实来源，不必重填模板；采用与现成文档映射见 [采用说明](../archive/research/ai-cqep/CLAUDE-ADOPTION.md)。
+细则见 [第8.2章（核心协议）](part8-ai-team/8-2-ai-cqep-protocol.md)；已有规范就是 [项目工程契约](../archive/research/ai-cqep/PROJECT-CONTRACT-TEMPLATE.md) 的事实来源，不必重填模板；采用与现成文档映射见 [采用说明](../archive/research/ai-cqep/CLAUDE-ADOPTION.md)。
 
 ## 1. 先确定当前任务处于哪里
 

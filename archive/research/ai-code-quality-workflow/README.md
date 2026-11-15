@@ -4,7 +4,7 @@
 
 ## 阅读顺序
 
-1. [研究报告](../../../book/06-ai-quality-chain.md)与[能力矩阵](capability-matrix.md)：结论、候选职责及取舍。
+1. [研究报告](../../../book/part8-ai-team/8-1-ai-quality-chain.md)与[能力矩阵](capability-matrix.md)：结论、候选职责及取舍。
 2. [采用方案](adoption-plan.md)、[配置设计](claude-code-configuration.md)、[实施指南](implementation-guide.md)：尚未执行的实践设计与通用模板，不是实际配置或操作授权。
 3. [Unity/C# 适配](unity-csharp-adaptation.md)：环境、生命周期、资源与验证责任。
 4. [来源登记](sources.md)与取证附录：[官方生态](evidence-official.md)、[ECC](evidence-ecc.md)、[OpenHands](evidence-openhands.md)、[质量工具](evidence-tools.md)。

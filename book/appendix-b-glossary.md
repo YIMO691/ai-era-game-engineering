@@ -2,19 +2,19 @@
 
 > **用途**：各章用词不同、所指相近的概念在这里对齐，也区分了名称相同、含义不同的概念。
 
-本附录对齐各章中名称不同、所指相近的概念，并区分名称相同、含义不同的概念。它是阅读索引，不是新的标准：每个术语的权威定义仍以所列来源文档为准；对齐关系是[第8章](08-ownership-evidence-bound.md)提出的综合推论，未经人工研究审核。
+本附录对齐各章中名称不同、所指相近的概念，并区分名称相同、含义不同的概念。它是阅读索引，不是新的标准：每个术语的权威定义仍以所列来源文档为准；对齐关系是[第1.4章](part1-method/1-4-ownership-evidence-bound.md)提出的综合推论，未经人工研究审核。
 
 ## 1. 所有权与生命周期
 
 | 本页用语 | 各专题中的写法 | 含义 | 来源 |
 |---|---|---|---|
-| 执行位置 | 执行位置、owner线程、执行上下文 | 当前代码在哪个线程或调度上下文运行，能否调用目标API | [第3章（Unity任务生命周期）](03-the-late-result.md) |
-| 提交资格 | 提交资格、写入资格、业务有效期、当前有效请求 | 一个结果此刻是否仍有权改变owner的状态 | [第3章（Unity任务生命周期）](03-the-late-result.md)、[第2章（代码优美论）](02-why-write-good-code.md) |
-| 请求身份 | 请求代次、请求标识、展示代次、业务会话身份 | 用于判断提交资格的身份；同一实例重开、归池复用或切换目标时更新 | [第7章（AI-CQEP）](07-ai-cqep-protocol.md)、[第5章（工程判断）](05-engineering-judgment.md) |
-| 资源归属 | 资源归属、ownership、释放责任 | 某份需要释放的结果此刻由producer、接收路径还是owner负责 | [第3章（Unity任务生命周期）](03-the-late-result.md)、[第4章（客户端代码质量）](04-client-code-quality.md) |
-| 交接点 | 接管、Adopt、责任转移点 | 资源归属从接收路径转移到owner的唯一时刻；失败时保持原归属 | [第3章（Unity任务生命周期）](03-the-late-result.md) |
-| 取消 | 请求取消、Cancel | 请求减少不再需要的工作；不证明工作已停止、不会返回资源或无需清理 | [第3章（Unity任务生命周期）](03-the-late-result.md) |
-| 停止等待 | 超时、调用方不再等待 | 调用方不再等待结果；后台工作可能仍在进行，迟到结果仍需接收与清理 | [第4章（客户端代码质量）](04-client-code-quality.md) |
+| 执行位置 | 执行位置、owner线程、执行上下文 | 当前代码在哪个线程或调度上下文运行，能否调用目标API | [第3.1章（Unity任务生命周期）](part3-system/3-1-the-late-result.md) |
+| 提交资格 | 提交资格、写入资格、业务有效期、当前有效请求 | 一个结果此刻是否仍有权改变owner的状态 | [第3.1章（Unity任务生命周期）](part3-system/3-1-the-late-result.md)、[第1.2章（代码优美论）](part1-method/1-2-why-write-good-code.md) |
+| 请求身份 | 请求代次、请求标识、展示代次、业务会话身份 | 用于判断提交资格的身份；同一实例重开、归池复用或切换目标时更新 | [第8.2章（AI-CQEP）](part8-ai-team/8-2-ai-cqep-protocol.md)、[第1.3章（工程判断）](part1-method/1-3-engineering-judgment.md) |
+| 资源归属 | 资源归属、ownership、释放责任 | 某份需要释放的结果此刻由producer、接收路径还是owner负责 | [第3.1章（Unity任务生命周期）](part3-system/3-1-the-late-result.md)、[第7.1章（客户端代码质量）](part7-craft/7-1-client-code-quality.md) |
+| 交接点 | 接管、Adopt、责任转移点 | 资源归属从接收路径转移到owner的唯一时刻；失败时保持原归属 | [第3.1章（Unity任务生命周期）](part3-system/3-1-the-late-result.md) |
+| 取消 | 请求取消、Cancel | 请求减少不再需要的工作；不证明工作已停止、不会返回资源或无需清理 | [第3.1章（Unity任务生命周期）](part3-system/3-1-the-late-result.md) |
+| 停止等待 | 超时、调用方不再等待 | 调用方不再等待结果；后台工作可能仍在进行，迟到结果仍需接收与清理 | [第7.1章（客户端代码质量）](part7-craft/7-1-client-code-quality.md) |
 | 完成／消费／复用 | 终态、GetResult、TryReturn、归池 | 逻辑终态、带清理副作用的消费、物理复用是三件事 | [附录D（工程判断案例库）](appendix-d-cases.md) |
 
 贯穿原则：**不再需要不等于不再负责**；对象仍有效不等于请求仍有效。
@@ -23,7 +23,7 @@
 
 三套分级的触发逻辑相近，但适用场景不同，不能互换名称。AI-CQEP的L/M/H是**变更风险**，与下一节能力等级中的L1–L5无关。
 
-| 大致对应 | [工程判断Tier](../archive/research/engineering-judgment/decision-handbook.md) | [附录F（AI-CQEP风险）](appendix-f-ai-cqep-quick-reference.md) | [第2章（代码优美论判断卡）](02-why-write-good-code.md) |
+| 大致对应 | [工程判断Tier](../archive/research/engineering-judgment/decision-handbook.md) | [附录F（AI-CQEP风险）](appendix-f-ai-cqep-quick-reference.md) | [第1.2章（代码优美论判断卡）](part1-method/1-2-why-write-good-code.md) |
 |---|---|---|---|
 | 低 | Tier 1：已知路径、局部、低后果、可恢复；四问短卡 | L：局部、已知、可逆；自查；常规功能仍先审方案 | 几句话说明问题、约束、选择、依据、停止 |
 | 中 | Tier 2：新状态、异步、配置或协议交互，多个owner；一页决策与验证矩阵 | M：重要协作、错误路径、异步或事件有效期；定向独立审阅 | 随风险与不可逆性增加记录与验证 |
@@ -52,7 +52,7 @@
 | 来源 | 写法 |
 |---|---|
 | [工程判断](../archive/research/engineering-judgment/decision-handbook.md) | S1理解够用；S2决策稳定；S3风险可控；S4验证可反驳；S5边际收益下降；S6责任明确 |
-| [第2章（代码优美论）](02-why-write-good-code.md) | 目标已达到；剩余收益无具体依据且成本超预算；新证据显示负担正转移到更重要处 |
+| [第1.2章（代码优美论）](part1-method/1-2-why-write-good-code.md) | 目标已达到；剩余收益无具体依据且成本超预算；新证据显示负担正转移到更重要处 |
 | [附录F（AI-CQEP）](appendix-f-ai-cqep-quick-reference.md) | 开发验证完成、提测就绪、QA通过、发布许可是四个不同的“完成” |
 
 ## 5. 状态词表

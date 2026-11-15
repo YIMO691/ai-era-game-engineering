@@ -2,7 +2,7 @@
 
 > **用途**：本书各章共同遵守的证据规则：陈述的四种类型、实验的最低记录要求，以及何时修订结论。
 
-研究单位是一个可回答、可证伪的问题，而不是一套新的能力框架。[第1章（项目宗旨）](01-from-code-to-responsibility.md)界定研究目的与核心问题；[原始深度研究报告](../archive/imports/manifesto.md)提供待检验的研究输入，其中 L1–L4 不是行业标准。宗旨所列来源及两份报告的核验边界见[导入说明](../archive/imports/import-notes.md)。
+研究单位是一个可回答、可证伪的问题，而不是一套新的能力框架。[第1.1章（项目宗旨）](part1-method/1-1-from-code-to-responsibility.md)界定研究目的与核心问题；[原始深度研究报告](../archive/imports/manifesto.md)提供待检验的研究输入，其中 L1–L4 不是行业标准。宗旨所列来源及两份报告的核验边界见[导入说明](../archive/imports/import-notes.md)。
 
 ## 最小闭环
 

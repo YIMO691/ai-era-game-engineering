@@ -56,4 +56,4 @@
 
 建议而非实测最优：**现有Claude Code + 一份短项目契约/任务卡 + 旧材料按需读取 + 已有编译/测试/格式与Unity分析器盘点 + 风险定向只读审查 + 一份反馈记录**。不需要新Agent runtime、数据库、Hook或专用Skill。候选都不是这一组合的强制安装项。
 
-详见[采用方案](adoption-plan.md)；八问与证据推理见[研究报告](../../../book/06-ai-quality-chain.md)。没有单项工具能覆盖十二项，也没有本轮数据支持“多个Agent一定更好”。
+详见[采用方案](adoption-plan.md)；八问与证据推理见[研究报告](../../../book/part8-ai-team/8-1-ai-quality-chain.md)。没有单项工具能覆盖十二项，也没有本轮数据支持“多个Agent一定更好”。

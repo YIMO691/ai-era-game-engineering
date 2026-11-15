@@ -2,11 +2,11 @@
 
 *原题：工程判断案例库（v0.9）*
 
-> **用途**：第5章所用 C1（UniTask）、C2（NGO）源码案例的完整路径、版本、反例与练习，以及仍待补全的案例。
+> **用途**：第1.3章所用 C1（UniTask）、C2（NGO）源码案例的完整路径、版本、反例与练习，以及仍待补全的案例。
 
 > **说明**：本附录原为 2026-11-06 的研究草案，状态记录属于当时；人工研究审核尚未发生。
 
-导航：[第5章](05-engineering-judgment.md) · [成熟项目源码阅读与设计还原手册](../archive/research/engineering-judgment/source-reading-handbook.md) · [工程判断模型与决策手册](../archive/research/engineering-judgment/decision-handbook.md) · [sources](../archive/research/engineering-judgment/sources.md)
+导航：[第1.3章](part1-method/1-3-engineering-judgment.md) · [成熟项目源码阅读与设计还原手册](../archive/research/engineering-judgment/source-reading-handbook.md) · [工程判断模型与决策手册](../archive/research/engineering-judgment/decision-handbook.md) · [sources](../archive/research/engineering-judgment/sources.md)
 
 > **warning** — 不能把六个真实项目误报为六个已完成案例
 > **C1、C2 已由研究子任务读取固定源码、相关测试与公开讨论，可作静态源码案例；没有编译或运行。C3–C6 只完成真实项目检索与待核案例分析，必要正文/源码仍不可得，不满足完整一手案例验收。**本库不以虚构结果填满这些缺口。所有练习是题设，建议 oracle 是静态预期/验证设计，不是实际通过记录。

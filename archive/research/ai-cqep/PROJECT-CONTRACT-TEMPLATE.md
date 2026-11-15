@@ -6,7 +6,7 @@
 >
 > 以下是候选模板，不是任何真实工程的事实、授权或可执行配置。`<待填>` 不能作为命令执行，示例不是默认值；新增政策须由有权维护者确认，已生效的规则无需为采用本协议重新审批。
 
-通用决策与证据义务见 [核心协议](../../../book/07-ai-cqep-protocol.md)；日常执行见 [精简协议](../../../book/appendix-f-ai-cqep-quick-reference.md)；接入 Claude Code 见 [采用说明](CLAUDE-ADOPTION.md)。
+通用决策与证据义务见 [核心协议](../../../book/part8-ai-team/8-2-ai-cqep-protocol.md)；日常执行见 [精简协议](../../../book/appendix-f-ai-cqep-quick-reference.md)；接入 Claude Code 见 [采用说明](CLAUDE-ADOPTION.md)。
 
 ## 使用方式：已有入口优先，缺口按需补充
 

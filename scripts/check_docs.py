@@ -168,7 +168,7 @@ def check_repository(root):
             visible, _ = prose(readme.read_text(encoding="utf-8"))
             targets = {match[1] for match in LINK.finditer(visible)}
             book = root / BOOK
-            chapters = sorted(p.relative_to(root).as_posix() for p in book.glob("*.md")) if book.is_dir() else []
+            chapters = sorted(p.relative_to(root).as_posix() for p in book.rglob("*.md")) if book.is_dir() else []
             errors.extend(f"README navigation missing: {name}" for name in (*chapters, *NAVIGATION)
                           if name not in targets)
         except UnicodeError:

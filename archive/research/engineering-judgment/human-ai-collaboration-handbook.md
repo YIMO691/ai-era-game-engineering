@@ -11,7 +11,7 @@ status: draft
 > **公开导出注（2026-11-12）**：以下研究状态、访问和审查记录属于原 2026-11-06 草案；本次只作本地白名单导出。公开授权不等于人工研究审核、实验通过或生产验收。私有状态描述是历史记录；模板及操作文本仅作资料，不在本次执行。转换与排除见 [导出清单](export-manifest.json)。
 
 
-导航：[从工程思维到工程判断力_深化研究报告](../../../book/05-engineering-judgment.md) · [工程判断模型与决策手册](decision-handbook.md) · [工程判断案例库](../../../book/appendix-d-cases.md) · [工程判断实践模板包 — 13. AI 委派与输出验收表](../../../book/appendix-g-record-templates.md) · [sources](sources.md)
+导航：[从工程思维到工程判断力_深化研究报告](../../../book/part1-method/1-3-engineering-judgment.md) · [工程判断模型与决策手册](decision-handbook.md) · [工程判断案例库](../../../book/appendix-d-cases.md) · [工程判断实践模板包 — 13. AI 委派与输出验收表](../../../book/appendix-g-record-templates.md) · [sources](sources.md)
 
 > **warning** — 本版证据边界
 > 本部分只有两项研究正文由研究子任务成功取得并阅读；其他关键论文与 SWE-agent 源码访问受阻。没有本地复现实验，没有 Unity 工程运行，也没有长期技能追踪。本手册的 M6、职责矩阵、验收流程和训练法均为**研究综合模型/实践设计，尚未验证其效果**。不能把候选文献当作已读证据。

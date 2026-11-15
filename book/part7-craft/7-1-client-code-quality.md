@@ -1,10 +1,10 @@
-# 第4章　客户端代码质量
+# 7.1　客户端代码质量
 
 *原题：游戏客户端代码质量与工程审美研究报告*
 
-> **本章导读**：第3章处理的是一个具体的生命周期问题。本章把视野放大到整段客户端代码：功能正确的代码为什么仍然难读、难改？本章按命名、函数、类与模块、抽象、注释、性能、可测试性逐层展开，并单独讨论 Unity 中最容易把“漂亮”误当成“安全”的地方。
+> **本章导读**：第七篇讨论代码与工艺。第3.1章处理的是一个具体的生命周期问题，本章把视野放大到整段客户端代码：功能正确的代码为什么仍然难读、难改？本章按命名、函数、类与模块、抽象、注释、性能、可测试性逐层展开，并单独讨论 Unity 中最容易把“漂亮”误当成“安全”的地方。
 
-> **本章证据状态**：已读官方 C# 规范、分析器与类库设计原稿，固定版本的 .NET Queue/Select 源码、Graphics RTHandle 关联实现、MonoGame 集合事件实现，并复用前题固定 Unity reference 记录（CQ 编号与读取范围见[来源登记](../archive/research/client-code-quality/sources.md)）。四本指定经典未完整阅读：Ousterhout、Fowler、Pragmatic Bookshelf 的合法公开原文候选访问受阻（CQ-09–12），Clean Code 未取得原文（CQ-13），因此本报告不是这些书的已核验综述，也不转述其论证。所有代码未编译、未运行，没有 Unity、Profiler 或读者实验数据。人工研究审核 pending。
+> **本章证据状态**：已读官方 C# 规范、分析器与类库设计原稿，固定版本的 .NET Queue/Select 源码、Graphics RTHandle 关联实现、MonoGame 集合事件实现，并复用前题固定 Unity reference 记录（CQ 编号与读取范围见[来源登记](../../archive/research/client-code-quality/sources.md)）。四本指定经典未完整阅读：Ousterhout、Fowler、Pragmatic Bookshelf 的合法公开原文候选访问受阻（CQ-09–12），Clean Code 未取得原文（CQ-13），因此本报告不是这些书的已核验综述，也不转述其论证。所有代码未编译、未运行，没有 Unity、Profiler 或读者实验数据。人工研究审核 pending。
 
 ## 结论
 
@@ -133,7 +133,7 @@ DRY、YAGNI、KISS 在这里只作为思考提示，不以未读书籍的引文�
 
 ### 8.2 异步与资源
 
-前题 CQ-08 区分了执行位置、提交资格与资源交接（详见 [第3章（Unity 异步任务生命周期）](03-the-late-result.md)）。名字带 `Async`、传了 token、await 后判空，都不足以独立证明旧请求不能改新状态。必须问：谁观察异常，谁清理生产者未交出的资源，谁接收迟到结果，何时成功接管。
+前题 CQ-08 区分了执行位置、提交资格与资源交接（详见 [第3.1章（Unity 异步任务生命周期）](../part3-system/3-1-the-late-result.md)）。名字带 `Async`、传了 token、await 后判空，都不足以独立证明旧请求不能改新状态。必须问：谁观察异常，谁清理生产者未交出的资源，谁接收迟到结果，何时成功接管。
 
 CQ-06 给出了具体的所有权例子〔源码〕：RenderTexture 的 `Alloc` 入口默认借用，`Release` 有条件地请求销毁。不要把所有资源清理压成一种 `Dispose` 模板；Graphics 主线包 17.7.0 与 6000.0.85f2 的兼容未验证，其实现细节不能外推到所有 Unity 资源。
 
@@ -202,19 +202,19 @@ CQ-05 的 `Select` 实际存在按输入类型、空集合、优化开关的分�
 1. **写前**：几句话说明意图、状态 owner、主流程、失败与项目约束。
 2. **写时**：让名称、类型、顺序兑现这些说明；只在形成真实知识边界时提取，比较“不改”候选。
 3. **自查**：沿正常、拒绝、异常、取消、重入或重复、退出路径追一次数据与资源。
-4. **审查**：先正确性与硬契约（A 必须修复），再设计讨论（B 需要讨论，须附替代方案与代价），最后可选风格（C）；评论给场景、后果与验证状态，不按审美凑问题。详见[附录E（审查清单）](appendix-e-review-checklist.md)。
+4. **审查**：先正确性与硬契约（A 必须修复），再设计讨论（B 需要讨论，须附替代方案与代价），最后可选风格（C）；评论给场景、后果与验证状态，不按审美凑问题。详见[附录E（审查清单）](../appendix-e-review-checklist.md)。
 5. **修改后**：运行实际需要的测试与设备检查，记录未覆盖项；同步注释与契约；小范围、可回退。
 6. **复盘**：用真实任务修正指南；只有反复出现、现有工具没有覆盖的缺口才考虑固化为规则或 Skill。
 
 ## 交付导航与下一步
 
-- [实用指南](../archive/research/client-code-quality/code-quality-guide.md)：特征、反模式、判断依据、改进动作与适用边界。
-- [代码对照案例](../archive/research/client-code-quality/unity-csharp-examples.md)：4 个固定源码案例、7 个原创教学案例。
-- [附录E（审查清单）](appendix-e-review-checklist.md)：必须修复、需要讨论、可选风格。
-- [训练路线](../archive/research/client-code-quality/training-route.md)：具体任务、交付与验收，尚未执行。
-- [原审查记录](../archive/research/client-code-quality/review.md)。内部 Skill 适配提案未纳入公开导出。
+- [实用指南](../../archive/research/client-code-quality/code-quality-guide.md)：特征、反模式、判断依据、改进动作与适用边界。
+- [代码对照案例](../../archive/research/client-code-quality/unity-csharp-examples.md)：4 个固定源码案例、7 个原创教学案例。
+- [附录E（审查清单）](../appendix-e-review-checklist.md)：必须修复、需要讨论、可选风格。
+- [训练路线](../../archive/research/client-code-quality/training-route.md)：具体任务、交付与验收，尚未执行。
+- [原审查记录](../../archive/research/client-code-quality/review.md)。内部 Skill 适配提案未纳入公开导出。
 
-下一步优先补合法取得的经典原文和一个授权的真实修改任务，检验本指南是否确实帮助理解与修改；不需要先建设新的研究平台。相关：[第6章（AI 代码质量工作流）](06-ai-quality-chain.md)以本报告为质量定义基础；可执行规则见[附录A（工程实践指南）](appendix-a-practice-rules.md)第 5 章。
+下一步优先补合法取得的经典原文和一个授权的真实修改任务，检验本指南是否确实帮助理解与修改；不需要先建设新的研究平台。相关：[第8.1章（AI 代码质量工作流）](../part8-ai-team/8-1-ai-quality-chain.md)以本报告为质量定义基础；可执行规则见[附录A（工程实践指南）](../appendix-a-practice-rules.md)第 5 章。
 
 ## 本章小结
 
@@ -223,7 +223,9 @@ CQ-05 的 `Select` 实际存在按输入类型、空集合、优化开关的分�
 - 抽象的价值在于隐藏了什么知识、减少了什么责任，而不是出现次数。
 - 性能与可读性的取舍必须给出具体成本；可验证的部分与仍属审美的部分要分开。
 
-上一章：[第3章　迟到的结果：谁拒绝，谁释放](03-the-late-result.md)
-下一章：[第5章　工程判断](05-engineering-judgment.md)
+上一章：[3.1　迟到的结果：谁拒绝，谁释放](../part3-system/3-1-the-late-result.md)
+下一章：[8.1　AI 工作链](../part8-ai-team/8-1-ai-quality-chain.md)
 
-返回[目录](../README.md)。
+本章在[学习路线](../roadmap.md)中的位置与尚待学习的相关条目，见对应篇的条目表。
+
+返回[目录](../../README.md)。

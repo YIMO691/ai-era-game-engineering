@@ -1,10 +1,10 @@
-# 第7章　AI-CQEP：一份最小工程协议
+# 8.2　AI-CQEP：一份最小工程协议
 
 *原题：AI Code Quality Engineering Protocol（AI-CQEP）0.2.0*
 
-> **本章导读**：第6章说明了“工作链”的思路，本章把它写成一份可以查阅的协议：八条常驻约束（U1–U8）、六个阶段的责任、按风险裁剪的验证与审查，以及一个完整的 Unity/C# 适配案例。日常使用时可以只看附录F的速查卡，本章是它的完整依据。
+> **本章导读**：第8.1章说明了“工作链”的思路，本章把它写成一份可以查阅的协议：八条常驻约束（U1–U8）、六个阶段的责任、按风险裁剪的验证与审查，以及一个完整的 Unity/C# 适配案例。日常使用时可以只看附录F的速查卡，本章是它的完整依据。
 
-> **本章证据状态**：版本 0.2.0，按真实研发工作流修订的草案（2026-11-06）。这是原稿研究与通用模板，不是任何项目的实际配置；人工研究审核 pending，协议的质量收益没有实验（见第 11 节）。历史检查、未运行项与审查记录保留在章末附录二，不因公开授权而升级。来源与排除边界见 [README](../archive/research/ai-cqep/README.md) 和 [导出清单](../archive/research/ai-cqep/export-manifest.json)。
+> **本章证据状态**：版本 0.2.0，按真实研发工作流修订的草案（2026-11-06）。这是原稿研究与通用模板，不是任何项目的实际配置；人工研究审核 pending，协议的质量收益没有实验（见第 11 节）。历史检查、未运行项与审查记录保留在章末附录二，不因公开授权而升级。来源与排除边界见 [README](../../archive/research/ai-cqep/README.md) 和 [导出清单](../../archive/research/ai-cqep/export-manifest.json)。
 
 > **核心命题：存在可迁移的工程决策顺序，不存在脱离需求、项目与运行环境的万能代码质量解。**
 >
@@ -12,7 +12,7 @@
 
 **使用定位：本文是按需查阅的工程判断依据，不是每次任务的执行脚本。** 正常功能开发先把需求拆成有项目依据的方法级方案，经一次整体人工审核，再逐点实现、审查、联调并提测；稳定项目规范由 AI 主动落实，不让用户逐项监督六阶段。
 
-日常入口：[附录F（精简工作流）](appendix-f-ai-cqep-quick-reference.md)。已有规范优先，缺口才用 [项目工程契约模板](../archive/research/ai-cqep/PROJECT-CONTRACT-TEMPLATE.md)。如何复用现成项目文档：[采用说明](../archive/research/ai-cqep/CLAUDE-ADOPTION.md)。
+日常入口：[附录F（精简工作流）](../appendix-f-ai-cqep-quick-reference.md)。已有规范优先，缺口才用 [项目工程契约模板](../../archive/research/ai-cqep/PROJECT-CONTRACT-TEMPLATE.md)。如何复用现成项目文档：[采用说明](../../archive/research/ai-cqep/CLAUDE-ADOPTION.md)。
 
 ## 协议一览
 
@@ -453,7 +453,7 @@ DRY 的操作目标是避免**同一规则的多处权威**，不是消除所有
 - 验证命令/操作、判定方式、环境限制和性能预算。
 - 允许读取/修改范围、材料处理通道、需人工决定的操作。
 
-**契约是一组有效约束，不是一份必须新建的文件。** 已有项目指令、规则导航、功能手册与验证入口足够时，直接使用；只有必要事实缺口才用 [模板](../archive/research/ai-cqep/PROJECT-CONTRACT-TEMPLATE.md) 的相关部分补充。未知标为未知，示例不变成项目事实，不再维护同义副本。
+**契约是一组有效约束，不是一份必须新建的文件。** 已有项目指令、规则导航、功能手册与验证入口足够时，直接使用；只有必要事实缺口才用 [模板](../../archive/research/ai-cqep/PROJECT-CONTRACT-TEMPLATE.md) 的相关部分补充。未知标为未知，示例不变成项目事实，不再维护同义副本。
 
 文档分工也沿项目已有方式：业务说明维护需求/非目标/验收；实现手册承载分端方法方案及实际实现；验证记录维护审查、联调和真实结果。拟方案须标状态，实施后更新为当前事实；审核决定和经过留原任务记录。项目仅需在采用时确认整体方案审核如何衔接，不为每功能固定增加一份新文档。
 
@@ -697,8 +697,8 @@ R1/R2 登记实际读取的既有研究，不将其上游资料冒充本轮重�
 
 本地溯源入口：
 
-- R1：[第4章（第一轮报告）](04-client-code-quality.md)；[第一轮原始来源与固定链接](../archive/research/client-code-quality/sources.md)；[第一轮审查边界](../archive/research/client-code-quality/review.md)。
-- R2：[第6章（第二轮报告）](06-ai-quality-chain.md)；[第二轮原始来源与固定链接](../archive/research/ai-code-quality-workflow/sources.md)；[第二轮审查边界](../archive/research/ai-code-quality-workflow/review.md)。
+- R1：[第7.1章（第一轮报告）](../part7-craft/7-1-client-code-quality.md)；[第一轮原始来源与固定链接](../../archive/research/client-code-quality/sources.md)；[第一轮审查边界](../../archive/research/client-code-quality/review.md)。
+- R2：[第8.1章（第二轮报告）](8-1-ai-quality-chain.md)；[第二轮原始来源与固定链接](../../archive/research/ai-code-quality-workflow/sources.md)；[第二轮审查边界](../../archive/research/ai-code-quality-workflow/review.md)。
 
 R1/R2：`read_status=read`，`claim_status=继承材料一致性核对与综合`；R3：工作方式要求；R4：原稿自述有界静态观察与采用设计推导，但其材料和范围细节未公开。整体 `experiment_status=not-run`。前两轮具体 SHA、外部原文定位、短摘录与权利限制仍以各自 sources 为唯一登记，不复制清单；R3/R4 的私有记录不随本导出提供；不公开其位置、内容或项目身份。
 
@@ -795,7 +795,9 @@ R1/R2：`read_status=read`，`claim_status=继承材料一致性核对与综合`
 - 每条完成声明都要有对应证据；审查发现要给出条件、路径、后果和依据。
 - 协议能否改善首次质量，目前没有对照数据。
 
-上一章：[第6章　AI 工作链](06-ai-quality-chain.md)
-下一章：[第8章　结语：责任、证据与限度](08-ownership-evidence-bound.md)
+上一章：[8.1　AI 工作链](8-1-ai-quality-chain.md)
+下一章：[附录A　工程实践规则](../appendix-a-practice-rules.md)
 
-返回[目录](../README.md)。
+本章在[学习路线](../roadmap.md)中的位置与尚待学习的相关条目，见对应篇的条目表。
+
+返回[目录](../../README.md)。
