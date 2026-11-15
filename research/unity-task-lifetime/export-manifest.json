@@ -31,7 +31,12 @@
       "transformations": [
         "Convert Obsidian wikilinks to standard file-level relative links.",
         "Convert Obsidian warning callouts to standard Markdown blockquotes."
-      ]
+      ],
+      "public_revision": {
+        "date": "2026-11-15",
+        "sha256": "1a52865b683d832e6dd50e6e53966e40e198a62aa676a759c367559043f79ab7",
+        "note": "公开区修订：按仓库所有者 2026-11-15 的要求在公开区直接改写——合并重复的状态说明、增加结论句或论点一览、压缩措辞；未新增来源，未升级任何审核、实验或证据状态。私有编辑源未同步，此后公开文件与 export_sha256 不再一致，以 public_revision.sha256 为准。"
+      }
     },
     {
       "source_filename": "blog.md",

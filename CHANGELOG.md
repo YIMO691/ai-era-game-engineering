@@ -1,11 +1,12 @@
 # 变更记录
 
-## 2026-11-15 — 专题精编版
+## 2026-11-15 — 专题主文档改写
 
-- 新增[专题精编版](research/digests/README.md)：把六个专题整理成五份统一结构的精编版（代码优美论；AI时代的工程质量，合并AI代码质量工作流与AI-CQEP；客户端代码质量；Unity异步任务生命周期；工程判断与人机协作）。每份按“一句话—核心问题—观点体系—边界—与其他专题的关系—编者注”组织，每个观点标注性质（价值立场、源码、研究、逻辑、推论、设计等），状态只在开头集中声明一次。
-- 保留原有观点与立场，不新增来源或结论；每份末尾的“编者注”列出合并、省略、加重或重新解读之处，待仓库所有者审阅。
-- 专题原文、专题README、来源账本、导出清单与私有编辑源均未修改；精编版是公开区新增的阅读层，与原文冲突时以原文为准。首页、研究专题目录增加入口，检查器把精编版目录列为必备与首页导航并扩展测试。
-- 实际执行（Linux／Python 3.13）：26项unittest通过，`python -I scripts/check_docs.py`退出0，`git diff --check`无输出。远端CI以本次提交的Actions结果为准。
+- 按仓库所有者选择，直接改写六个专题的主文档，而不是另建精编版：[Unity异步任务生命周期](research/unity-task-lifetime/report.md)、[客户端代码质量](research/client-code-quality/research-report.md)、[AI代码质量工作流](research/ai-code-quality-workflow/research-report.md)、[AI-CQEP核心协议](research/ai-cqep/AI-CQEP.md)与[日常精简协议](research/ai-cqep/QUICK-REFERENCE.md)、[工程判断报告](research/engineering-judgment/engineering-judgment-report.md)与[研究入口](research/engineering-judgment/research-overview.md)、[代码优美论](research/code-aesthetics/final/article.md)。
+- 改写内容：分散的导出说明、验收警告与状态提示合并为开头一段“状态”；各节以“本节结论”开头；前三份报告重组了章节与措辞；AI-CQEP 增加“协议一览”；代码优美论只增加“核心论点一览”，正文未动。观点、来源、编号体系（U1–U8、P1–P6、Tier、S1–S6、M1–M7）与证据状态未改，未新增来源。
+- 公开文件与私有编辑源自此分叉：各专题导出清单保留原 `export_sha256`，为修改过的记录新增 `public_revision`（日期、新哈希、说明）。
+- 撤下同一 PR 中先前新增的 `research/digests/`，首页、研究专题目录、检查器与测试同步移除其入口。
+- 实际执行（Linux／Python 3.13）：26项unittest通过，`python -I scripts/check_docs.py`退出0，`git diff --check`无输出。没有运行Unity或文中任何示例；远端CI以本次提交的Actions结果为准。
 
 ## 2026-11-15 — 工程实践指南
 

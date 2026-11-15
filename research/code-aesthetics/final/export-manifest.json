@@ -21,7 +21,12 @@
       "source_filename": "article.md",
       "source_sha256": "c462446567d7e7d0fdf8a5f651e4e55cfc99fa22b42ed7aebd031263a895d502",
       "path": "article.md",
-      "export_sha256": "2eb696ec7e3d8518ca3237c495e9ce5850cdc724aa5ff9a7136f075a0e1dae93"
+      "export_sha256": "2eb696ec7e3d8518ca3237c495e9ce5850cdc724aa5ff9a7136f075a0e1dae93",
+      "public_revision": {
+        "date": "2026-11-15",
+        "sha256": "ff069d170b4b49c0671261a4c815e3914258cbeee35e8fcfa1cf55cba32e50cf",
+        "note": "Public-area revision requested by the repository owner on 2026-11-15: added a core-arguments table before section 1 and a revision note; body text and source notes unchanged; no research status upgraded. The private source was not updated, so the public file no longer matches export_sha256; public_revision.sha256 is authoritative."
+      }
     },
     {
       "source_filename": "evidence-notes.md",
