@@ -9,6 +9,7 @@
 - **用于实践：** [AI时代游戏客户端工程实践指南](docs/engineering-practice-guide.md)。57条带编号的规则，每条注明理由、证据等级、不适用情形和检查方式，附一页检查卡与验证矩阵。
 - **看阶段全貌：** [阶段性综合：责任、证据与限度](docs/stage-review-2026-11.md)。提炼六个专题的五项共同命题与统一框架，评估第一阶段的缺口并给出下一步优先级。
 - **快速读懂每个专题：** 各专题主文档已在开头集中写明状态，每节先给“本节结论”；从[研究专题目录](research/README.md)进入。
+- **按维度查找：** [知识地图](knowledge/README.md)。按领域、读者、责任—证据—限度三轴和命题状态，列出专题与22条跨专题命题；由数据生成，受检查器保障。
 - **按问题查找：** [六个研究专题](research/README.md)。各专题保留自己的来源、适用边界和未验证项。
 
 **文章定稿、公开入库和研究验证是三件事。** 代码优美论v1.0是证据受限的批判性综合文章，不是实证论文；证据状态仍为PARTIAL，人工研究审核待完成，没有运行代码或读者实验。原始导入报告的引用缺口也仍保留，详见[导入与证据缺口说明](docs/import-notes.md)。
@@ -40,17 +41,19 @@
 | 文档 | 用途 |
 |---|---|
 | [研究方法](docs/research-method.md) | 证据规则、实验要求与可复制记录 |
+| [知识库架构](docs/knowledge-architecture.md) | 分层、专题契约、命题登记、知识如何进入与演进 |
+| [决策记录](docs/decisions.md) | 改变结构或编辑约定的决定及理由 |
 | [术语与分级对照](docs/glossary.md) | 对齐各专题的所有权术语、风险分级、能力等级与状态词表 |
 | [来源登记](research/sources.md) | 原始材料缺口及各专题来源入口 |
 | [路线图](docs/roadmap.md) | 早期研究路线与验收条件；当前专题进展以各自入口为准 |
 | [原始深度研究报告](docs/manifesto.md) | 保真研究输入，不等同于项目宗旨或已证实成果 |
 | [历史草稿](docs/historical/deep-research-draft.md) | 追溯早期能力模型，不作为现行标准 |
-| [公开范围与维护](research/PUBLICATION.md) | 白名单导出、单一编辑源及发布边界 |
-| [Obsidian 阅读说明](docs/obsidian.md) | 本地入口与公开快照的关系 |
+| [公开范围与维护](research/PUBLICATION.md) | 白名单导出历史、编辑源变更及发布边界 |
+| [Obsidian 阅读说明](docs/obsidian.md) | 本地入口与仓库的关系 |
 | [贡献指南](CONTRIBUTING.md) | 范围、引用、AI披露与检查要求 |
 | [变更记录](CHANGELOG.md) | 已发生的改动和实际验证结果 |
 
-私有研究版本是编辑源，公开仓库保存经授权的可追溯快照，不双向自动同步。原报告中的能力分级是待检验提案，不是行业标准或认证量表；不合并不同报告的模型。
+自2026-11-15起，本仓库是研究正文唯一的编辑源，私有研究稿冻结为历史档案，各专题导出清单只作来源追溯。原报告中的能力分级是待检验提案，不是行业标准或认证量表；不合并不同报告的模型。
 
 ## 本地检查
 
@@ -59,9 +62,11 @@
 ```bash
 python -I -m unittest discover -s tests -p 'test_*.py' -v
 python -I scripts/check_docs.py
+# 修改专题元数据或命题登记后，重新生成知识地图
+python -I scripts/check_docs.py --write-index
 ```
 
-检查只覆盖支持的文档约定、仓库内链接及保真导入件，不证明研究事实、外链内容、Unity行为或页面渲染正确。远端结果见[GitHub Actions](https://github.com/YIMO691/ai-era-game-engineering/actions)。
+检查只覆盖支持的文档约定、仓库内链接、保真导入件，以及专题元数据、命题登记与知识地图的一致性，不证明研究事实、外链内容、Unity行为或页面渲染正确。远端结果见[GitHub Actions](https://github.com/YIMO691/ai-era-game-engineering/actions)。
 
 ## 参与与许可
 

@@ -1,5 +1,15 @@
 # 变更记录
 
+## 2026-11-15 — 知识库架构
+
+- 所有者决定公开仓库成为唯一编辑源；[发布说明](research/PUBLICATION.md)、[Obsidian 说明](docs/obsidian.md)与首页的相应条款已更新，导出清单改作来源追溯记录。
+- 新增[知识库架构](docs/knowledge-architecture.md)：五层结构（宗旨与方法、专题、命题、综合与实践、档案）、多维索引、专题契约与成熟度门槛、命题登记规则、知识进入与演进的路径、规模化触发条件、待决定的结构调整（P1–P4）及本架构的失败信号。
+- 新增[决策记录](docs/decisions.md)（D-001～D-004）。
+- 新增数据层：每个专题的 `meta.json`；`knowledge/vocabulary.json`（受控词表）；`knowledge/claims.json`（22条跨专题命题，含类型、状态、证据位置、推翻条件、对应实践规则与修订历史）。新增由数据生成的[知识地图](knowledge/README.md)。
+- 检查器新增：校验专题元数据与命题登记；执行成熟度门槛（已审需审核通过，已检验需实验已执行）；要求命题的证据文件和实践规则编号存在；拒绝过期的知识地图；新增 `--write-index` 生成选项。新增11项测试。
+- 本轮不移动、不重命名已有文件；未改动任何研究结论或证据状态。
+- 实际执行（Linux／Python 3.13）：37项unittest通过，`python -I scripts/check_docs.py`退出0，`git diff --check`无输出。远端CI以本次提交的Actions结果为准。
+
 ## 2026-11-15 — 专题主文档改写
 
 - 按仓库所有者选择，直接改写六个专题的主文档，而不是另建精编版：[Unity异步任务生命周期](research/unity-task-lifetime/report.md)、[客户端代码质量](research/client-code-quality/research-report.md)、[AI代码质量工作流](research/ai-code-quality-workflow/research-report.md)、[AI-CQEP核心协议](research/ai-cqep/AI-CQEP.md)与[日常精简协议](research/ai-cqep/QUICK-REFERENCE.md)、[工程判断报告](research/engineering-judgment/engineering-judgment-report.md)与[研究入口](research/engineering-judgment/research-overview.md)、[代码优美论](research/code-aesthetics/final/article.md)。

@@ -1,0 +1,33 @@
+{
+  "id": "unity-task-lifetime",
+  "title": "Unity异步任务生命周期",
+  "question": "场景退出或请求替换后，旧任务的结果由谁决定能否提交、由谁负责释放？",
+  "entry": "report.md",
+  "maturity": "drafted",
+  "status": {
+    "editorial": "draft",
+    "human_review": "pending",
+    "evidence": "partial",
+    "experiment": "not-run"
+  },
+  "domains": [
+    "async-lifecycle",
+    "resource-ownership"
+  ],
+  "axes": [
+    "ownership",
+    "evidence"
+  ],
+  "readers": [
+    "practitioner",
+    "lead"
+  ],
+  "related": [
+    "client-code-quality",
+    "engineering-judgment"
+  ],
+  "edit_source": "public",
+  "provenance": "export-manifest.json",
+  "first_public": "2026-11-12",
+  "last_revised": "2026-11-15"
+}

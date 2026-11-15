@@ -1,0 +1,38 @@
+{
+  "id": "engineering-judgment",
+  "title": "工程判断与人机协作",
+  "question": "工程判断力能否拆解、训练与评价；AI 时代人应强化什么？",
+  "entry": "engineering-judgment-report.md",
+  "maturity": "drafted",
+  "status": {
+    "editorial": "draft",
+    "human_review": "pending",
+    "evidence": "partial",
+    "experiment": "not-run"
+  },
+  "domains": [
+    "engineering-judgment",
+    "learning",
+    "ai-workflow"
+  ],
+  "axes": [
+    "ownership",
+    "evidence",
+    "bound"
+  ],
+  "readers": [
+    "practitioner",
+    "lead",
+    "learner",
+    "researcher"
+  ],
+  "related": [
+    "code-aesthetics",
+    "ai-cqep",
+    "unity-task-lifetime"
+  ],
+  "edit_source": "public",
+  "provenance": "export-manifest.json",
+  "first_public": "2026-11-12",
+  "last_revised": "2026-11-15"
+}

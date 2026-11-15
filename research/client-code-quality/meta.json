@@ -1,0 +1,36 @@
+{
+  "id": "client-code-quality",
+  "title": "客户端代码质量",
+  "question": "如何判断 Unity/C# 客户端代码的质量、开展审查，并把案例用于训练？",
+  "entry": "research-report.md",
+  "maturity": "drafted",
+  "status": {
+    "editorial": "draft",
+    "human_review": "pending",
+    "evidence": "partial",
+    "experiment": "not-run"
+  },
+  "domains": [
+    "code-quality",
+    "code-review",
+    "learning"
+  ],
+  "axes": [
+    "ownership",
+    "evidence"
+  ],
+  "readers": [
+    "practitioner",
+    "lead",
+    "learner"
+  ],
+  "related": [
+    "unity-task-lifetime",
+    "code-aesthetics",
+    "ai-code-quality-workflow"
+  ],
+  "edit_source": "public",
+  "provenance": "export-manifest.json",
+  "first_public": "2026-11-12",
+  "last_revised": "2026-11-15"
+}

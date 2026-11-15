@@ -153,5 +153,122 @@ class DocumentChecks(unittest.TestCase):
             self.assertIn(name, checker.NAVIGATION)
 
 
+REPO = Path(__file__).resolve().parents[1]
+
+
+class KnowledgeChecks(unittest.TestCase):
+    def setUp(self):
+        self.assertIsNotNone(checker, "Document checker has not been implemented")
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.root = Path(self.temp.name)
+        vocab = (REPO / "knowledge/vocabulary.json").read_text(encoding="utf-8")
+        self.write("knowledge/vocabulary.json", vocab)
+        self.write("docs/engineering-practice-guide.md", "# Guide\n\n**G-1（必须）** rule\n")
+        self.write("research/alpha/README.md", "# Alpha\n")
+        self.write("research/alpha/report.md", "# Report\n")
+        self.meta = {
+            "id": "alpha", "title": "甲", "question": "问题？", "entry": "report.md",
+            "maturity": "drafted",
+            "status": {"editorial": "draft", "human_review": "pending",
+                       "evidence": "partial", "experiment": "not-run"},
+            "domains": ["async-lifecycle"], "axes": ["ownership"], "readers": ["practitioner"],
+            "related": [], "edit_source": "public", "provenance": None,
+            "first_public": "2026-11-15", "last_revised": "2026-11-15",
+        }
+        self.claim = {
+            "id": "K-001", "statement": "命题", "type": "inference", "status": "supported",
+            "axes": ["ownership"], "topics": ["alpha"],
+            "evidence": [{"path": "research/alpha/report.md", "note": "第1节"}],
+            "practice": ["G-1"], "falsified_by": None,
+            "history": [{"date": "2026-11-15", "change": "登记", "reason": "测试"}],
+        }
+        self.save()
+
+    def write(self, name, text):
+        path = self.root / name
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(text, encoding="utf-8", newline="\n")
+        return path
+
+    def save(self):
+        self.write("research/alpha/meta.json", json.dumps(self.meta, ensure_ascii=False))
+        self.write("knowledge/claims.json", json.dumps({"claims": [self.claim]}, ensure_ascii=False))
+
+    def errors(self):
+        return checker.load_knowledge(self.root)[3]
+
+    def assert_error(self, phrase):
+        errors = self.errors()
+        self.assertTrue(any(phrase in error for error in errors), errors)
+
+    def test_valid_knowledge_and_fresh_index(self):
+        self.assertEqual([], self.errors())
+        self.assert_index_state(fresh=False)  # no index written yet
+        self.write("knowledge/README.md", checker.render_index(self.root))
+        self.assertEqual([], checker.check_knowledge(self.root))
+
+    def assert_index_state(self, fresh):
+        errors = checker.check_knowledge(self.root)
+        self.assertEqual(fresh, not errors, errors)
+
+    def test_stale_index_is_rejected(self):
+        self.write("knowledge/README.md", checker.render_index(self.root))
+        self.claim["statement"] = "改过的命题"
+        self.save()
+        self.assertTrue(any("out of date" in e for e in checker.check_knowledge(self.root)))
+
+    def test_topic_without_meta_is_rejected(self):
+        self.write("research/beta/README.md", "# Beta\n")
+        self.assert_error("missing or invalid topic metadata")
+
+    def test_unknown_vocabulary_value(self):
+        self.meta["domains"] = ["blockchain"]
+        self.save()
+        self.assert_error("unknown domain blockchain")
+
+    def test_reviewed_requires_passed_review(self):
+        self.meta["maturity"] = "reviewed"
+        self.save()
+        self.assert_error("requires human_review passed")
+
+    def test_tested_requires_experiment(self):
+        self.meta["maturity"] = "tested"
+        self.meta["status"]["human_review"] = "passed"
+        self.save()
+        self.assert_error("requires an executed experiment")
+
+    def test_missing_entry_and_related(self):
+        self.meta["entry"] = "missing.md"
+        self.meta["related"] = ["ghost"]
+        self.save()
+        self.assert_error("entry not found")
+        self.assert_error("unknown related topic ghost")
+
+    def test_hypothesis_cannot_be_supported(self):
+        self.claim["type"] = "hypothesis"
+        self.save()
+        self.assert_error("hypothesis cannot be supported")
+
+    def test_claim_references_must_exist(self):
+        self.claim["evidence"] = [{"path": "research/alpha/nope.md", "note": "x"}]
+        self.claim["practice"] = ["G-99"]
+        self.claim["topics"] = ["ghost"]
+        self.save()
+        self.assert_error("evidence path not found")
+        self.assert_error("unknown practice rule G-99")
+        self.assert_error("unknown topic ghost")
+
+    def test_duplicate_claim_ids(self):
+        self.write("knowledge/claims.json", json.dumps({"claims": [self.claim, dict(self.claim)]}))
+        self.assert_error("id must be unique")
+
+    def test_repository_knowledge_layer_is_registered(self):
+        for name in ("docs/knowledge-architecture.md", "docs/decisions.md", "knowledge/README.md"):
+            self.assertIn(name, checker.REQUIRED)
+            self.assertIn(name, checker.NAVIGATION)
+        self.assertEqual([], checker.check_knowledge(REPO))
+
+
 if __name__ == "__main__":
     unittest.main()

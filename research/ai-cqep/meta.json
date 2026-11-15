@@ -1,0 +1,35 @@
+{
+  "id": "ai-cqep",
+  "title": "AI-CQEP工程协议",
+  "question": "AI 参与研发时，用什么最小协议组织理解、方案、实现、验证、审查与反馈？",
+  "entry": "AI-CQEP.md",
+  "maturity": "drafted",
+  "status": {
+    "editorial": "draft",
+    "human_review": "unknown",
+    "evidence": "partial",
+    "experiment": "not-run"
+  },
+  "domains": [
+    "ai-workflow",
+    "code-quality",
+    "code-review"
+  ],
+  "axes": [
+    "ownership",
+    "evidence",
+    "bound"
+  ],
+  "readers": [
+    "practitioner",
+    "lead"
+  ],
+  "related": [
+    "ai-code-quality-workflow",
+    "engineering-judgment"
+  ],
+  "edit_source": "public",
+  "provenance": "export-manifest.json",
+  "first_public": "2026-11-12",
+  "last_revised": "2026-11-15"
+}

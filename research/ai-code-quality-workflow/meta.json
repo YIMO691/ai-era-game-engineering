@@ -1,0 +1,33 @@
+{
+  "id": "ai-code-quality-workflow",
+  "title": "AI代码质量工作流",
+  "question": "怎样把项目约束、最小修改、可执行检查、定向审查与反馈接成可追溯的 AI 工作链？",
+  "entry": "research-report.md",
+  "maturity": "drafted",
+  "status": {
+    "editorial": "draft",
+    "human_review": "pending",
+    "evidence": "partial",
+    "experiment": "not-run"
+  },
+  "domains": [
+    "ai-workflow",
+    "code-review"
+  ],
+  "axes": [
+    "evidence",
+    "bound"
+  ],
+  "readers": [
+    "practitioner",
+    "lead"
+  ],
+  "related": [
+    "ai-cqep",
+    "client-code-quality"
+  ],
+  "edit_source": "public",
+  "provenance": "export-manifest.json",
+  "first_public": "2026-11-12",
+  "last_revised": "2026-11-15"
+}
