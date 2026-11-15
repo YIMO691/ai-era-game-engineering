@@ -19,7 +19,7 @@ REQUIRED = (
     "README.md", "CONTRIBUTING.md", "CHANGELOG.md", "LICENSE",
     "LICENSES/CC-BY-4.0.txt", "LICENSES/MIT.txt", "docs/imports.json",
     "docs/import-notes.md", "docs/project-manifesto.md", "docs/research-method.md", "docs/roadmap.md",
-    "docs/stage-review-2026-11.md", "docs/glossary.md",
+    "docs/stage-review-2026-11.md", "docs/glossary.md", "docs/engineering-practice-guide.md",
     "docs/obsidian.md", "research/sources.md", *IMPORTS,
     "scripts/check_docs.py", "tests/test_check_docs.py",
     ".github/workflows/docs.yml", ".gitignore", ".gitattributes",
@@ -27,7 +27,7 @@ REQUIRED = (
 NAVIGATION = (
     "docs/project-manifesto.md", "docs/manifesto.md", "docs/import-notes.md", "docs/research-method.md",
     "research/sources.md", "docs/roadmap.md", "docs/obsidian.md",
-    "docs/stage-review-2026-11.md", "docs/glossary.md",
+    "docs/stage-review-2026-11.md", "docs/glossary.md", "docs/engineering-practice-guide.md",
     "CONTRIBUTING.md", "CHANGELOG.md", "LICENSE",
 )
 LINK = re.compile(r"!?\[[^\[\]\n]*\]\(([^\s()<>]+)\)")
