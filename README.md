@@ -39,9 +39,11 @@
 - [附录F　AI-CQEP 速查卡](book/appendix-f-ai-cqep-quick-reference.md)
 - [附录G　记录模板](book/appendix-g-record-templates.md)
 - [附录H　研究方法](book/appendix-h-research-method.md)
+- [附录I　学习版图与路线](book/appendix-i-learning-roadmap.md)：78 个可单独学习的条目，分六个阶段，标出本书已覆盖、点到与空白之处。
 
 ## 阅读路线
 
+- **作为学习者，想知道还要学什么**：[附录I](book/appendix-i-learning-roadmap.md)，从推荐的第一项开始。
 - **只想抓住主线**：第1、2、3、8章。
 - **一线工程师**：第3、4章，附录A、E。
 - **在团队中引入 AI 协作**：第6、7章，附录F、A。

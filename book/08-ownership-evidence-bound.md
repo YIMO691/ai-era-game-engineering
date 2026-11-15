@@ -388,4 +388,6 @@
 上一章：[第7章　AI-CQEP：一份最小工程协议](07-ai-cqep-protocol.md)
 下一章：[附录A　工程实践规则](appendix-a-practice-rules.md)
 
+本书没有覆盖的知识领域与学习路线，见[附录I　学习版图与路线](appendix-i-learning-roadmap.md)。
+
 返回[目录](../README.md)。

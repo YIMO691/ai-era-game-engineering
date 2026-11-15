@@ -36,7 +36,7 @@ AI 正在让“写出代码”这件事变得越来越便宜。于是有一个�
 | 第三部分　判断 | 第5章 | 分析多深、何时停止、能力如何训练？ |
 | 第四部分　AI 时代的工作方式 | 第6、7章 | AI 参与研发时，怎样组织约束、检查与审查？ |
 | 结语 | 第8章 | 前七章共同说明了什么？还缺什么？ |
-| 附录 | A–H | 实践规则、术语、命题索引、案例、清单与模板 |
+| 附录 | A–I | 实践规则、术语、命题索引、案例、清单、模板，以及学习版图与路线 |
 
 不同的读者可以走不同的路线：
 
@@ -44,6 +44,7 @@ AI 正在让“写出代码”这件事变得越来越便宜。于是有一个�
 - **一线工程师**：第3章 → 第4章 → [附录A](appendix-a-practice-rules.md) → [附录E](appendix-e-review-checklist.md)。
 - **在团队中引入 AI 协作**：第6章 → 第7章 → [附录F](appendix-f-ai-cqep-quick-reference.md) → [附录A](appendix-a-practice-rules.md)第 7 章。
 - **带新人或训练自己的判断**：第5章 → [附录D](appendix-d-cases.md) → [附录G](appendix-g-record-templates.md)。
+- **作为学习者，想知道这本书之外还要学什么**：[附录I](appendix-i-learning-roadmap.md)。它列出 78 个可以单独学习的条目，标出本书已覆盖、点到与空白之处。
 - **研究者与审阅者**：第8章 → [附录C](appendix-c-propositions.md) → [附录H](appendix-h-research-method.md) → [研究档案](../archive/README.md)。
 
 ## 阅读约定
